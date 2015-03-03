@@ -1,0 +1,601 @@
+//====================================
+// BYU 4.0 v1 SKIN: Config
+//====================================
+// This file is written in SASS. To find out how to install SASS to generate CSS visit http://sass-lang.com
+
+// Configure these settings to make both broad and fine adjustments to the skin.
+// If there isn't a configuration here you need, make an override in "_skin-overrides.scss".
+//
+// For colors, the main color palette is in "_skin-colors.scss".
+// SASS will take the colors defined in the palette and create shade variations for each color.
+// For example:
+// $c1				: $skinColor1;
+// $c1dark			: darken($c1, 10%);
+// $c1darker		: darken($c1, 20%);
+// $c1darkest		: darken($c1, 30%);
+// $c1light			: lighten($c1, 10%);
+// $c1lighter		: lighten($c1, 20%);
+// $c1lightest		: lighten($c1, 30%);
+//
+// Use the $cX references in the rest of the color delcarations below to customize which color from the palette + shade variations your skin uses for different areas and components of the portal.
+//
+// Anywhere there is a background specified, you can expand a simple color variable to include an image with normal css background syntax.
+//
+// Some things may be turned off by using "false" instead of a variable or css value.
+
+
+//====================================
+// General
+//====================================
+$fontSize						: 14px; // Use a value to override the reset font size. "false" will keep the reset font size.
+$font							: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+$headingFont					: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+$buttonFont						: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+$formElementFont				: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+
+//====================================
+// Page
+//====================================
+$portalWidth					: 100%;
+$portalMinWidth					: 960px;
+$portalPageSideBorder			: 1px solid $graydark;
+$portalBackground				: $graylight;
+$portalGradient1				: false;
+$portalGradient2				: false;
+$portalPageBodyInnerPadding		: 3.0em 4.0em;
+
+//====================================
+// Header
+//====================================
+$headerBackground				: $white;
+$headerGradient1				: false;
+$headerGradient2				: false;
+// Logo
+$portalLogoPadding				: 0.5em 4.0em;
+$portalFocusedLogoPadding		: 1.5em 0;
+// Login (assumes CAS)
+$loginPositionTop				: 1.5em;
+$loginPositionRight				: 25px;
+$loginButtonWidth				: 10em;
+// User Welcome
+$headerWelcomeTop				: 3.0em;
+$headerWelcomeLeft				: 195px;
+$headerWelcome					: $gray6;
+$headerUserName					: $gray9;
+// Portal Bar
+$portalBarBackground			: $white;
+$portalBarGradient1				: false;
+$portalBarGradient2				: false;
+$portalBarPadding				: 2.0em 4.0em 1.0em 4.0em;
+$portalBarFontSize				: 90%;
+$portalBarTextAlign				: left;
+$portalBarTextTransform			: uppercase;
+$portalBarLink					: $gray6;
+$portalBarLinkHover				: $gray9;
+$portalBarLinkPadding			: 0 5px;
+$portalBarPipes					: 1px solid rgba($c1lightest, .25);
+// Web Search
+$webSearchTop					: 1.5em;
+$webSearchRight					: 4.0em;
+$webSearchSelectHide			: true;
+$webSearchInput					: $white;
+$webSearchInputBorder			: $grayD;
+$webSearchInputText				: $text;
+$webSearchInputHover			: $grayE;
+$webSearchInputFocus			: $grayE;
+$webSearchInputBorderFocus		: $grayC;
+$webSearchInputFocusText		: $text;
+$webSearchInputRound			: false;
+$webSearchInputRoundTL			: 0;
+$webSearchInputRoundTR			: 0;
+$webSearchInputRoundBR			: 0;
+$webSearchInputRoundBL			: 0;
+// Tips
+
+// Emergency Alerts
+$headerBlockBackground      : $c1darker;
+
+//====================================
+// Navigation
+//====================================
+$navBackground					: $byublue1;
+$navGradient1					: false;
+$navGradient2					: false;
+$navTabMargin					: 0 0 0 4.0em;
+// Tabs
+$navTabBackground				: $byublue1;
+$navTabGradient1				: false;
+$navTabGradient2				: false;
+$navTabGradient3				: false; // set to "false" for a 2-color gradient
+$navTabRound					: false;
+$navTabBorderLeft				: none;
+$navTabBorderRight				: none;
+$navTabPadding					: 8px 20px;
+$navTabMarginRight				: 0;
+$navTabLink						: $white;
+$navTabWeight					: bold;
+$navTabTextShadow				: flat;
+$navTabHoverBackground			: $graylight;
+$navTabHoverGradient1			: false;
+$navTabHoverGradient2			: false;
+$navTabHoverGradient3			: false; // set to "false" for a 2-color gradient
+$navTabLinkHover				: $gray3;
+$navTabHoverTextShadow			: flat;
+// Active Tab
+$navTabActiveBackground			: $graylight;
+$navTabActiveGradient1			: false;
+$navTabActiveGradient2			: false;
+$navTabActiveGradient3			: false; // set to "false" for a 2-color gradient
+$navTabActiveLink				: $gray3;
+$navTabActiveTextShadow			: flat;
+$navTabActiveHoverBackground	: $blue6;
+$navTabActiveHoverGradient1		: false;
+$navTabActiveHoverGradient2		: false;
+$navTabActiveHoverGradient3		: false; // set to "false" for a 2-color gradient
+$navTabActiveHoverLink			: $white;
+$navTabActiveHoverTextShadow	: flat;
+// Add Tab
+$navAddTabTopPosition			: 7px;
+$navAddTabPadding				: 5px 8px 2px 20px;
+$navAddTabBackground			: transparent;
+$navAddTabBorder				: none;
+$navAddTabRound					: false;
+$navAddTabLink					: $white;
+$navAddTabFontSize				: 86%;
+$navAddTabImage					: url("images/add.png");
+$navAddTabImagePosition			: 5px 3px;
+$navAddTabHover					: $graylight;
+$navAddTabLinkHover				: $gray3;
+// Tab Reorder
+$navReorderGripperImage			: transparent url("images/gripper.png") 0px 0px no-repeat;
+$navReorderAvatarBackground		: $black;
+$navReorderAvatarLink			: $white;
+$navReorderAvatarRound			: 5px;
+$navReorderAvatarBoxShadow		: 0px, 0px, 4px, $dgray;
+// Remove Tab
+$navRemoveTabImage				: transparent url("images/remove.png") 0px 0px no-repeat;
+// Flyouts
+$navFlyoutBackground			: $c2;
+$navFlyoutGradient1				: false;
+$navFlyoutGradient2				: false;
+$navFlyoutBorder				: 4px solid $c2;
+$navFlyoutBorderTopWidth		: 1px;
+$navFlyoutRound					: false;
+$navFlyoutRoundTL				: 0;
+$navFlyoutRoundTR				: 0;
+$navFlyoutRoundBL				: 0.6em;
+$navFlyoutRoundBR				: 0.6em;
+$navFlyoutBoxShadow				: 2px 4px 6px $graydarker;
+$navFlyoutLinkBackground		: $white;
+$navFlyoutLinkGradient1			: false;
+$navFlyoutLinkGradient2			: false;
+$navFlyoutLinkBorderTop			: 1px solid $c2;
+$navFlyoutLinkBorderBottom		: false;
+$navFlyoutLinkTextSize			: 85%;
+$navFlyoutLinkColor				: $gray3;
+$navFlyoutHoverBackground		: $blue6;
+$navFlyoutLinkHoverColor		: $white;
+// Portlet Nav
+$navPortletHeading				: $white;
+$navPortletImage				: transparent url("/ResourceServingWebapp/rs/famfamfam/silk/1.3/tab_go.png") 0px 0px no-repeat;
+// Breadcrumb
+$breadcrumbText					: $graylighter;
+$breadcrumbLink					: $gray;
+$breadcrumbFontWeight			: normal;
+$breadcrumbLinkHover			: $graydark;
+
+//====================================
+// Body
+//====================================
+$portalPageBackground			: $graylight;
+// Portlet Wrapper
+$portletRound					: 0;
+$portletContentRound			: 0;
+$portletPadding					: 3px 0 0 0;
+$portletShadow					: false;
+$portletTitlePadding			: 3px 0 8px 0.5em;
+$portletTitleFontSize			: 100%;
+$portletTitleFontWeight			: normal;
+$portletTitleTextTransform		: capitalize;
+// Portlet Controls
+$portletControlsTop				: 0;
+$portletControlsPadding			: 1px 6px 0 0;
+$portletControlsFontSize		: 90%;
+$portletControlIconSprite		: url("../byu4.0_v1/images/portlet_icons_with_print_flat.png");
+$portletControlIconSize			: 16px;
+$portletControlLink				: $c1lightest;
+$portletControlLinkHover		: $white;
+// Portlet Default
+$portletBackground				: $byublue1;
+$portletGradient1				: false;
+$portletGradient2				: false;
+$portletTitle					: $white;
+$portletTitleShadow				: flat;
+$portletTitleHover				: $grayC;
+$portletBorder					: 1px solid $c1;
+$portletContentBorder			: none;
+$portletContentBackground		: $white;
+// Portlet Alternate
+$portletAltBackground			: $byugray1;
+$portletAltGradient1			: false;
+$portletAltGradient2			: false;
+$portletAltTitle				: $blue5;
+$portletAltTitleShadow			: flat;
+$portletAltTitleHover			: $graylight;
+$portletAltBorder				: 1px solid $blue6;
+$portletAltContentBorder		: none;
+$portletAltContentBackground	: $white;
+// Portlet Highlight
+$portletHLBackground			: $blue9;
+$portletHLGradient1				: false;
+$portletHLGradient2				: false;
+$portletHLTitle					: $blue1;
+$portletHLTitleShadow			: flat;
+$portletHLTitleHover			: $c2darkest;
+$portletHLBorder				: 1px solid $c5darker;
+$portletHLContentBorder			: none;
+$portletHLContentBackground		: $c5lightest;
+// Portlet Locked
+$portletLockedBackground		: $c1dark url("../common/images/light_top_100px_50.png") 0px 0px repeat-x;
+$portletLockedGradient1			: $c1dark;
+$portletLockedGradient2			: $c1;
+$portletLockedTitle				: $c1lighter;
+$portletLockedTitleShadow		: dark;
+$portletLockedTitleHover		: $white;
+$portletLockedBorder			: 1px solid $c1dark;
+$portletLockedContentBorder		: none;
+$portletLockedContentBackground	: $white;
+$portletLockedTitleIcon			: false;
+// Sidebar
+$sidebarPadding					: 0 0 0 15px;
+// Sidebar Widget
+$sidebarWidgetRound				: 5px;
+$sidebarWidgetContentRound		: 3px;
+$sidebarWidgetShadow			: false;
+$sidebarWidgetBackground		: $c2 url("../common/images/light_top_100px_50.png") 0px 0px repeat-x;
+$sidebarWidgetGradient1			: $c2lightest;
+$sidebarWidgetGradient2			: $c2;
+$sidebarWidgetTitle				: $c1lightest;
+$sidebarWidgetTitleWeight		: bold;
+$sidebarWidgetTitleSize			: 100%;
+$sidebarWidgetTitleTransform	: uppercase;
+$sidebarWidgetTitleShadow		: dark;
+$sidebarWidgetTitlePadding		: 0;
+$sidebarWidgetBorder			: 1px solid $c2dark;
+$sidebarWidgetContentBorder		: 1px solid $c2;
+$sidebarWidgetContentBackground	: $c1dark;
+$sidebarWidgetContentText		: $c1lightest;
+$sidebarWidgetContentPadding	: 1em 12px; // For widgets that don't contain listmenus.
+// Sidebar Listmenu
+$sidebarListBackground			: $c1dark;
+$sidebarListBorder				: 1px solid $c1dark;
+$sidebarLIBackground			: $c1dark;
+$sidebarLIBorder				: 1px solid $c1dark;
+$sidebarLIText					: $c1lightest;
+$sidebarLIPadding				: 5px;
+$sidebarLIBackgroundHover		: $c4darker;
+$sidebarLITextHover				: $white;
+$sidebarLIActiveBackground		: $c1darker;
+$sidebarLIActiveText			: $c1lighter;
+$sidebarLIActiveBackgroundHover	: $c4darkest;
+$sidebarLIActiveTextHover		: $white;
+
+
+//====================================
+// Footer
+//====================================
+$footerBackground				: $white;
+$footerText						: $gray9;
+$footerLink						: $gray6;
+$footerLinkDecoration			: none;
+$footerLinkHover				: $gray9;
+$footerLinkHoverDecoration      : underline;
+$footerInnerPadding				: 4.0em;
+$footerFontSize					: 90%;
+$footerInnerBackground			: transparent;
+$footerInnerNavBackground       : $white;
+$footerInnerNavFontSize         : 90%;
+$footerInnerNavLink             : $gray9;
+$footerInnerNavLinkDecoration   : none;
+$footerInnerNavLinkHover        : $gray6;
+$footerInnerNavLinkHoverDec     : underline;
+$footerLinkListMargin			: 0 0 2em 0;
+$footerLinkListFontWeight		: bold;
+$footerLinkListColor			: $gray6;
+$footerLinkListHoverColor		: $gray9;
+$footerEtcMargin				: 0 0 0 120px;
+
+//====================================
+// Buttons
+//====================================
+// Global Buttons
+$buttonPadding					: 0.3em 15px 0.4em 15px;
+$buttonBorderWidth				: 1px;
+$buttonBorderStyle				: solid;
+$buttonFontWeight				: bold;
+$buttonFontSize					: 12px;
+$buttonTextAlign				: center;
+$buttonTextTransform			: capitalize;
+$buttonRound					: none;
+$buttonShadow					: none; // drop shadow
+// Default Button
+$buttonBorder					: $blue1;
+$buttonBackground				: $byublue1;
+$buttonText						: $white;
+$buttonTextShadow				: flat;
+$buttonGradient1				: false;
+$buttonGradient2				: false;
+$buttonHoverBorder				: $blue4;
+$buttonHoverBackground			: $blue5;
+$buttonHoverText				: $white;
+$buttonHoverTextShadow			: flat;
+$buttonHoverGradient1			: false;
+$buttonHoverGradient2			: false;
+$buttonDownBorder				: $blue4;
+$buttonDownBackground			: $blue5;
+$buttonDownText					: $white;
+$buttonDownTextShadow			: flat;
+$buttonDownGradient1			: false;
+$buttonDownGradient2			: false;
+// Dark Button
+$darkButtonBorder				: $blue1;
+$darkButtonBackground			: $byublue1;
+$darkButtonText					: $white;
+$darkButtonTextShadow			: flat;
+$darkButtonGradient1			: false;
+$darkButtonGradient2			: false;
+$darkButtonHoverBorder			: $blue4;
+$darkButtonHoverBackground		: $blue5;
+$darkButtonHoverText			: $white;
+$darkButtonHoverTextShadow		: flat;
+$darkButtonHoverGradient1		: false;
+$darkButtonHoverGradient2		: false;
+$darkButtonDownBorder			: $blue4;
+$darkButtonDownBackground		: $blue5;
+$darkButtonDownText				: $white;
+$darkButtonDownTextShadow		: flat;
+$darkButtonDownGradient1		: false;
+$darkButtonDownGradient2		: false;
+// Light Button
+$lightButtonBorder				: $gray9;
+$lightButtonBackground			: $byugray1;
+$lightButtonText				: $gray3;
+$lightButtonTextShadow			: flat;
+$lightButtonGradient1			: false;
+$lightButtonGradient2			: false;
+$lightButtonHoverBorder			: $graydark;
+$lightButtonHoverBackground		: $gray;
+$lightButtonHoverText			: $graydarkest;
+$lightButtonHoverTextShadow		: flat;
+$lightButtonHoverGradient1		: false;
+$lightButtonHoverGradient2		: false;
+$lightButtonDownBorder			: $graydark;
+$lightButtonDownBackground		: $graydark;
+$lightButtonDownText			: $graydarkest;
+$lightButtonDownTextShadow		: flat;
+$lightButtonDownGradient1		: false;
+$lightButtonDownGradient2		: false;
+// Login Button
+$loginButtonBorder              : $blue1;
+$loginButtonBackground          : $byublue1;
+$loginButtonText                : $white;
+$loginButtonTextShadow          : flat;
+$loginButtonGradient1           : false;
+$loginButtonGradient2           : false;
+$loginButtonHoverBorder	        : $blue4;
+$loginButtonHoverBackground     : $blue5;
+$loginButtonHoverText           : $white;
+$loginButtonHoverTextShadow     : flat;
+$loginButtonHoverGradient1      : false;
+$loginButtonHoverGradient2      : false;
+$loginButtonDownBorder          : $blue4;
+$loginButtonDownBackground      : $blue5;
+$loginButtonDownText            : $white;
+$loginButtonDownTextShadow      : flat;
+$loginButtonDownGradient1       : false;
+$loginButtonDownGradient2       : false;
+// Web Search Button
+$websearchButtonPadding			: 0.4em 12px;
+$websearchButtonBorder			: $grayB;
+$websearchButtonBackground		: $grayC;
+$websearchButtonText			: $gray6;
+$websearchButtonTextShadow		: flat;
+$websearchButtonGradient1		: false;
+$websearchButtonGradient2		: false;
+$websearchButtonHoverBorder		: $grayA;
+$websearchButtonHoverBackground	: $grayB;
+$websearchButtonHoverText		: $gray3;
+$websearchButtonHoverTextShadow	: flat;
+$websearchButtonHoverGradient1	: false;
+$websearchButtonHoverGradient2	: false;
+$websearchButtonDownBorder		: $gray9;
+$websearchButtonDownBackground	: $grayA;
+$websearchButtonDownText		: $gray3;
+$websearchButtonDownTextShadow	: flat;
+$websearchButtonDownGradient1	: false;
+$websearchButtonDownGradient2	: false;
+// Search Button
+$searchButtonPadding			: 0.3em 12px;
+$searchButtonBorder				: $grayB;
+$searchButtonBackground			: $grayC;
+$searchButtonText				: $gray6;
+$searchButtonTextShadow			: flat;
+$searchButtonGradient1			: false;
+$searchButtonGradient2			: false;
+$searchButtonHoverBorder		: $grayA;
+$searchButtonHoverBackground	: $grayB;
+$searchButtonHoverText			: $gray3;
+$searchButtonHoverTextShadow	: flat;
+$searchButtonHoverGradient1		: false;
+$searchButtonHoverGradient2		: false;
+$searchButtonDownBorder			: $gray9;
+$searchButtonDownBackground		: $grayA;
+$searchButtonDownText			: $gray3;
+$searchButtonDownTextShadow		: flat;
+$searchButtonDownGradient1		: false;
+$searchButtonDownGradient2		: false;
+// Utility Button
+$utilityButtonBorder            : $blue1;
+$utilityButtonBackground        : $byublue1;
+$utilityButtonText              : $white;
+$utilityButtonTextShadow        : flat;
+$utilityButtonGradient1         : false;
+$utilityButtonGradient2         : false;
+$utilityButtonHoverBorder	    : $blue4;
+$utilityButtonHoverBackground   : $blue5;
+$utilityButtonHoverText         : $white;
+$utilityButtonHoverTextShadow   : flat;
+$utilityButtonHoverGradient1    : false;
+$utilityButtonHoverGradient2    : false;
+$utilityButtonDownBorder        : $blue4;
+$utilityButtonDownBackground    : $blue5;
+$utilityButtonDownText          : $white;
+$utilityButtonDownTextShadow    : flat;
+$utilityButtonDownGradient1     : false;
+$utilityButtonDownGradient2     : false;
+// Active (global "on") state.
+$activeButtonBorder				: $blue6;
+$activeButtonBackground			: $blue8;
+$activeButtonText				: $gray6;
+$activeButtonTextShadow			: flat;
+$activeButtonGradient1			: false;
+$activeButtonGradient2			: false;
+// Disabled Button
+$disabledButtonBorder			: $gray6;
+$disabledButtonBackground		: $gray7;
+$disabledButtonText				: $gray6;
+
+//====================================
+// Forms
+//====================================
+$formElementFontSize			: 14px;
+$formElementBorder				: 1px solid $gray;
+$formElementPadding				: 0.2em 0.4em;
+$formElementLineHeight			: 1.4;
+$formElementBackground			: $white;
+$formElementBoxShadow			: none;
+$formElementRound				: false;
+$formSelectPadding				: 0.1em;
+$formSelectRound				: false;
+$formElementFocus				: none;
+
+//====================================
+// Customization
+//====================================
+// Gallery
+$galleryBackground				: $grayE;
+$galleryBorder					: 1px solid $blue0;
+$galleryHandleBackground		: transparent;
+$galleryHandleBorder			: none;
+$galleryHandleLinkBackground	: $graylight;
+$galleryHandleLink				: $text;
+$galleryHandleRound				: 0;
+$galleryHandleShadow			: none;
+$galleryHandleIconClosed		: url("../common/images/gallery-handle-arrow-down.png");
+$galleryHandleIconOpen			: url("../common/images/gallery-handle-arrow-up.png") !important;
+$galleryBarBackground			: $white;
+$galleryMenuBackground			: $grayD;
+$galleryMenuBorder				: none;
+$galleryMenuItemBackground		: $grayA;
+$galleryMenuItemBorder			: 1px solid $gray9;
+$galleryMenuItemLink			: $white;
+$galleryMenuItemBackgroundHover	: $gray8;
+$galleryMenuItemLinkHover		: $white;
+$galleryMenuItemActiveBackground: $grayC;
+$galleryMenuItemActiveLink		: $white;
+$galleryMenuItemActiveIcon		: $dgray url("../common/images/gallery-arrow-right.png") 90% 50% no-repeat;
+$galleryCloseButtonType			: default;
+$galleryFilterBackground		: $gray8;
+$galleryFilterBorder			: none;
+$galleryFilterRound				: 0;
+$galleryFilterTitleRound		: 0;
+$galleryFilterTitleBackground	: $grayA;
+$galleryFilterTitle				: $white;
+$galleryFilterTitleHover		: $grayE;
+$galleryFilterTitleActive		: $white;
+$galleryFilterTitleActiveHover	: $white;
+$galleryFilterTitleActiveBgd	: $gray8;
+$galleryFilterSubtitle			: $white;
+$galleryFilterSubtitleLine		: 1px dotted $grayC;
+$galleryFSearchInputBackground	: $white;
+$galleryFSearchInputText		: #gray6;
+$galleryFSearchInputPadding		: 0.3em;
+$galleryFSearchInputHover		: $grayD;
+$galleryFSearchInputFocus		: $grayE;
+$galleryCatLink					: $white;
+$galleryCatLinkHover			: $grayD;
+$galleryCatActiveLink			: $grayD;
+$galleryPackagesText			: $graylighter;
+$galleryResultsBottomPadding	: 5px;
+$galleryResultsText				: $white;
+$galleryRIBackground			: $gray6;
+$galleryRIBorder				: 1px solid $gray5;
+$galleryRIRound					: 0;
+$galleryRIShadow				: none;
+$galleryRIUtilityHeight			: 16px;
+$galleryRIUtilityBackground		: $gray6;
+$galleryRIUtilityRound			: 0;
+$galleryRIGripper				: $gray8 url("../common/images/gripper.png") 5px 0px no-repeat;
+$galleryRITitle					: $white;
+$galleryRIDescription			: $graylight;
+$galleryRIBackgroundHover		: $grayA;
+$galleryRIBorderHover			: 1px soild $grayB;
+$galleryRIGradient1Hover		: false;
+$galleryRIGradient2Hover		: false;
+$galleryRILink					: $white;
+$galleryRILinkBackground		: $gray6;
+$galleryRILinkGradient1			: false;
+$galleryRILinkGradient2			: false;
+$galleryRILinkRound				: 0;
+$galleryRILinkBackgroundHover	: $gray3;
+$galleryRILinkGradient1Hover	: false;
+$galleryRILinkGradient2Hover	: false;
+$galleryRISelectedBackground	: $dgraydark;
+$galleryRISelectedBorderWidth   : 3px;
+$galleryRISelectedBorderStyle   : solid;
+$galleryRISelectedBorderColor   : $c1;
+$galleryPagerText				: $white;
+$galleryPagerButtonBackground	: $dgraylight;
+$galleryPagerButtonBorder		: 1px solid $dgraylightest;
+$galleryPagerButtonGradient1	: false;
+$galleryPagerButtonGradient2	: false;
+$galleryPagerButtonRound		: 0;
+$galleryPagerBtnBackgroundHover	: $dgraylightest;
+$galleryPagerBtnBorderHover		: none;
+$galleryPagerBtnGradient1Hover	: false;
+$galleryPagerBtnGradient2Hover	: false;
+$galleryPagerBtnBgdDisabled		: $dgray !important;
+$galleryPagerBtnBorderDisabled	: none !important;
+// Customize Page Message
+$customizePageMessagePointer	: transparent url("images/customize_message_arrow.png") 40px 0px no-repeat;
+$customizePageMessageBackground	: $white;
+$customizePageMessageBorder		: 2px solid $c4darker;
+$customizePageMessageRound		: 7px;
+$customizePageMessagePadding	: 1em 20px;
+$customizePageMessageTitle		: $dgray;
+$customizePageMessageTitleWeight: normal;
+$customizePageMessageTitleMargin: 0 0 .3em 0;
+$customizePageMessageStrong		: $c1dark;
+// Fragment Administration
+$fragAdminHeaderBackground		: $c3light;
+$fragAdminHeaderBorder			: none;
+$fragAdminHeaderBorderBottom	: 1px solid $c3darker;
+$fragAdminHeaderRound			: 0;
+$fragAdminHeaderTitle			: $c3darkest;
+$fragAdminHeaderTitleSize		: 150%;
+$fragAdminHeaderContentBgd		: $c3light;
+$fragAdminHeaderButtonType		: dark;
+$fragAdminPagePermsButtonType	: light;
+$fragAdminColumnPermsButtonType	: light;
+$fragDisabled					: $graydark;
+// Layout Options
+$layoutOptionSelectedBorder		: thin solid $gray; // 3.2 only; 4.0 uses the gallery instead.
+// Drag and Drop
+$dndSelectedOutline				: 2px solid $c4;
+$dndAvatarBackground			: $white;
+$dndAvatarBorder				: 1px dotted $gray;
+$dndDropMarkerBackground		: $c4;
+$dndDropMarkerBorder			: 2px dashed $c4darker;
+$dndDropWarningBackground		: $c5;
+$dndDropWarningBorder			: 2px solid $c5darker;
+$dndDropWarningText				: $white;

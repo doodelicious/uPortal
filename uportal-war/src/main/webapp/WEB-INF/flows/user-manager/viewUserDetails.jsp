@@ -21,27 +21,27 @@
 
 <%@ include file="/WEB-INF/jsp/include.jsp" %>
 <portlet:renderURL var="backUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="cancel"/>
 </portlet:renderURL>
 <portlet:renderURL var="deleteUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="confirmRemove"/>
 </portlet:renderURL>
 <portlet:renderURL var="permissionsUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="viewPermissions"/>
 </portlet:renderURL>
 <portlet:renderURL var="editDetailsUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="editUser"/>
 </portlet:renderURL>
 <portlet:actionURL var="impersonateUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="swap"/>
 </portlet:actionURL>
 <portlet:renderURL var="resetLayoutUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="resetLayout"/>
 </portlet:renderURL>
 <c:set var="n"><portlet:namespace/></c:set>
@@ -52,6 +52,7 @@
     <!-- Portlet Titlebar -->
     <div class="fl-widget-titlebar titlebar portlet-titlebar" role="sectionhead">
         <h2 class="title" role="heading">${ fn:escapeXml(person.name )}</h2>
+
         <div class="toolbar">
             <ul>
                 <c:if test="${ canEdit }">
@@ -67,8 +68,9 @@
                 <li><a class="button" href="${ resetLayoutUrl }"><spring:message code="reset.user.layout"/></a></li>
             </ul>
         </div>
-    </div> <!-- end: portlet-titlebar -->
-    
+    </div>
+    <!-- end: portlet-titlebar -->
+
     <!-- Portlet Body -->
     <div class="fl-widget-content content portlet-content" role="main">
 
@@ -81,20 +83,21 @@
 
                 <table class="portlet-table">
                     <thead>
-                        <tr>
-                            <th><spring:message code="attribute.name"/></th>
-                            <th><spring:message code="attribute.value"/></th>
-                        </tr>
+                    <tr>
+                        <th><spring:message code="attribute.name"/></th>
+                        <th><spring:message code="attribute.value"/></th>
+                    </tr>
                     </thead>
                     <c:forEach items="${ groupedAttributes }" var="attribute">
                         <tr>
                             <td class="attribute-name">
                                 <strong>${ attribute.displayName }</strong>
-                                (<c:forEach items="${attribute.attributeNames}" var="name" varStatus="status">${ name }${ status.last ? '' : ',' }</c:forEach>)
+                                (<c:forEach items="${attribute.attributeNames}" var="name"
+                                            varStatus="status">${ name }${ status.last ? '' : ',' }</c:forEach>)
                             </td>
                             <td>
                                 <c:forEach items="${ attribute.values }" var="value">
-                                   <div>${fn:escapeXml(value)}</div>
+                                    <div>${fn:escapeXml(value)}</div>
                                 </c:forEach>
                             </td>
                         </tr>
@@ -102,7 +105,7 @@
                 </table>
             </div>
         </div>
-        
+
         <!-- Portlet Section -->
         <div class="portlet-section" role="region">
             <div class="titlebar">
@@ -116,7 +119,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="buttons">
             <a class="button" href="${ backUrl }"><spring:message code="back"/></a>
         </div>

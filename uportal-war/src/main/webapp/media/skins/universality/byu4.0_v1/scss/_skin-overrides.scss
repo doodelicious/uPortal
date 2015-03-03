@@ -1,0 +1,88 @@
+//====================================
+// IVY SKIN: Overrides
+//====================================
+// This file is written in SASS. To find out how to install SASS to generate CSS visit http://sass-lang.com
+
+// Put any skin-specific overrides here.
+
+.up {
+    #portalPageHeader {
+        #webSearchContainer {
+            border-radius: 0;
+
+            input[type="text"], input[type="submit"] {
+                margin-right: 10px;
+                text-shadow: none;
+            }
+        }
+
+        // Overriding fluid's styles
+        .fl-widget {
+            .fl-widget-content {
+                border-radius: 0;
+            }
+        }
+    }
+
+    #portalNavigation {
+
+        .portal-navigation, .portal-navigation:hover, .active, .active:hover {
+
+            .portal-navigation-link {
+                text-shadow: none;
+            }
+        }
+
+        li.portal-navigation-add-item {
+            margin-right: 3.0em;
+        }
+    }
+
+    .up-gallery {
+
+        .gallery-inner {
+
+            .content-filters-wrapper {
+
+                .categories {
+                    a {
+                        &:hover, &:focus {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .handle {
+            a {
+                margin-left: 4.5em;
+            }
+        }
+    }
+
+    // Portlet overrides
+    .up-portlet-wrapper {
+        margin: 10px 10px 30px 10px;
+
+        .up-portlet-titlebar {
+
+            .up-portlet-control {
+                padding-top: 3px;
+                margin-right: 4px;
+                margin-left: 3px;
+            }
+        }
+    }
+
+    #portalPageFooter {
+
+        #portalPageFooterLinks {
+            text-align: center;
+        }
+
+        #portalProductAndVersion, #besafe, #powered-by, #silkIconsAttribution {
+            display: none;
+        }
+    }
+}

@@ -21,35 +21,35 @@
 
 <%@ include file="/WEB-INF/jsp/include.jsp" %>
 <portlet:renderURL var="cancelUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="cancel"/>
 </portlet:renderURL>
 <portlet:renderURL var="backUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="back"/>
 </portlet:renderURL>
 <portlet:renderURL var="saveUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="save"/>
 </portlet:renderURL>
 <portlet:renderURL var="deleteUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="confirmRemove"/>
 </portlet:renderURL>
 <portlet:renderURL var="permissionsUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="viewGroupPermissions"/>
 </portlet:renderURL>
 <portlet:renderURL var="editDetailsUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="editDetails"/>
 </portlet:renderURL>
 <portlet:renderURL var="editMembersUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="editMembers"/>
 </portlet:renderURL>
 <portlet:renderURL var="createMemberUrl">
-    <portlet:param name="execution" value="${flowExecutionKey}" />
+    <portlet:param name="execution" value="${flowExecutionKey}"/>
     <portlet:param name="_eventId" value="createChildGroup"/>
 </portlet:renderURL>
 <c:set var="n"><portlet:namespace/></c:set>
@@ -61,10 +61,12 @@
     <!-- Portlet Titlebar -->
     <div class="fl-widget-titlebar titlebar portlet-titlebar" role="sectionhead">
         <h2 class="title" role="heading">${ fn:escapeXml(group.name )}</h2>
+
         <h3 class="subtitle">${ fn:escapeXml(group.description )}</h3>
+
         <div class="details">Created by ${ fn:escapeXml(group.creatorId )}</div>
         <div class="toolbar">
-        	<ul>
+            <ul>
                 <c:if test="${ canEdit }">
                     <li><a class="button" href="${ editDetailsUrl }"><spring:message code="edit"/></a></li>
                 </c:if>
@@ -75,19 +77,22 @@
                     <li><a class="button" href="${ deleteUrl }"><spring:message code="delete"/></a></li>
                 </c:if>
                 <c:if test="${ canCreateMember }">
-                    <li><a class="button" href="${ createMemberUrl }"><spring:message code="create.member.group"/></a></li>
+                    <li><a class="button" href="${ createMemberUrl }"><spring:message code="create.member.group"/></a>
+                    </li>
                 </c:if>
             </ul>
         </div>
-    </div> <!-- end: portlet-titlebar -->
-    
+    </div>
+    <!-- end: portlet-titlebar -->
+
     <!-- Portlet Body -->
     <div class="fl-widget-content content portlet-content" role="main">
-        
+
         <!-- Portlet Section -->
         <div class="portlet-section" role="region">
             <div class="titlebar">
                 <h3 class="title" role="heading"><spring:message code="members"/></h3>
+
                 <div class="options">
                     <a href="${ editMembersUrl }"><span><spring:message code="edit.members"/></span></a>
                 </div>
@@ -100,7 +105,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="buttons">
             <c:choose>
                 <c:when test="${ isNew }">

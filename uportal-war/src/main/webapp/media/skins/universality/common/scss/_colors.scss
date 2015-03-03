@@ -11,8 +11,14 @@
 // The basics.
 $white			: rgba(255,255,255,1);
 $black			: rgba(0,0,0,1);
-$text			: $skinTextColor;
-$background		: $skinBackgroundColor;
+$text			: #222222;
+$background		: $white;
+$skinGrayColor  : lighten($black, 50%);
+$skinColor1     : $black;
+$skinColor2     : $white;
+$skinColor3     : $skinGrayColor;
+$skinColor4     : #ff0000;
+$skinColor5     : #0000ff;
 
 // Grayscale (medium value).
 $gray			: $skinGrayColor;
@@ -24,7 +30,7 @@ $graylighter	: lighten($gray, 20%);
 $graylightest	: lighten($gray, 30%);
 
 // Grayscale (dark value).
-$dgray			: $skinDarkGrayColor;
+$dgray			: $skinGrayColor;
 $dgraydark		: darken($dgray, 5%);
 $dgraydarker	: darken($dgray, 10%);
 $dgraydarkest	: darken($dgray, 15%);

@@ -136,7 +136,8 @@
   <xsl:variable name="ABSOLUTE_MEDIA_PATH" select="concat($CONTEXT_PATH,'/',$MEDIA_PATH)"/>
   <xsl:variable name="SKIN_RESOURCES_PATH" select="concat('/',$MEDIA_PATH,'/',$SKIN,'/skin.xml')"/>
   <xsl:variable name="SKIN_PATH" select="concat($ABSOLUTE_MEDIA_PATH,'/',$SKIN)"/>
-  <xsl:variable name="PORTAL_SHORTCUT_ICON" select="concat($CONTEXT_PATH,'/favicon.ico')" />
+    <xsl:variable name="PORTAL_SHORTCUT_ICON">http://home.byu.edu/home/sites/all/themes/homepage/favicon.ico
+    </xsl:variable>
   <xsl:variable name="FLUID_THEME">
     <xsl:call-template name="skinParameter">
         <xsl:with-param name="path" select="$SKIN_RESOURCES_PATH" />
@@ -234,9 +235,9 @@
    | Institution Settings can be used to change intitution-specific parts of the theme.
    | Refer to localization notes above for changing text and labels used in the theme.
   -->
-  <xsl:variable name="HELP_URL">http://www.jasig.org/uportal</xsl:variable>
-  <xsl:variable name="LOGIN_HELP_URL">http://www.jasig.org/uportal</xsl:variable>
-  <xsl:variable name="CAS_NEW_USER_URL">http://www.jasig.org/cas</xsl:variable>
+  <xsl:variable name="HELP_URL">http://go.byu.edu/mybyubetahelp</xsl:variable>
+    <xsl:variable name="LOGIN_HELP_URL">http://go.byu.edu/mybyubetahelp</xsl:variable>
+    <xsl:variable name="CAS_NEW_USER_URL">https://y.byu.edu/ae/prod/person/cgi/createNetId.cgi</xsl:variable>
 
 
 
@@ -415,6 +416,7 @@
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="header.guest.block">
+        <xsl:call-template name="portal.page.bar"/>
     <!-- Skip Navigation -->
     <xsl:call-template name="skip.nav"/>
 
@@ -495,7 +497,11 @@
   -->
   <xsl:template name="portal.page.bar.links.block">
   	<!-- Home Link -->
-  	<xsl:call-template name="portal.page.bar.link.home" />
+        <!--<xsl:call-template name="portal.page.bar.link.home"/>-->
+        <a href="http://www.byu.edu" target="_blank"
+           title="BYU Home">
+            Home
+        </a>
     <!-- Home Link -->
 
     <!-- Admin Link -->
@@ -528,9 +534,14 @@
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="logo.block">
-  	<img src="{$SKIN_PATH}/images/portal_logo.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
-    <!-- Text only:
-    <span><xsl:value-of select="upMsg:getMessage('portal.page.title', $USER_LANG)"/></span> -->
+  	    <img src="{$SKIN_PATH}/images/portal_logo.jpg" style="height:100px" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
+    <!-- Text only: -->
+        <h1>
+            <div id="myBYUTitle"><span style="font-style: italic;"><xsl:value-of select="upMsg:getMessage('portal.page.myTitle', $USER_LANG)"/></span>
+                <span style="font-style: normal;"><xsl:value-of select="upMsg:getMessage('portal.page.BYUTitle', $USER_LANG)"/></span>
+            </div>
+            <div id="byuTitle"><span><xsl:value-of select="upMsg:getMessage('portal.page.fullTitle', $USER_LANG)"/></span></div>
+        </h1>
   </xsl:template>
   <!-- ========================================== -->
 
@@ -619,11 +630,19 @@
    | Template contents can be any valid XSL or XHTML.
   -->
   <xsl:template name="logo.focused.block">
-  	<img src="{$SKIN_PATH}/images/portal_logo.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
-  	<!-- Text:
-    <span><xsl:value-of select="upMsg:getMessage('portal.page.title', $USER_LANG)"/></span> -->
-    <!-- Slim version of logo:
-    <img src="{$SKIN_PATH}/images/portal_logo_slim.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>  -->
+        <img src="{$SKIN_PATH}/images/portal_logo.jpg" style="height:100px"
+             alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>
+        <!-- Text: -->
+        <h1>
+            <div id="myBYUTitle">
+                <span>
+                    <xsl:value-of select="upMsg:getMessage('portal.page.title', $USER_LANG)"/>
+                </span>
+            </div>
+            <div id="byuTitle">BRIGHAM YOUNG UNIVERSITY</div>
+        </h1>
+        <!-- Slim version of logo:-->
+        <!--<img src="{$SKIN_PATH}/images/portal_logo.png" alt="{upMsg:getMessage('portal.page.title', $USER_LANG)}"/>  -->
   </xsl:template>
   <!-- ================================================== -->
 
@@ -960,35 +979,45 @@
         </xsl:for-each>
     </div>
 
-    <xsl:if test="$INSTITUTION='uportal' or $INSTITUTION='coal' or $INSTITUTION='ivy' or $INSTITUTION='hc'">
+        <!--<xsl:if test="$INSTITUTION='uportal' or $INSTITUTION='coal' or $INSTITUTION='ivy' or $INSTITUTION='hc'">-->
 			<div id="portalPageFooterContent">
       <!-- Footer Links -->
       	<div id="portalPageFooterLinks">
-	        <a href="http://www.jasig.org/" target="_blank" title="{upMsg:getMessage('go.to.jasig.site', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('jasig.org', $USER_LANG)"/>
-	          <!--<xsl:value-of select="jasig.org"/>-->
+                <!--<a href="{$TOKEN[@name='CHURCH_URL']}" target="_blank" title="{$TOKEN[@name='CHURCH_LONG_LABEL']}">-->
+                <!--<xsl:value-of select="$TOKEN[@name='CHURCH_LABEL']"/>-->
+                <!--</a>-->
+
+                <a href="http://www.byui.edu/" target="_blank" title="BYU Idaho">
+                    BYU-Idaho
 	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal" target="_blank" title="{upMsg:getMessage('go.to.uportal.site', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('uportal.org', $USER_LANG)"/>
-	          <!--<xsl:value-of select="uportal.org"/>-->
+                <!--<xsl:call-template name="portal.pipe"/>-->
+                <a href="http://www.byuh.edu/" target="_blank" title="BYU Hawaii">
+                    BYU-Hawaii
 	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/download" target="_blank" title="{upMsg:getMessage('go.to.uportal.download.site', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('download.uportal', $USER_LANG)"/>
+
+                <a href="http://www.ldsbc.edu/" target="_blank"
+                   title="LDS Business College">
+                    LDS Business College
 	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/community" target="_blank" title="{upMsg:getMessage('go.to.uportal.community.page', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('uportal.community', $USER_LANG)"/>
+                <a href="http://ce.byu.edu/sl/" target="_blank"
+                   title="Salt Lake Center">
+                    Salt Lake Center
 	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/privacy" target="_blank" title="{upMsg:getMessage('view.uportal.privacy.policy', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('privacy.policy', $USER_LANG)"/>
+                <a href="http://ce.byu.edu/jc/" target="_blank"
+                   title="Salt Lake Center">
+                    Jerusalem Center
 	        </a>
-	        <xsl:call-template name="portal.pipe"/>
-	        <a href="http://www.jasig.org/uportal/accessibility" target="_blank" title="{upMsg:getMessage('view.uportal.accessibility.information', $USER_LANG)}">
-	          <xsl:value-of select="upMsg:getMessage('uportal.accessibility', $USER_LANG)"/>
+                <a href="http://www.mtc.byu.edu/" target="_blank"
+                   title="Salt Lake Center">
+                    Missionary Training Center
 	        </a>
+                <br/>
+                <a href="http://lds.org" style="margin:0 auto">
+                    <img alt="The Church of Jesus Christ of Latter-Day Saints"
+                         src="{$ABSOLUTE_MEDIA_PATH}/common/images/200px-Logo_of_the_Church_of_Jesus_Christ_of_Latter-day_Saints.svg.png"/>
+                         <!--style="width: 150px; height: 59px; "/>-->
+                </a>
+                <br/>
 	      </div>
 
 	      <!-- uPortal Product Version -->
@@ -1005,18 +1034,72 @@
 	        <!-- It's a good idea to leave this in the markup, that way anyone who may be supporting your portal can get to this information quickly by simply using a browser.  If you don't want the statement to visibly render in the page, use CSS to make it invisible. -->
 	      </div>
 
+            <div id="besafe">
+                <a href="http://besafe.byu.edu/" target="_blank" title="BeSafe">
+                    BeSafe
+                </a>
+            </div>
 	      <!-- Copyright -->
 	      <div id="portalCopyright">
-	        <p><a href="http://www.jasig.org/uportal/about/license" title="uPortal" target="_blank">uPortal</a> is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License, Version 2.0" target="_blank">Apache License, Version 2.0</a> as approved by the Open Source Initiative (OSI), an <a href="http://www.opensource.org/docs/osd" title="OSI-certified" target="_blank">OSI-certified</a> ("open") and <a href="http://www.gnu.org/licenses/license-list.html" title="Gnu/FSF-recognized" target="_blank">Gnu/FSF-recognized</a> ("free") license.</p>
+                <p>Copyright
+                    <sup>&#169; </sup>
+                    <script type="text/javascript">
+                        var theDate=new Date()
+                        document.write(theDate.getFullYear())
+                    </script>. All Rights Reserved.
+                </p>
+	      </div>
+            <div id="footer-social-icons">
+                <a href="http://www.facebook.com/myBYU" style="margin:0 auto" target="_blank">
+                    <img alt="Follow myBYU on Facebook"
+                         src="{$ABSOLUTE_MEDIA_PATH}/common/images/icon-facebook.png"
+                         title="Follow myBYU on Facebook"
+                         style="width: 32px; height: 32px; padding: 0 10px"/>
+                </a>
+                <a href="https://twitter.com/myBYUv3" style="margin:0 auto" target="_blank">
+                    <img alt="Follow myBYU on Twitter"
+                         src="{$ABSOLUTE_MEDIA_PATH}/common/images/icon-twitter.png"
+                         title="Follow myBYU on Twitter"
+                         style="width: 32px; height: 32px; padding: 0 10px"/>
+
+                </a>
+                <a href=" http://www.youtube.com/watch?v=MC-ymbZxRM8&amp;list=PLXfNP1oF_PCGqt0gbuLp-Fb-yZLuMq9fX" style="margin:0 auto" target="_blank">
+                    <img alt="Follow myBYU on YouTube"
+                         src="{$ABSOLUTE_MEDIA_PATH}/common/images/icon-youtube.png"
+                         title="Follow myBYU on YouTube"
+                         style="width: 32px; height: 32px; padding: 0 10px"/>
+                </a>
+                <a href="http://mybyu.wordpress.com/" style="margin:0 auto" target="_blank">
+                    <img alt="Follow myBYU on WordPress"
+                         src="{$ABSOLUTE_MEDIA_PATH}/common/images/icon-wordpress.png"
+                         title="Follow myBYU on WordPress"
+                         style="width: 32px; height: 32px; padding: 0 10px"/>
+                </a>
+                <br/>
 	      </div>
 
-	      <!-- Icon Set Attribution -->
-	      <div id="silkIconsAttribution">
-	        <p><a href="http://www.famfamfam.com/lab/icons/silk/" title="Silk icon set 1.3" target="_blank">Silk icon set 1.3</a> courtesy of Mark James.</p>
-	        <!-- Silk icon set 1.3 by Mark James [ http://www.famfamfam.com/lab/icons/silk/ ], which is licensed under a Creative Commons Attribution 2.5 License. [ http://creativecommons.org/licenses/by/2.5/ ].  This icon set is free for use under the CCA 2.5 license, so long as there is a link back to the author's site.  If the Silk icons are used, this reference must be present in the markup, though not necessarily visible in the rendered page.  If you don't want the statement to visibly render in the page, use CSS to make it invisible. -->
-	      </div>
+            <div id="powered-by">
+                <p>
+                    <i>Powered by</i>
+                    BYU Office of Information Technology Core Services
+                </p>
     	</div>
-    </xsl:if>
+        </div>
+        <!--</xsl:if>-->
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17149951-5']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+            '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
 
   </xsl:template>
   <!-- ============================================ -->

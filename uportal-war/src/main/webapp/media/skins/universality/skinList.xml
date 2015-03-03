@@ -22,34 +22,24 @@
 
 <skins>
     <skin>
-        <skin-key>uportal3</skin-key>
-        <skin-name>uPortal 4</skin-name>
+        <skin-key>byu</skin-key>
+        <skin-name>Rhapsody</skin-name>
         <skin-description>
-            Blue and white.
+            Traditional BYU theme.
         </skin-description>
     </skin>
-    
     <skin>
-        <skin-key>ivy</skin-key>
-        <skin-name>Ivy</skin-name>
+        <skin-key>byu2</skin-key>
+        <skin-name>Winter Morning</skin-name>
         <skin-description>
-            Light blue and white.
+            Traditional BYU theme.
         </skin-description>
     </skin>
-    
     <skin>
-        <skin-key>coal</skin-key>
-        <skin-name>Coal</skin-name>
+        <skin-key>byu4.0_v1</skin-key>
+        <skin-name>BYU Flat Style</skin-name>
         <skin-description>
-            Dark charcoal and gray.
-        </skin-description>
-    </skin>
-    
-    <skin>
-        <skin-key>hc</skin-key>
-        <skin-name>High Contrast</skin-name>
-        <skin-description>
-            High contrast black and white.
+            BYU theme presented in Flat style.
         </skin-description>
     </skin>
 </skins>

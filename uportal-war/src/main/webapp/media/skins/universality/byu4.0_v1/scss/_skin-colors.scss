@@ -1,0 +1,98 @@
+//====================================
+// BYU 4.0 v1 SKIN: Colors
+//====================================
+// This file is written in SASS. To find out how to install SASS to generate CSS visit http://sass-lang.com
+
+// BYU School Colors
+
+// BYU Blue
+$byublue1:  #002255;
+
+// BYU Gray
+$byugray1:  #a7a9ac;
+
+// Rhapsody in Blue
+$blue0:     #001948;
+$blue1:     #002255; // BYU Blue
+$blue2:     #003366;
+$blue3:     #114477;
+$blue4:     #336699;
+$blue5:     #628cb6;
+$blue6:     #91b2d2;
+$blue7:     #abc8e4;
+$blue8:     #d1e4f6;
+$blue9:     #e0edf9;
+$blue10:    #eff6fc;
+$blue11:    #f9fcfe;
+
+// Secondary School Colors
+
+// Green
+$green1:    #007722;
+
+// Red
+$red1:      #990011;
+
+// Oranges
+$orange1:   #ee8800;
+$orange2:   #eeaa00;
+
+// Yellows
+$yellow1:   #ffffcc;
+$yellow2:   #ffffdd;
+$yellow3:   #ffffee;
+
+// Gray
+$gray0:     #000000;
+$gray1:     #111111;
+$gray2:     #222222;
+$gray3:     #333333;
+$gray4:     #444444;
+$gray5:     #555555;
+$gray6:     #666666;
+$gray7:     #777777;
+$gray8:     #888888;
+$gray9:     #999999;
+$grayA:     #aaaaaa; // Approx BYU Gray
+$grayB:     #bbbbbb;
+$grayC:     #cccccc;
+$grayD:     #dddddd;
+$grayE:     #eeeeee;
+$grayF:     #ffffff;
+$graylight: #f1f2f4;
+
+
+// Skin-specific color palette overrides.
+
+// Main text color.
+$skinTextColor:         $gray2;
+
+// Page background color.
+$skinBackgroundColor:   $white;
+
+// Grayscale (medium value) base color.
+$skinGrayColor:         $white;
+
+// Grayscale (dark hue) base color.
+$skinDarkGrayColor:     $black;
+
+// Primary color, c1 - generally expects to be a medium value.
+$skinColor1:            $byublue1;
+
+
+// Secondary color, c2 - generally expects to be a darker value.
+$skinColor2:            $byugray1;
+
+
+// Tertiary color, c3 - generally expects to be a medium or lighter value.
+$skinColor3:            $orange1;
+
+
+// Highlight color, c4 - generally expects to be a lighter value with brighter saturation.
+$skinColor4:            $blue9;
+
+
+// Secondary Highlight color, c5 - generally expects to be a lighter value with brighter saturation.
+$skinColor5:            $blue11;
+
+

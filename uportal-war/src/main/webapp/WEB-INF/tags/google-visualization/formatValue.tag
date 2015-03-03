@@ -19,15 +19,17 @@
 
 --%>
 
-<%@ include file="/WEB-INF/jsp/include.jsp"  %>
-<%@ tag trimDirectiveWhitespaces="true" %>  
+<%@ include file="/WEB-INF/jsp/include.jsp" %>
+<%@ tag trimDirectiveWhitespaces="true" %>
 <%@ tag import="java.util.Date" %>
 <%@ tag dynamic-attributes="attributes" isELIgnored="false" %>
 <%@ attribute name="value" required="true" type="java.lang.Object" %>
 
 <c:choose>
     <c:when test="<%= value instanceof Date %>">
-        new Date(<fmt:formatDate value="${ value }" pattern="yyyy"/>, Number(<fmt:formatDate value="${ value }" pattern="M"/>)-1, <fmt:formatDate value="${ value }" pattern="d"/>)
+        new Date(<fmt:formatDate value="${ value }" pattern="yyyy"/>, Number(<fmt:formatDate value="${ value }"
+                                                                                             pattern="M"/>)-1,
+        <fmt:formatDate value="${ value }" pattern="d"/>)
     </c:when>
     <c:when test="<%= value instanceof Number || value instanceof Boolean %>">
         ${ fn:escapeXml(value )}

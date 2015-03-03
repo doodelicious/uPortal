@@ -59,7 +59,7 @@
 -->
 <xsl:template name="mobile.header">
     <div class="titlebar portlet-wrapper-titlebar" data-role="header" data-backbtn="false" data-position="inline">
-        <h1 class="title">uMobile</h1>
+        <h1 class="title">myBYU Mobile</h1>
         <xsl:call-template name="mobile.auth.link"/>
     </div>
 </xsl:template>

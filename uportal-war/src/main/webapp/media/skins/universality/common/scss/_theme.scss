@@ -4,6 +4,8 @@
 // Portal theme styles. This file imports all other theme files.
 // Theme files are boxed off for human use.
 
+@import "colors";
+@import "config";
 @import "buttons";
 @import "forms";
 @import "fss-overrides";

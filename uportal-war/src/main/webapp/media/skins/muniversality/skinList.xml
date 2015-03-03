@@ -22,13 +22,21 @@
 
 <skins>
   
-  <skin>
-    <skin-key>iphone</skin-key>
-    <skin-name>iphone</skin-name>
-    <skin-description>
-      iPhone theme and skin.
-    </skin-description>
-  </skin>
+  <!--<skin>-->
+    <!--<skin-key>iphone</skin-key>-->
+    <!--<skin-name>iphone</skin-name>-->
+    <!--<skin-description>-->
+      <!--iPhone theme and skin.-->
+    <!--</skin-description>-->
+  <!--</skin>-->
+
+    <skin>
+        <skin-key>byu</skin-key>
+        <skin-name>Rhapsody</skin-name>
+        <skin-description>
+            iPhone theme and skin.
+        </skin-description>
+    </skin>
   
 </skins>
 

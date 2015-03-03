@@ -1,0 +1,30 @@
+// ====================================
+//  BYU SKIN
+// ====================================
+
+
+// Common files required before all other imports
+@import "../common/scss/helpers";
+@import "../common/scss/colors";
+
+// BYU Theme skin configuration and colors
+@import "scss/skin-colors";
+@import "scss/skin-config";
+
+// The rest of the foundational theme files
+@import "../common/scss/buttons";
+@import "../common/scss/forms";
+@import "../common/scss/fss-overrides";
+@import "../common/scss/jqueryui-overrides";
+@import "../common/scss/general";
+@import "../common/scss/header";
+@import "../common/scss/navigation";
+@import "../common/scss/gallery";
+@import "../common/scss/sidebar";
+@import "../common/scss/portlet-chrome";
+@import "../common/scss/footer";
+@import "../common/scss/customization";
+
+// BYU skin overrides
+@import "scss/skin-overrides"; // skin specific overrides.
+

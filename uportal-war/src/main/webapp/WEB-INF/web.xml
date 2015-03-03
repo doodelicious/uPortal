@@ -28,6 +28,7 @@
     version="2.5">
     
     <display-name>uPortal</display-name>
+    <!--distributable/-->
 
     <!--
         - Location of the Log4J config file, for initialization and refresh checks.
@@ -53,6 +54,11 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:/properties/contexts/*.xml,classpath:/properties/contextOverrides/*.xml</param-value>
+    </context-param>
+    <!-- Length of time to set in cache headers (in seconds) -->
+    <context-param>
+        <param-name>cacheMaxAge</param-name>
+        <param-value>300</param-value>
     </context-param>
    
     <!--
@@ -480,4 +486,7 @@
         <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
 </web-app>

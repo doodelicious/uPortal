@@ -18,7 +18,8 @@
     under the License.
 
 --%>
-<%@ include file="/WEB-INF/jsp/include.jsp"%>
+<%@ include file="/WEB-INF/jsp/include.jsp" %>
 <script type="text/javascript">
-    window['ga']=window['ga']||function() {};
+    window['ga'] = window['ga'] || function () {
+    };
 </script>

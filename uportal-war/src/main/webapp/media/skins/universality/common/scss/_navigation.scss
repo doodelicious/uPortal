@@ -19,7 +19,7 @@
 			@include clearfix();
 		}
 		.portal-navigation {
-			/* Each tab list item. */
+			position: relative;
 			float: left;
 			@if ($navTabMarginRight != false) {
 				margin-right: $navTabMarginRight;
