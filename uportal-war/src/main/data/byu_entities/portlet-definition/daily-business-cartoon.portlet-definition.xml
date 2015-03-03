@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-definition version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/subscribed-fragment">
+    <title>Daily Business Cartoon</title>
+    <name>Daily Business Cartoon</name>
+    <fname>daily-business-cartoon</fname>
+    <desc>Daily Business Cartoon by Ted Goff, www.tedgoff.com</desc>
+    <type>Image</type>
+    <timeout>30000</timeout>
+    <portlet-descriptor>
+        <ns2:isFramework>true</ns2:isFramework>
+        <ns2:portletName>Image</ns2:portletName>
+    </portlet-descriptor>
+    <category>Entertainment</category>
+    <group>Everyone</group>
+    <parameter>
+        <name>disableDynamicTitle</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>editable</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>hasHelp</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>iconUrl</name>
+        <value>/ResourceServingWebapp/rs/tango/0.8.90/32x32/emotes/face-smile.png</value>
+    </parameter>
+    <portlet-preference>
+        <name>img-border</name>
+        <readOnly>false</readOnly>
+        <value>0</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>img-height</name>
+        <readOnly>false</readOnly>
+        <value>300</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>img-link</name>
+        <readOnly>false</readOnly>
+        <value>http://www.tedgoff.com</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>img-uri</name>
+        <readOnly>false</readOnly>
+        <value>http://www.tedgoff.com/mb/images/today.gif</value>
+    </portlet-preference>
+    <portlet-preference>
+        <name>img-width</name>
+        <readOnly>false</readOnly>
+        <value>300</value>
+    </portlet-preference>
+</portlet-definition>

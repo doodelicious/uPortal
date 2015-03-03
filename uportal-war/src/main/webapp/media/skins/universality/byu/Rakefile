@@ -1,0 +1,32 @@
+# 
+#   `rake` is a Ruby build tool. Learn more about Rake:
+#   Tutorial      - http://martinfowler.com/articles/rake.html
+#   Documentation - http://rake.rubyforge.org/files/doc/rakefile_rdoc.html
+#   
+#   A `Rakefile` is to Rake as `build.xml` is to Ant; it contains scripts 
+#   you can run from the command line called "tasks".
+#
+#   Run `rake -T` to get a list of tasks. (This is equivalent to `ant -p`.)
+# 
+
+begin
+  require 'sass'
+rescue LoadError
+  puts "You need to install sass! See sass-lang.com for more information about sass."
+end
+
+namespace :sass do
+  desc "Compile CSS."
+  task :compile do
+    options = {
+      :style  => :expanded,
+      :cache  => false,
+      :syntax => :scss,
+      :load_paths => ['.','./scss']
+    }    
+    scss = File.read("scss/portal.scss")
+    css  = Sass::Engine.new(scss, options).render
+    File.open("portal.css", "w+") { |f| f.write(css) }
+    puts "Compiled portal.css"
+  end
+end

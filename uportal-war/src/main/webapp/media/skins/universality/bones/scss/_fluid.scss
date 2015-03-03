@@ -1,0 +1,124 @@
+/* 
+------------------------------------
+  Fluid Skinning System overrides.
+------------------------------------
+ * The Fluid Skinning System is a group of CSS files with a specially designed modular structure and class-specific format.
+ * It is meant to work well as both a standalone CSS foundation for your site and Fluid Infusion components.
+ * In FSS, "themes" refer to the color schemes and "window dressings" for basic markup and FSS Helpers, such as Tabs, Widgets, Menus, etc.
+ * For more information on FSS themes, refer to:
+ * http://wiki.fluidproject.org/x/egNS
+ * uPortal skins generally use a FSS theme as the base CSS styling for the portal. 
+ * If a FSS theme is used with this skin, it is specified in skin.xml and applied first (from the resource server).
+ * These are any overrides to the FSS theme.
+ */
+
+.fl-theme-mist, .fl-theme-coal, .fl-theme-hc, .fl-theme-rust, .fl-theme-slate {
+	a {
+		font-weight: normal;
+	}
+	
+	.fl-widget {
+		@include rounded(7px);
+		
+		.fl-widget-titlebar, .fl-widget-content, .fl-listmenu {
+			@include rounded(5px);
+		}
+	}
+	
+	.fl-tabs {
+		*padding: 0;
+		
+		li {
+			*display: inline;
+			*padding: 5px 20px 5px 20px;
+		}
+	}
+}
+
+
+
+
+//------------------------------------------------------------------------------------------------
+// STUFF THAT NEEDS REFACTORING
+
+
+
+
+
+/* Custom fl classes for use with the Sidebar. */
+.fl-col-mixed .fl-container-flex-left {margin-left:200px;}
+.fl-col-mixed .fl-container-flex-right {margin-right:200px;}
+.fl-col-mixed-100 .fl-container-flex-left {margin-left:100px;}
+.fl-col-mixed-100 .fl-container-flex-right {margin-right:100px;}
+.fl-col-mixed-150 .fl-container-flex-left {margin-left:150px;}
+.fl-col-mixed-150 .fl-container-flex-right {margin-right:150px;}
+.fl-col-mixed-200 .fl-container-flex-left {margin-left:200px;}
+.fl-col-mixed-200 .fl-container-flex-right {margin-right:200px;}
+.fl-col-mixed-250 .fl-container-flex-left {margin-left:250px;}
+.fl-col-mixed-250 .fl-container-flex-right {margin-right:250px;}
+.fl-col-mixed-300 .fl-container-flex-left {margin-left:300px;}
+.fl-col-mixed-300 .fl-container-flex-right {margin-right:300px;}
+
+/* Reset: tabs. */
+.fl-tabs {margin: 0 0 0 0; border-bottom: none; text-align: inherit; padding-bottom:0;}
+.fl-tabs li {list-style-type: none; display:inline;}
+.fl-tabs li a {padding:0 0 0 0; background-color: transparent; margin-left: 0; *margin-bottom: 0; zoom:1; border: none; color:#999;}
+.fl-tabs .fl-reorderer-dropMarker {padding:0 3px; background-color:#c00; margin:0 5px 0 -5px; zoom:1;}
+.fl-tabs .fl-tabs-active a {padding:0; border-bottom: none; color:#000;}
+.fl-tabs-content {padding: 0;}
+.fl-tabs-center {text-align: center;}
+.fl-tabs-left {text-align: left; padding-left: 10px;}
+.fl-tabs-right {text-align: right; padding-right: 15px;}
+
+/* Reset: coal theme. */
+.fl-theme-coal .fl-tabs li,
+.fl-theme-coal .fl-tabs li a {font-weight: bold; color: #FFF; background-color: transparent; text-decoration: none;}
+.fl-theme-coal .fl-tabs li a:hover {background-color: transparent; color:#FFF;}
+.fl-theme-coal .fl-tabs li.fl-activeTab,
+.fl-theme-coal .fl-tabs li.fl-activeTab:hover,
+.fl-theme-coal .fl-tabs li.fl-activeTab a,
+.fl-theme-coal .fl-tabs li.fl-activeTab a:hover,
+.fl-theme-coal .fl-tabs li.fl-tabs-active,
+.fl-theme-coal .fl-tabs li.fl-tabs-active a,
+.fl-theme-coal .fl-tabs li.fl-tabs-active a:hover {background-color: transparent; color:#000;}
+.fl-theme-coal .fl-tabs-content {background-color: transparent; color:#000; border: none;}
+
+/* Redefine: coal theme. */
+.fl-theme-coal .fl-tabs {padding: 0 0 0 0; text-align: left;}
+.fl-theme-coal .fl-tabs li {display: inline-block; position: relative; background-color: #666; padding: 5px 20px 5px 20px; border-left: 1px solid #333; border-right: 1px solid #333;
+    border-top: 1px solid #333; cursor: pointer; white-space: nowrap;}
+.fl-theme-coal .fl-tabs li:hover {background-color: #333;}
+.fl-theme-coal .fl-tabs li.fl-tabs-active,
+.fl-theme-coal .fl-tabs li.fl-tabs-active:hover,
+.fl-theme-coal .fl-tabs li.fl-activeTab,
+.fl-theme-coal .fl-tabs li.fl-activeTab:hover {background-color: #EBEBEB;}
+
+/* Fluid Layout Customizer (Generic: drag and drop) */
+.fl-reorderer-movable-dragging {filter:alpha(opacity=50); opacity:.5;}
+.fl-reorderer-movable-selected {outline-color: #F68922;}
+.fl-reorderer-avatar {background-color:#fff; border:1px dotted #999; width:auto; filter:alpha(opacity=60); opacity:.6;}
+.fl-reorderer-dropMarker {height:200px !important; background-color:#FF0000; border:2px dotted #960000; margin-bottom:1em;}
+.drop-warning {position:absolute; top:50px; left:10px; border:2px solid red; background-color:#ffd7d7; display:none; padding:10px; margin:5px; z-index:65535;}
+.drop-warning p {margin:0em; padding:0.5em 1em;}
+
+
+/* Fluid Layout Customizer (Sidebar: drag and drop) */
+/* Avatar Icons (common) */
+.fl-reorderer-sidebar-avatar .portal-navigation-delete,
+.fl-reorderer-sidebar-avatar .portal-navigation-gripper {display: block; position: absolute; padding: 0; border: none; text-decoration: none;}
+.fl-reorderer-sidebar-avatar .portal-navigation-delete,
+.fl-reorderer-sidebar-avatar .portal-navigation-delete span,
+.fl-reorderer-sidebar-avatar .portal-navigation-gripper,
+.fl-reorderer-sidebar-avatar .portal-navigation-gripper span {display: block; width: 16px; height: 16px; overflow: hidden;}
+.fl-reorderer-sidebar-avatar .portal-navigation-delete span,
+.fl-reorderer-sidebar-avatar .portal-navigation-gripper span {visibility: hidden;}
+/* Avatar */
+.fl-reorderer-sidebar-avatar {display: inline; position: relative; padding: 5px 0 5px 20px; width: 150px; height: 30px; overflow: hidden; cursor: pointer; background-color: #FFF; border: 2px solid #F68922; filter:alpha(opacity=70); opacity:.7;}
+.fl-reorderer-sidebar-avatar .portal-navigation-link {color: #222222 !important; text-decoration: none;}
+.fl-reorderer-sidebar-avatar .portal-navigation-delete {top: 0; right: 0; cursor: pointer; background: transparent url("images/remove.png") 0 0 no-repeat;}
+.fl-reorderer-sidebar-avatar .portal-navigation-gripper {top: 0; left: auto; right: 18px; cursor: move; background: transparent url("images/gripper.png") 0 0 no-repeat;}
+.fl-reorderer-sidebar-avatar .portal-flyout-container, .up .fl-reorderer-sidebar-avatar .portal-subnav-list{display: none !important;}
+/* Drop Marker */
+.fl-reorderer-sidebar-dropMarker {display: inline-block; border: 1px solid #d26600 !important; background-color: #F68922 !important; margin: 0 2px !important; filter:alpha(opacity=80) !important;
+    opacity:.8 !important; padding: .31em 1em !important; *display: inline !important; *height: 10px; *padding: 0em .13em !important; *zoom: 1 !important;}
+

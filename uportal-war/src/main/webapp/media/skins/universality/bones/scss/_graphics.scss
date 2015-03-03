@@ -1,0 +1,183 @@
+//====================================
+// uPortal 4
+//====================================
+
+.up {
+    // Background
+	&#portal {
+	    background: $gray;
+        @include gradient(
+            lighten($gray, 10%),
+            darken($gray, 10%) 
+        );	    
+	}
+	
+	#portalPageInner {
+	    background: $white;
+	    border-left: 1px solid $graydark;
+		border-right: 1px solid $graydark;
+	}
+	
+    // Header
+    #portalPageHeader {
+        background: $c1;
+		@include gradient($c1light, $c1dark);
+    
+        #portalPageBar {
+            background: $c1darker;
+    		@include gradient($c1, $c1darker);
+        }
+
+        #webSearchContainer {
+            #webSearchInput {
+                background: $c1light;
+                border-color: $c1dark;
+                line-height: 1.5;
+    			@include round(0.6em, 0, 0, 0.6em);
+
+    			&:hover {
+    			    background: $c1lighter;
+    			}
+
+    			&:focus {
+    			    background: $white;
+    				border-color: $c1dark;
+    			}
+            }
+            #webSearchSubmit {
+                @include round(0, 0.6em, 0.6em, 0);
+                line-height: 1.1;
+            }
+        }
+    }
+    
+    // Navigation
+    #portalNavigation {
+        background: $c2;
+        @include gradient($c2light, $c2dark);
+      
+        li.portal-navigation {
+            border-left: 1px solid rgba($white, .25);
+            border-right: 1px solid rgba($black, .25);
+            background: $c2;
+            @include gradient2($c2, $c2light, $c2dark);
+            
+            &:hover,
+            &:focus {
+                background: $c2light;
+    			@include gradient2($c2light, $c2lightest, $c2);
+            }
+            
+            &.active {
+              	background: $c4;
+    			@include gradient2($c4, $c4light, $c4dark);  
+            }
+            
+            .portal-navigation-gripper {
+                background: transparent url("images/gripper.png") 0 0 no-repeat;
+            }
+            
+            .portal-navigation-delete {
+    			background: transparent url("images/remove.png") 0 0 no-repeat;
+    		}
+        }
+        
+        div.portal-flyout-container {
+           	background: $c2;
+			border: 4px solid $c2dark;
+			border-top-width: 1px;
+			@include round(0, 0, 0.6em, 0.6em);
+			@include box-shadow(2px 4px 6px $graydarker);
+			
+			li {
+			    border-top: 1px solid $c2;
+				background-color: $white;
+				
+				a {
+                    color: #000;
+				}
+				
+				a:hover,
+				a:focus {
+				    background: $c1dark;
+				    color: $white;
+				}
+			}
+        }
+        
+        a.portal-navigation-add {
+            background: url("images/add.png") no-repeat 5px 2px;
+			background-repeat: no-repeat;
+			border: 1px solid $c2light;
+			@include rounded(5px);
+			color: $white;
+			
+			&:hover,
+			&:focus {
+			    background-color: $c2light;
+			}
+		}		
+    }
+    
+    // Tab Avatar
+    .fl-reorderer-header-avatar {
+        @include header-tab-avatar();
+    }
+
+    .fl-reorderer-header-dropMarker {
+        @include header-tab-dropmarker();
+    }
+
+    // Sidebar
+    #portalSidebar {
+        #portalAdminLinks {
+			border: 1px solid $c2dark;
+			background: $c2 url("../common/images/light_top_100px_50.png") repeat-x;
+			@include gradient($c2lightest, $c2);
+			@include rounded(5px);
+		}
+		.fl-widget-content {
+			background: $c1dark;
+			color: $c1lightest;
+			border: 1px solid $c2;
+			@include rounded(3px);
+		}
+    }
+    
+    // Footer
+    #portalPageFooter {
+        background: $c2;
+    
+        #portalPageFooterInner {
+            background: transparent url("images/portal_poweredby.png") 25px 65px no-repeat;
+        }
+        
+        #portalProductAndVersion, 
+		#portalCopyright, 
+		#silkIconsAttribution {
+			margin: 0 0 0 120px;
+		}
+    }
+    
+    // Forms (some of this stuff should be in a reset)
+    form {
+        input, textarea {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+            padding: 0.1em 0.4em 0 0.4em;
+            @include rounded(0.6em);
+            line-height: 1.5;
+            border: 1px solid $gray;
+            
+            &:focus {
+                @include box-shadow(0 0 10px $c1light);
+                outline: none;
+            }
+        }
+        
+        select {
+            @extend input;
+            padding: 0.1em;
+			@include rounded(0.2em);
+        }
+    }    
+}

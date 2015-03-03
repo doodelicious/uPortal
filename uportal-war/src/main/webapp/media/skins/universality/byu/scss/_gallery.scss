@@ -1,0 +1,668 @@
+/* 
+------------------------------------
+  uPortal Gallery.
+------------------------------------ 
+* The gallery is a sliding drawer that provides interfaces for customizing the protal.
+*/
+
+.up {
+    .up-gallery {
+        background: $dgray url("../common/images/gallery-bar.png") top left repeat-x;
+        border: 1px solid $gray;
+        position: relative;
+        
+        .gallery-inner {
+            overflow: hidden;
+            padding-top: 7px;
+            height: 200px;
+            position: relative;
+        }
+        .content-wrapper {
+        	margin: 0 0 0 127px;
+        	padding: 8px 0;
+        	display: block;
+        	height: 174px;
+        }
+        .content {
+        	padding-right: 8px;
+
+        	.add-content,
+        	.use-content {
+        	    overflow: hidden;
+        	}
+        }
+        .content-results-wrapper {
+        	margin: 0 0 0 220px;
+        	padding: 0;
+        	display: block;
+        	height: 172px;
+
+        	.column-inner {
+            	padding-left: 15px;
+            }
+        }
+        .skins .content-results-wrapper,
+        .layouts .content-results-wrapper {
+        	margin-left: 0;
+        	margin-right: 0;
+        }
+        .content-pager-wrapper {
+        	padding: 0;
+        	width: 70px;
+        	display: block;
+        	height: 170px;
+        }
+        
+        // Menu
+        .menu-wrapper {
+        	width: 130px;
+        	display: block;
+        	height: 200px;
+        	position: relative;
+        }
+	 	.menu {
+	 	    height: 190px;
+        	width: 100px;
+        	padding: 10px 0 0 0;
+        	margin: 0 auto 0 15px;
+	 		border: 1px solid $graylight;
+	 		background: $dgraylight;
+	 		
+	 		li {
+	 		    height: 28px;
+            	cursor: pointer;
+            	list-style: none;
+            	margin: 0;
+	 			border: 1px solid $graydark;
+	 			background: $dgraylighter;
+	 			
+	 			&.last {
+	 			    border-bottom-width: 1px;
+                	border-bottom-style: solid;
+	 			}
+	 			span {
+                	padding: 7px;
+                	display: block;
+                	height: 14px;
+                	width: 110px;
+                	bottom: 0;
+                	font-weight: bold;
+                	font-size: 12px;
+                }
+	 			a {
+	 				color: $graylight;
+	 				text-decoration: none;
+                	cursor: pointer;
+	 			}
+	 			&:hover, &:active {
+	 			    background: $c1darkest;
+    	 			a {
+    	 				color: $white;
+    	 			}
+	 			}	 			
+	 		}
+	 		.active {
+	 			background: $dgray;
+	 			a {
+	 				color: $white;
+	 			}
+	 			span {
+	 				background: $dgray url("../common/images/gallery-arrow-right.png") 90% 50% no-repeat;
+	 			}
+	 		}
+	 	}
+		
+		// Content filter tabs
+        .content-filters-wrapper {
+	 	    width: 200px;
+            padding: 0;
+            display: block;
+            height: 174px;
+            position: relative;
+	 		background: $dgraylight;
+	 		border: 1px solid $dgraylightest;
+ 			@include rounded(5px);
+	 		
+ 			h3 {
+ 				background: $dgray;
+ 				color: $c1dark;		 
+ 				margin: 0;
+                padding: 5px 0 0 0;
+                cursor: pointer;
+                font-size: 12px;			
+		 		
+		 		&, span {
+		 			@include round(5px, 5px, 0, 0);
+		 		}
+                span {
+                    padding: 1px 10px;
+                }
+		 		&:hover, &:focus {
+	 				color: $c1light;
+		 		}
+		 	}
+	 		.active h3 {
+	 			span {
+	 				background: $dgraylight;
+	 				color: $white;
+	 			}
+	 			&:hover, &:focus {
+	 			    color: $c1lighter;
+	 			}
+	 		}
+	 		h4 {
+	 			color: $graylighter;
+	 			border-bottom: 1px dotted $graydarkest;
+	 		}
+	 		.portlet-search-form {
+            	margin-bottom: 10px;
+
+            	label, .portlet-search-submit {
+            	    display: none;
+            	}
+            	.portlet-search-input {
+            	    width: 157px;
+            	    background: $dgraylightest;
+		 			color: $dgray;
+		 			padding: 0.3em;
+		 			
+		 			&:hover {
+		 				background: $graydarker;
+		 			}
+		 			&:focus {
+			 			background: $white;
+			 		}
+            	}
+            }
+	 		.categories {
+	 			ul, li, a {
+	 			    list-style: none;
+                	margin: 0;
+                	padding: 0;
+                	font-size: 10px;
+                	text-decoration: none;
+	 			}
+	 			li {
+	 			    float: left;
+                	padding: 1px 0 1px 2px;  text-align: left;
+                	cursor: pointer;
+                	
+                	&:after {
+                        content: ", ";
+                	}
+                	&:last-child {
+                	    content: "";
+                	}
+                	
+                	&.active a {
+                	    text-decoration: none;
+                	}
+	 			}
+	 			a {
+	 				color: $graylight;
+	 				
+	 				&:hover, &:focus {
+	 				    color: $c1;
+	 				}
+	 			}
+	 			.active a {
+	 				color: $white;
+	 			}
+	 		}
+	 		.packages-column h3 {
+            	position: absolute;
+            	top: 0;
+            	left: 56px;
+            }
+            .categories-column .categories-wrapper, 
+            .packages-column .packages-wrapper {
+            	display: none;
+            }
+            .categories-column.active .categories-wrapper, 
+            .packages-column.active .packages-wrapper {
+            	display: block;
+            }
+            .packages-wrapper, .categories-wrapper {
+            	padding: 10px;
+            }
+            .packages p {
+                color: $graylighter;
+            	margin: 0;
+            	font-size: 11px;
+            }
+            .categories-column h4 {
+            	padding-bottom: 1px;
+            	margin-bottom: 3px;
+            	font-size: 10px;
+            	text-transform: uppercase;
+            }
+	 	}
+        
+        // Content area
+        .column-inner {
+        	position: relative;
+        }
+
+        .results-wrapper {
+        	position: relative;
+            overflow: hidden;
+	 		padding-bottom: 5px;
+	 		color: $gray;
+	 		font-size: 10px;
+	 		
+	 		.ri-wrapper {
+	 			background: $dgray;
+	 			border: 1px solid $dgraylightest;
+ 				@include rounded(5px);
+ 				@include box-shadow(1px 1px 2px $black);
+	 			
+	 			.ri-utility {
+	 				height: 16px;
+	 				background: $dgraylight;
+ 					@include round(5px, 5px, 0, 0);
+	 			}
+	 			.portlet-thumb-gripper {
+	 				background: $dgraylight url("../common/images/gripper.png") 5px 0 no-repeat;
+                    display: block;
+                	cursor: move;
+
+                	span {
+                    	display: block;
+                    	width: 16px;
+                    	height: 16px;
+                    	overflow: hidden;
+                    	visibility: hidden;
+                    }
+	 			}
+	 			.ri-titlebar {
+	 				color: $white;
+	 			}
+	 			.ri-description {
+	 				color: $graylight;
+	 			}
+	 			&:hover, &:focus {
+	 			    background: $dgraydarker;
+		 			border: 1px solid $c1;
+		 			@include gradient($dgray, $dgraydarkest);
+	 			}
+	 			&.selected {
+	 				background: $dgraydark;
+	 				border: 1px solid $c1;
+	 			}
+	 		}
+	 		.portlet-wrapper, 
+	 		.package-wrapper {
+	 		    .ri-link {
+	 		        color: $black;
+	 				background: $dgray;
+					@include gradient($gray, $graydarkest);
+ 					@include round(0, 5px, 0, 0);
+	 				display: none;
+	 		    }
+	 			&:hover, &:focus {
+	 			    .ri-link {
+	 			        background: $c1dark;
+		 				display: block !important;
+                        @include gradient($c1light, $c1dark);
+	 			    }
+	 			}
+	 		}
+ 			.pager {
+ 				.pager-pagination {
+ 					color: $white;
+ 				}
+ 				.pager-button-up, .pager-button-down {
+ 					background: $dgraylight;
+ 					border: 1px solid $dgraylightest;
+					@include gradient($dgraylighter, $dgray);
+					@include rounded(5px);
+					
+					&:hover, &:focus {
+					    background: $dgraylightest;
+						border: 1px solid $c1;
+						@include gradient($dgraylighter, $dgraydarkest);
+					}
+ 				}
+				.fl-pager-disabled {
+					background: $dgray !important;
+					border: 1px solid $dgraylight !important;
+					cursor: default !important;
+					a {
+						cursor: default !important;
+					}
+				}
+ 			}
+	 	}
+	 	
+	 	/* Gallery Skin List 
+         * The list of skins.
+         */
+        .results-wrapper .skins-list li {
+        	width: 140px;
+        	height: 75%;
+        }
+        .skins-wrapper .skin-thumb {
+        	width: 120px;
+        	height: 70px;
+        }
+
+        /* Gallery Layout List 
+         * The list of page layouts.
+         */
+        .results-wrapper .layouts-list li {
+        	width: 140px;
+        	height: 50%;
+        }
+        .layout-wrapper .layout-thumb {
+        	width: 27px;
+        	height: 27px;
+        }
+        
+        /* Gallery Portlet and Package Lists
+         * The list of portlets and packages for add and use.
+         */
+        .portlet-list li,
+        .package-list li {
+        	width: 33%;
+        	height: 50%;
+
+        	.portlet-wrapper,
+        	.package-wrapper {
+        	    height: 80px;
+        	}
+        }
+        .portlet-wrapper,
+        .package-wrapper {
+            .ri-link {
+            	position: absolute;
+            	top: 0;
+            	right: 0;
+            	display: block;
+            	cursor: pointer;
+            	padding: 2px 8px;
+            	text-align: center;
+            }
+            .ri-icon {
+            	width: 32px;
+            	height: 32px;
+            }
+        }
+        
+        /* Gallery Results List 
+         * General formatting for results lists (portlets, packages, skins, and layouts).
+         */
+        .results-wrapper-inner {
+            padding: 0 5px;
+        }
+        .results-wrapper {
+            .results-list {
+            	list-style: none;
+            	padding: 0;
+            	margin: 0;
+            	position: relative;
+            	width: 100%;
+
+            	li {
+                	display: block;
+                	list-style: none;
+                	padding: 0;
+                	margin: 0;
+                	position: relative;
+                	float: left;
+                }
+                .ri-wrapper {
+                	padding: 0;
+                	margin: 5px 5px 0 0;
+                	overflow: hidden;
+                	position: relative;
+                }
+            }
+            a {
+            	text-decoration: none;
+            }
+            .pager-column.fl-col-side {
+            	float: right;
+            	width: 74px;
+            	margin: 0;
+            	padding: 0;
+            }
+        }
+        .results-column.fl-col-main {
+        	margin: 0 74px 0 0;
+        	padding: 0;
+        	position: relative;
+        }
+        .ri-titlebar {
+        	font-size: 11px;
+        	font-weight: bold;
+        }
+        .ri-titlebar,
+        .ri-content {
+        	padding: 5px 8px 3px 8px;
+        }
+        .ri-icon {
+        	float: left;
+        	margin: 0 15px 5px 0;
+        }
+        .ri-icon span {
+        	visibility: hidden;
+        }
+        .ri-description {
+        	clear: right;
+        	display: inline;
+        }
+	 	
+	 	// Pagination controls
+        .pager-pagination {
+        	height: 38px;
+        	margin: 2px 0 2px 0;
+        	font-size: 10px;
+        }
+        .pager-button-up,
+        .pager-button-down {
+        	cursor: pointer;
+        	position: relative;
+        	height: 62px;
+        	
+        	span {
+        	    display: none;
+        	}
+        }
+        .pager-button-up-inner {
+        	display: block;
+        	height: 59px;
+        	background: url("../common/images/gallery-pager-up-active.png") center 85% no-repeat;
+        }
+        .pager-button-down-inner {
+        	display: block;
+        	height: 59px;
+        	background: url("../common/images/gallery-pager-down-active.png") center 15% no-repeat;
+        }
+        .pager-button-up.fl-pager-disabled {
+            .pager-button-up-inner {
+            	background-image: url("../common/images/gallery-pager-up-inactive.png");
+            }
+            .pager-button-down-inner {
+            	background-image: url("../common/images/gallery-pager-down-inactive.png");
+            }
+        }
+	 	
+	 	// Close button
+	 	.close-button {
+        	position: absolute;
+        	left: 32px;
+        	bottom: 15px;
+        }
+	 	
+	 	// Loader
+        .gallery-loader {
+        	display: block;
+        	margin: 7px 0 0 127px;
+        	position: absolute;
+        	top: 0;
+        	bottom: 0;
+        	left: 0;
+        	right: 0;
+        	background-image: url("../common/images/gallery-content-preloader.gif") no-repeat 50% 50%;
+
+        	span {
+            	display: none;
+            }
+        }
+	 	
+	 	// Handle
+        .handle {
+            background: $black url("../common/images/gallery-bar.png") bottom left repeat-x;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            right: 0;
+            height: 7px;
+            clear: both;
+
+            a {
+                background: $white scroll url("../common/images/gallery-handle.png") 0 0 repeat-x;
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 100px;
+                cursor: pointer;
+                font-size: 10px;
+                margin-left: 25px;
+            	color: $text;
+            	border: 1px solid $graydark;
+            	border-top: none;
+            	@include round(0,0,3px,3px);
+            	@include box-shadow(0 1px 2px $gray);
+	
+            	span {
+            		background-image: url("../common/images/gallery-handle-arrow-down.png");
+            		background-position: right center;
+            		background-repeat: no-repeat;
+            		text-transform: uppercase;
+                	font-weight: bold;
+                	padding: 1px 25px 2px 10px;
+                	margin-right: 5px;
+                	display: block;
+            	}
+            }
+            .handle-arrow-up {
+                background-image: url("../common/images/gallery-handle-arrow-up.png") !important;
+            }
+        }
+	}
+	
+	// Gallery Avatar
+    .portlet.ui-draggable-dragging {
+        padding: 0;
+    	margin: 0;
+        border: 1px solid #F68923;
+    	list-style: none; 
+    	background: #333;
+    	position: relative;
+        background-image:-moz-linear-gradient(90deg,#000000,#333333);
+    	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#333333));
+    	height: 80px;
+    	width: auto;
+        overflow: hidden;
+        @include rounded(5px);
+        @include box-shadow(0px 0 4px 0 #333);
+
+        .portlet-wrapper {
+        	overflow: hidden;
+        }
+        .portlet-wrapper-inner {
+        	padding: 0 10px 0 10px;
+        	position: relative;
+        }
+        .portlet-thumb-link {
+            position: absolute;
+        	top: 0;
+        	right: 0;
+        	height: 20px;
+        	display: block;
+        	color: #000;
+        	text-decoration: none;
+        	font-size: 77%;
+        	padding: 2px 8px;
+        	text-align: center;
+        	cursor: move;
+        	background: #F68923;
+        	background-image: -moz-linear-gradient(90deg,#F68923,#ffffff);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F68923),to(#ffffff));
+            @include round(0, 5px, 0, 0);
+        }
+        .portlet-thumb-gripper {
+            display: block;
+        	background: #444444 url("images/gripper.png") 5px 0 no-repeat;
+        	cursor: move;
+        	@include round(5px, 0, 0, 0);
+
+        	span {
+            	display: block;
+            	width: 16px;
+            	height: 16px;
+            	overflow: hidden;
+            	visibility: hidden;
+            }
+        }
+        .portlet-thumb-content {
+        	padding: 0 8px 0 8px;
+        }
+        .portlet-thumb-titlebar {
+        	padding: 5px 8px 3px 8px;
+        	font-size: 11px;
+        	font-weight: bold;
+        	color:#DDD;
+        }
+        .portlet-thumb-icon {
+        	width: 37px;
+        	height: 37px;
+
+        	span {
+            	visibility: hidden;
+            }
+        }
+        .portlet-thumb-description {
+        	color: #AAA;
+        	padding: 0;
+        	margin-left: 36px;
+        	font-size: 11px;
+        }
+    }
+}
+
+/* Gallery: Drop Target */
+.layout-draggable-drop-target {
+	display: none;
+	background: #FF0000;
+	padding: 5px;
+	height: 150px;
+	text-align: center;
+	margin-bottom: 1em;  border: 2px dotted #960000;
+	font-weight: bold;
+	color: #960000;
+}
+.layout-draggable-drop-target span {
+	display: block;
+	padding: 65px 5px 5px 5px;
+}
+.layout-draggable-drop-target-active {}
+.layout-draggable-target-dropped {
+	border: 1px solid #CCC;
+	background: #EFEFEF url("../../uportal3/images/loading.gif") 50% 50% no-repeat;
+}
+.layout-draggable-target-dropped span {
+	display: none;
+}
+
+/* IE7 */
+*:first-child+html .up-gallery .menu li {
+    height: 25px;
+}
+*:first-child+html .up-gallery .results-wrapper .portlet-list li, 
+*:first-child+html .up-gallery .results-wrapper .package-list li {
+	width: 24%;
+}

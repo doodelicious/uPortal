@@ -1,0 +1,174 @@
+/*====================================*/
+/* Portlet Chrome */
+/*====================================*/
+/*
+ * Styles for formatting the portlet chrome that wraps portlets.
+ */
+
+// Mixin to set image sprite location for portlet control icons.
+@mixin portlet-control($size, $position) {
+	$xpos: ($size * $position);
+	$ypos: 0;
+	
+	.icon {
+		background-position: -#{$xpos} #{$ypos};
+	}
+	&:hover, &:focus {
+		.icon {
+			background-position: -#{$xpos} -#{$size};
+		}
+	}
+}
+
+.up {
+	.up-portlet-wrapper {		
+		padding: 5px;
+		margin-bottom: 1em;
+		
+		.up-portlet-wrapper-top,
+		.up-portlet-wrapper-bottom {
+			/* These extra containers are available for additional styling (like rounded corners with images). 
+			 * This skin does not use them, so hide them from view. */
+			display:none;
+			
+		}
+		
+		.up-portlet-titlebar  {
+			/* Prevent portlet titles from wrapping. */
+			white-space: nowrap;
+			position: relative;
+			background: #025 url("images/light_top_10px_30.png") repeat-x 0 0;
+			@include rounded(10px 10px 0 0);
+			padding: 4px 10px;
+			
+			h2 {
+				padding: 0 0 3px 0.5em;
+                font-size: 12px;
+                font-weight: bold;
+				
+				a {
+					text-decoration: none;
+					color: #F9FCFE;
+				}
+			}
+			
+			.up-portlet-controls {
+			    position: absolute;
+				top: 4px;
+				right: 0;
+				padding: 0 0.5em 0 0;
+			}
+			
+			.up-portlet-control {
+				font-size: 90%;
+				padding-right: 1em;
+				color: #F8FBFE;
+				
+				&:hover, &:focus {
+				}
+				
+				.icon {
+					display: block;
+					float: left;
+					height: 16px;
+					width: 16px;
+					background: url("images/byu_icons.png") no-repeat 0 0;
+				}
+			}
+			
+			.focus {
+				@include portlet-control(16px, 0);
+			}
+			.edit {
+				@include portlet-control(16px, 1);
+			}
+			.info {
+				@include portlet-control(16px, 2);
+			}
+			.help {
+				@include portlet-control(16px, 3);
+			}
+			.remove {
+				@include portlet-control(16px, 4);
+			}
+			.add {
+				@include portlet-control(16px, 5);
+			}
+			.permissions {
+				@include portlet-control(16px, 6);
+			}
+			.show-content {
+				@include portlet-control(16px, 7);
+			}
+			.hide-content {
+				@include portlet-control(16px, 8);
+			}
+			.return {
+				@include portlet-control(16px, 9);
+			}
+		}
+		
+		.up-portlet-content-wrapper {
+			margin: 0;
+			padding: 1em;
+			background: #F9FCFE;
+		}	
+	}
+	
+	.up-portlet-wrapper.no-chrome, .up-portlet-wrapper.no-chrome .up-portlet-content-wrapper {
+		/* A portlet that has been flagged to have no chrome - "Just the content, please." */
+		padding: 0;
+		background: none;
+		border: none;
+	}
+	
+	.up-portlet-wrapper.alternate {
+
+	}
+	
+	.up-portlet-wrapper.highlight {
+
+	}
+	
+	.up-portlet-wrapper.locked {
+		.up-portlet-titlebar h2 {
+			padding-left: 21px;
+			background: url("/ResourceServingWebapp/rs/tango/0.8.90/16x16/emblems/emblem-readonly.png") no-repeat;
+		}
+	}
+	
+	.dashboard {
+		.up-portlet-controls {
+			top: 4px;
+			padding: 0 0.5em 0 0;
+		}
+			
+		.up-portlet-control {
+			display: block;
+			float: left;
+			padding: 0;
+			
+			.label {
+				display: none;
+			}
+		}
+	}
+	
+	.focused {
+		/* A portlet when in the focused view. */
+		.up-portlet-controls {
+			.up-portlet-control {
+				display: inline-block;
+				margin-left: 1.5em;
+				text-decoration: none;
+			}
+			.icon {
+				margin-right: 3px;
+			}
+			.label {
+				float: left;
+			}
+		}
+		
+	}
+}

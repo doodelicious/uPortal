@@ -1,0 +1,145 @@
+/*====================================*/
+/* Customization */
+/*====================================*/
+/*
+ * Styles for formatting various aspects of portal customization.
+ */
+
+.up {
+	#portalPageBodyCustomizeMessageRow {
+	    background: url("images/customize_message_arrow.png") no-repeat 40px 0;
+	    padding-top: 4px;
+	    	
+		#portalPageBodyCustomizeMessageRowContents {
+			padding: 1em 20px;
+			border: 2px solid $c4;
+		    @include rounded(7px);
+    		
+    		h1 {
+    			margin: 0 0 .3em 0;
+    			font-weight: normal;
+    			text-decoration: none;
+    			border: none;
+                color: $dgray;
+    		}
+    		
+    		strong {
+    			color: $c1dark;
+    		}
+		}
+	}
+	
+	.fragment-admin-mode #portalPageBodyInner {
+		/* Page body in fragment administration mode. */
+		padding: 1.2em 25px 2.5em 25px;
+	}
+	
+	#portalFragAdminExit {
+		/* Fragment Administration mode. */
+		margin: 0;
+		padding:0.5em 1em;
+		background: $c4lightest;
+		border: none;
+		border-bottom: 1px solid $c4;
+		@include rounded(0);
+		
+		h2 {
+			color: $c4;
+			font-size: 150%;
+		}
+		
+		.fl-widget-content {
+			background: $c4lightest;
+			
+			#exitFragment {
+				float: right;
+			}
+		}
+	}
+	
+	#portalEditPagePermissions {
+		/* Edit page Permisssions */
+		float: right;
+		display: block;
+		margin-top: .75em;
+		margin-right: 25px;
+	}
+	
+	#editPagePermissionsLink {
+	    float: right; 
+	    display: block; 
+	    margin-top: .75em; 
+	    margin-right: 2em;
+	}
+
+	.column-permissions {
+		margin-bottom:0.5em;
+	}
+	
+	.fragment-disabled, .fragment-disabled h2.fragment-title {
+		color: $graydark;
+	}
+	
+	// Part of the login form
+	#guestLocaleSelection .portlet .portlet-form { 
+        background-color: #fff;
+        border: none;
+        width: auto;
+        li { 
+            margin:0 0 5px 30px;
+        }
+        form .buttons {
+            margin: 0 0 0 50px;
+        }
+    }
+    
+    #portalLogin label {
+        display:block;
+        margin-bottom:0.3em;
+    }
+    #portalLogin input {
+        margin-bottom:1em;
+    }
+	
+	.fl-reorderer-movable-hover {
+		/* Affordance to indicate draggable. */
+		cursor: move;
+	}
+	
+	.fl-reorderer-movable-dragging-mouse {
+		/* When the item is being moved, hide the original. */
+		display: none;
+	}
+	
+	.fl-reorderer-avatar {
+		/* See-through avatar (copy) of the item being dragged. */
+		background-color: $white;
+		border: 1px dotted $gray;
+	}
+	
+	.fl-reorderer-movable-selected,
+	.fl-reorderer-movable-selected:focus,
+	.fl-reorderer-movable-dragging:focus {
+		/* keyboard layout reorder focus outline */
+		outline: 2px solid $c4;
+	}
+	.fl-reorderer-header-movable-selected:focus,
+	.fl-reorderer-header-movable-dragging:focus,
+	.fl-reorderer-sidebar-movable-selected:focus,
+	.fl-reorderer-sidebar-movable-dragging:focus {
+		outline: none;
+	}
+	
+	.fl-reorderer-dropMarker {
+		/* Indicate where the item may be dropped. */
+		background-color: $c4;
+		border: 2px dashed $c4darker;
+	}
+	
+	.drop-warning {
+		/* Warning message that indicates that an item cannot be moved into a position due to locked (unmovable) items. */
+		border: 2px solid $c5darker;
+		background: $c5;
+		color: $white;
+	}
+}

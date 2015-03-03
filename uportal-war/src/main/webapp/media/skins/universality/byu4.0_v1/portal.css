@@ -1,0 +1,1399 @@
+.up .button, .up button, .up input[type='submit'], .up input[type='button'] {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #002255;
+  background: #002255;
+  color: white;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up .button:hover, .up button:hover, .up input[type='submit']:hover, .up input[type='button']:hover {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up .button:active, .up .button.active, .up button:active, .up button.active, .up input[type='submit']:active, .up input[type='submit'].active, .up input[type='button']:active, .up input[type='button'].active {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+.up a.button {
+  display: inline-block; }
+.up .button[disabled='disabled']:hover, .up .button[disabled='disabled']:focus, .up button[disabled='disabled']:hover, .up button[disabled='disabled']:focus, .up input[disabled='disabled']:hover, .up input[disabled='disabled']:focus {
+  background: #777777 !important;
+  border-color: #666666 !important;
+  color: #666666 !important;
+  text-shadow: none !important;
+  cursor: default !important; }
+.up .up-gallery .close-button a.button {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #002255;
+  background: #002255;
+  color: white;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up .up-gallery .close-button a.button:hover {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up .up-gallery .close-button a.button:active, .up .up-gallery .close-button a.button.active {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+.up #webSearchContainer input[type='submit'] {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #bbbbbb;
+  background: #cccccc;
+  color: #666666;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false);
+  padding: 0.4em 12px;
+  -moz-border-radius: 0 none none 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: none;
+  -webkit-border-bottom-right-radius: none;
+  -webkit-border-bottom-left-radius: 0;
+  border-radius: 0 none none 0; }
+  .up #webSearchContainer input[type='submit']:hover {
+    border-color: #aaaaaa;
+    background: #bbbbbb;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up #webSearchContainer input[type='submit']:active, .up #webSearchContainer input[type='submit'].active {
+    border-color: #999999;
+    background: #aaaaaa;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+.up #portalLogin #portalCASLogin a.button {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #002255;
+  background: #002255;
+  color: white;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up #portalLogin #portalCASLogin a.button:hover {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up #portalLogin #portalCASLogin a.button:active, .up #portalLogin #portalCASLogin a.button.active {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+.up #portalFragAdminExit input.button {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #002255;
+  background: #002255;
+  color: white;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up #portalFragAdminExit input.button:hover {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up #portalFragAdminExit input.button:active, .up #portalFragAdminExit input.button.active {
+    border-color: #336699;
+    background: #628cb6;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+.up #portalEditPagePermissions a.button {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #999999;
+  background: #a7a9ac;
+  color: #333333;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up #portalEditPagePermissions a.button:hover {
+    border-color: #666666;
+    background: gray;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up #portalEditPagePermissions a.button:active, .up #portalEditPagePermissions a.button.active {
+    border-color: #666666;
+    background: #666666;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+.up .column-permissions a.button {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #999999;
+  background: #a7a9ac;
+  color: #333333;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up .column-permissions a.button:hover {
+    border-color: #666666;
+    background: gray;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up .column-permissions a.button:active, .up .column-permissions a.button.active {
+    border-color: #666666;
+    background: #666666;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+.up .portlet .titlebar .toolbar .button {
+  display: inline;
+  margin: 0;
+  padding: 0.3em 15px 0.4em 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #999999;
+  background: #a7a9ac;
+  color: #333333;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false);
+  display: block; }
+  .up .portlet .titlebar .toolbar .button:hover {
+    border-color: #666666;
+    background: gray;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+  .up .portlet .titlebar .toolbar .button:active, .up .portlet .titlebar .toolbar .button.active {
+    border-color: #666666;
+    background: #666666;
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+
+/* Form styles.
+ * Gives form elements a consistent look across the portal.
+ * Pass in the desired type of form based on the context.
+ */
+/* Use variables to store selectors. */
+/* Apply baseline form element styling. */
+.up form input[type='text'], .up form input[type='email'], .up form input[type='tel'], .up form input[type='url'], .up form input[type='search'], .up form input[type='password'], .up form select, .up form textarea {
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  border: 1px solid gray;
+  font-size: 14px; }
+.up form input[type='text'], .up form input[type='email'], .up form input[type='tel'], .up form input[type='url'], .up form input[type='search'], .up form input[type='password'], .up form textarea {
+  padding: 0.2em 0.4em;
+  line-height: 1.4;
+  background: white;
+  box-shadow: none; }
+.up form select {
+  padding: 0.1em; }
+.up form select:focus, .up form input[type='text']:focus, .up form input[type='email']:focus, .up form input[type='tel']:focus, .up form input[type='url']:focus, .up form input[type='search']:focus, .up form input[type='password']:focus, .up form select:focus, .up form textarea:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none; }
+
+/* 
+------------------------------------
+  Fluid Skinning System overrides.
+------------------------------------
+ * The Fluid Skinning System is a group of CSS files with a specially designed modular structure and class-specific format.
+ * It is meant to work well as both a standalone CSS foundation for your site and Fluid Infusion components.
+ * In FSS, "themes" refer to the color schemes and "window dressings" for basic markup and FSS Helpers, such as Tabs, Widgets, Menus, etc.
+ * For more information on FSS themes, refer to:
+ * http://wiki.fluidproject.org/x/egNS
+ * uPortal skins generally use a FSS theme as the base CSS styling for the portal. 
+ * If a FSS theme is used with this skin, it is specified in skin.xml and applied first (from the resource server).
+ * These are any overrides to the FSS theme.
+ */
+.fl-theme-mist a, .fl-theme-coal a, .fl-theme-hc a, .fl-theme-rust a, .fl-theme-slate a {
+  font-weight: normal; }
+.fl-theme-mist .fl-widget, .fl-theme-coal .fl-widget, .fl-theme-hc .fl-widget, .fl-theme-rust .fl-widget, .fl-theme-slate .fl-widget {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px; }
+  .fl-theme-mist .fl-widget .fl-widget-titlebar, .fl-theme-mist .fl-widget .fl-widget-content, .fl-theme-mist .fl-widget .fl-listmenu, .fl-theme-coal .fl-widget .fl-widget-titlebar, .fl-theme-coal .fl-widget .fl-widget-content, .fl-theme-coal .fl-widget .fl-listmenu, .fl-theme-hc .fl-widget .fl-widget-titlebar, .fl-theme-hc .fl-widget .fl-widget-content, .fl-theme-hc .fl-widget .fl-listmenu, .fl-theme-rust .fl-widget .fl-widget-titlebar, .fl-theme-rust .fl-widget .fl-widget-content, .fl-theme-rust .fl-widget .fl-listmenu, .fl-theme-slate .fl-widget .fl-widget-titlebar, .fl-theme-slate .fl-widget .fl-widget-content, .fl-theme-slate .fl-widget .fl-listmenu {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+.fl-theme-mist .fl-tabs, .fl-theme-coal .fl-tabs, .fl-theme-hc .fl-tabs, .fl-theme-rust .fl-tabs, .fl-theme-slate .fl-tabs {
+  *padding: 0; }
+  .fl-theme-mist .fl-tabs li, .fl-theme-coal .fl-tabs li, .fl-theme-hc .fl-tabs li, .fl-theme-rust .fl-tabs li, .fl-theme-slate .fl-tabs li {
+    *display: inline;
+    *padding: 5px 20px 5px 20px; }
+
+/* 
+------------------------------------
+  jQuery UI overrides.
+------------------------------------ 
+ * uPortal uses jQuery UI (http://jqueryui.com/) for animation, effects, and widgets.
+ * jQuery UI themes are expected by uPortal to format jQuery UI elements used by the portal.
+ * The specific jQuery UI theme used in this skin is specified in skin.xml
+ * A default theme (smoothness) is available from the resource server.
+ * Alternate themes can be used by changing the reference in skin.xml
+ * These are any overrides to the jQuery UI theme.
+*/
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button, .ui-widget {
+  font-size: 1em;
+  font-family: arial,helvetica,clean,sans-serif; }
+
+.ui-tabs .ui-tabs-nav li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none; }
+
+#tooltip {
+  /* Unsure if this is still needed.
+  background-color: #fffbbf;
+  color: #344461;
+  border: thin solid #b1c6f2;
+  */ }
+
+/*====================================*/
+/* General */
+/*====================================*/
+/* 
+ * Formatting for global elements and basic setup.
+ */
+.up {
+  /* Global, general styling. */
+  font-size: 14px;
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  background: #f1f2f4;
+  color: #222222; }
+  .up h1, .up h2, .up h3, .up h4, .up h5, .up h6 {
+    /* Global heading styling. */
+    font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif; }
+  .up #portalPage {
+    width: 100%;
+    min-width: 960px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .up #portalPageInner {
+    background: #f1f2f4;
+    border-left: 1px solid #666666;
+    border-right: 1px solid #666666; }
+  .up #portalPageBodyInner {
+    /* Page body. */
+    padding: 3em 4em; }
+
+/*====================================*/
+/* Header */
+/*====================================*/
+/*
+ * Styles for formatting the portal header and widgets that are contained in it.
+ */
+.up #portalPageHeader {
+  /* Portal header (all views). */
+  position: relative;
+  background: white;
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up #portalPageHeader #portalWelcome {
+    top: 3em;
+    left: 195px;
+    color: #666666; }
+    .up #portalPageHeader #portalWelcome a, .up #portalPageHeader #portalWelcome .user-name {
+      color: #999999; }
+  .up #portalPageHeader .fl-widget {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none; }
+    .up #portalPageHeader .fl-widget .fl-widget-titlebar {
+      display: none; }
+    .up #portalPageHeader .fl-widget .fl-widget-content {
+      margin: 0;
+      padding: 0;
+      background: transparent; }
+  .up #portalPageHeader #portalPageBar {
+    /* A utility bar at the top of the portal page. */
+    padding: 2em 4em 0.5em 4em;
+    font-size: 90%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #666666;
+    background: white;
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false); }
+    .up #portalPageHeader #portalPageBar #portalPageBarLinks {
+      /* List of portal links in the bar. */
+      display: inline; }
+      .up #portalPageHeader #portalPageBar #portalPageBarLinks li {
+        padding: 0 5px;
+        border-right: 1px solid rgba(77, 77, 77, 0.25); }
+      .up #portalPageHeader #portalPageBar #portalPageBarLinks li:last-child {
+        border-right: none; }
+      .up #portalPageHeader #portalPageBar #portalPageBarLinks a {
+        color: #666666;
+        text-decoration: none; }
+      .up #portalPageHeader #portalPageBar #portalPageBarLinks a:hover, .up #portalPageHeader #portalPageBar #portalPageBarLinks a:focus {
+        color: #999999;
+        text-decoration: underline; }
+  .up #portalPageHeader #portalLogo {
+    /* The portal logo. It's physical size + padding gives the header its height. */
+    padding: 0.2em 4em; }
+  .up #portalPageHeader #webSearchContainer {
+    /* Web Search */
+    top: 1.5em;
+    right: 4em; }
+    .up #portalPageHeader #webSearchContainer input, .up #portalPageHeader #webSearchContainer select {
+      margin: 0; }
+    .up #portalPageHeader #webSearchContainer select {
+      display: none; }
+    .up #portalPageHeader #webSearchContainer input[type="text"], .up #portalPageHeader #webSearchContainer input[type="search"] {
+      color: #222222;
+      background: white;
+      border-color: #dddddd; }
+    .up #portalPageHeader #webSearchContainer input[type="text"]:hover, .up #portalPageHeader #webSearchContainer input[type="search"]:hover {
+      background: #eeeeee; }
+    .up #portalPageHeader #webSearchContainer input[type="text"]:focus, .up #portalPageHeader #webSearchContainer input[type="search"]:focus {
+      color: #222222;
+      background: #eeeeee;
+      border-color: #eeeeee; }
+.up .not-logged-in #portalPageHeader {
+  /* Guest Header */ }
+  .up .not-logged-in #portalPageHeader #portalLogo {
+    /* The portal logo when not logged in (Guest View). The logo's physical size + padding gives the header its height. */
+    padding: 1.5em 0; }
+  .up .not-logged-in #portalPageHeader #portalLogin {
+    /* Login */
+    width: 10em;
+    position: absolute;
+    top: 1.5em;
+    right: 25px; }
+    .up .not-logged-in #portalPageHeader #portalLogin .fl-widget-content {
+      text-align: center; }
+
+/*====================================*/
+/* NAVIGATION */
+/*====================================*/
+/* 
+ * Styles specific to navigation.
+ */
+/* Portlet Navigation */
+.up #portalNavigation {
+  /* Main Navigation, rendered as a row of tabs. */
+  background: #002255;
+  background-image: -moz-linear-gradient(top, false, false);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+  background-image: linear-gradient(top, false, false); }
+  .up #portalNavigation #portalNavigationList {
+    text-align: left;
+    border: none;
+    margin: 0 0 0 4em;
+    zoom: 1; }
+    .up #portalNavigation #portalNavigationList:before, .up #portalNavigation #portalNavigationList:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .up #portalNavigation #portalNavigationList:after {
+      clear: both; }
+  .up #portalNavigation .portal-navigation {
+    position: relative;
+    float: left;
+    margin-right: 0;
+    padding: 0;
+    border: none;
+    border-left: none;
+    border-right: none;
+    background: #002255;
+    background-image: -moz-linear-gradient(top, false, false, false 50%, false 0%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(false), to(false), color-stop(0.5, false), color-stop(0.5, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false, false 50%, false 0%); }
+    .up #portalNavigation .portal-navigation .portal-navigation-link {
+      /* Anchor tag within the list item. */
+      display: block;
+      color: white;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+      text-decoration: none;
+      font-weight: bold; }
+    .up #portalNavigation .portal-navigation .portal-navigation-link, .up #portalNavigation .portal-navigation .fl-inlineEditContainer {
+      padding: 8px 20px; }
+  .up #portalNavigation .portal-navigation:hover, .up #portalNavigation .portal-navigation:focus {
+    /* Tab hover. */
+    background: #f1f2f4;
+    background-image: -moz-linear-gradient(top, false, false, false 50%, false 0%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(false), to(false), color-stop(0.5, false), color-stop(0.5, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false, false 50%, false 0%); }
+    .up #portalNavigation .portal-navigation:hover .portal-navigation-link, .up #portalNavigation .portal-navigation:focus .portal-navigation-link {
+      /* Anchor tag within the list item. */
+      color: #333333;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+  .up #portalNavigation .active {
+    /* Active tab. */
+    background: #f1f2f4;
+    background-image: -moz-linear-gradient(top, false, false, false 50%, false 0%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(false), to(false), color-stop(0.5, false), color-stop(0.5, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false, false 50%, false 0%); }
+    .up #portalNavigation .active .portal-navigation-link {
+      color: #333333;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+  .up #portalNavigation .active:hover {
+    /* Active tab hover. */
+    background: #91b2d2;
+    background-image: -moz-linear-gradient(top, false, false, false 50%, false 0%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(false), to(false), color-stop(0.5, false), color-stop(0.5, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false, false 50%, false 0%); }
+    .up #portalNavigation .active:hover .portal-navigation-link {
+      color: white;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+  .up #portalNavigation .portal-flyout-container {
+    /* Flyout menus. */
+    background: white;
+    background-image: -moz-linear-gradient(top, false, false);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+    background-image: linear-gradient(top, false, false);
+    border: 4px solid white;
+    border-top-width: 1px;
+    -moz-box-shadow: 2px 4px 6px #4d4d4d;
+    -webkit-box-shadow: 2px 4px 6px #4d4d4d;
+    box-shadow: 2px 4px 6px #4d4d4d; }
+    .up #portalNavigation .portal-flyout-container li {
+      border-top: 1px solid white;
+      background-color: white;
+      color: #333333;
+      font-size: 85%; }
+      .up #portalNavigation .portal-flyout-container li a {
+        text-decoration: none; }
+      .up #portalNavigation .portal-flyout-container li a:hover, .up #portalNavigation .portal-flyout-container li a:focus {
+        /* Flyout menu hover. */
+        background: #91b2d2;
+        color: white; }
+  .up #portalNavigation .portal-navigation-add {
+    /* Add tab link */
+    top: 7px;
+    padding: 5px 8px 2px 20px;
+    background-color: transparent;
+    background-image: url("images/add.png");
+    background-position: 5px 3px;
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    font-size: 86%; }
+    .up #portalNavigation .portal-navigation-add:hover, .up #portalNavigation .portal-navigation-add:focus {
+      background-color: #f1f2f4;
+      color: #333333; }
+  .up #portalNavigation li.portal-navigation-add-item {
+    float: right;
+    background: transparent none;
+    border: 0;
+    margin: 1px;
+    padding-left: 5px; }
+  .up #portalNavigation .active .portal-navigation-gripper {
+    /* Gripper for indicating drag and drop ability. */
+    background: transparent url("images/gripper.png") 0px 0px no-repeat; }
+  .up #portalNavigation .portal-navigation-delete {
+    /* "X" icon for indicating delete tab action. */
+    background: transparent url("images/remove.png") 0px 0px no-repeat; }
+  .up #portalNavigation .fl-inlineEdit-editModeInstruction {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+  .up #portalNavigation .fl-reorderer-header-avatar {
+    /* An avatar of the original tab being dragged during drag and drop. */
+    background-color: black;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px, 0px, 4px, gray;
+    -webkit-box-shadow: 0px, 0px, 4px, gray;
+    box-shadow: 0px, 0px, 4px, gray; }
+    .up #portalNavigation .fl-reorderer-header-avatar .portal-navigation-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold; }
+    .up #portalNavigation .fl-reorderer-header-avatar .portal-navigation-gripper {
+      background: transparent url("images/gripper.png") 0px 0px no-repeat; }
+    .up #portalNavigation .fl-reorderer-header-avatar .portal-navigation-delete {
+      background: transparent url("images/remove.png") 0px 0px no-repeat; }
+.up #portalSidebar {
+  /* Refer to other Sidebar styles for general list menu styling that affects the sidebar navigation. */ }
+  .up #portalSidebar #portalNavigation {
+    /* Main navigation can be rendered in the Sidebar. */ }
+    .up #portalSidebar #portalNavigation .portal-navigation-add {
+      /* Add tab link */
+      color: white; }
+    .up #portalSidebar #portalNavigation .portal-navigation-gripper {
+      /* Gripper for indicating drag and drop ability. */
+      background: transparent url("images/gripper.png") 0px 0px no-repeat; }
+    .up #portalSidebar #portalNavigation .portal-navigation-delete {
+      /* "X" icon for indicating delete tab action. */
+      background: transparent url("images/remove.png") 0px 0px no-repeat; }
+    .up #portalSidebar #portalNavigation .fl-reorderer-sidebar-avatar {
+      /* An avatar of the original tab being dragged during drag and drop. */
+      background: black;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -moz-box-shadow: 0px, 0px, 4px, gray;
+      -webkit-box-shadow: 0px, 0px, 4px, gray;
+      box-shadow: 0px, 0px, 4px, gray; }
+      .up #portalSidebar #portalNavigation .fl-reorderer-sidebar-avatar .portal-navigation-link {
+        color: white;
+        text-decoration: none;
+        font-weight: bold; }
+      .up #portalSidebar #portalNavigation .fl-reorderer-sidebar-avatar .portal-navigation-delete {
+        background: transparent url("images/remove.png") 0px 0px no-repeat; }
+      .up #portalSidebar #portalNavigation .fl-reorderer-sidebar-avatar .portal-navigation-gripper {
+        background: transparent url("images/gripper.png") 0px 0px no-repeat; }
+  .up #portalSidebar #portletNavigation {
+    /* Portlet Navigation (focused view) */ }
+    .up #portalSidebar #portletNavigation #portletNavigationLinkHome a {
+      background: transparent url("/ResourceServingWebapp/rs/famfamfam/silk/1.3/tab_go.png") 0px 0px no-repeat; }
+    .up #portalSidebar #portletNavigation h3 {
+      color: white; }
+.up #portalPageBodyBreadcrumb {
+  /* Breadcrumb */
+  color: #b3b3b3; }
+  .up #portalPageBodyBreadcrumb a {
+    font-weight: normal;
+    color: gray;
+    text-decoration: none; }
+    .up #portalPageBodyBreadcrumb a:hover, .up #portalPageBodyBreadcrumb a:focus {
+      color: #666666; }
+
+/* 
+------------------------------------
+  uPortal Gallery.
+------------------------------------ 
+ * The gallery is a sliding drawer that provides interfaces for customizing the protal.
+ */
+.up .up-gallery {
+  background: #eeeeee;
+  border: 1px solid #001948; }
+  .up .up-gallery .handle {
+    /* Clickable handle that opens the drawer. Once open, the handle can be clicked to close the drawer. */
+    background: transparent; }
+    .up .up-gallery .handle a {
+      background: #f1f2f4;
+      color: #222222;
+      border: none;
+      border-top: none;
+      -moz-border-radius: 0 0 0 0;
+      -webkit-border-top-left-radius: 0;
+      -webkit-border-top-right-radius: 0;
+      -webkit-border-bottom-right-radius: 0;
+      -webkit-border-bottom-left-radius: 0;
+      border-radius: 0 0 0 0;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .up .up-gallery .handle a span {
+        background-image: url("../common/images/gallery-handle-arrow-down.png");
+        background-position: right center;
+        background-repeat: no-repeat; }
+    .up .up-gallery .handle .handle-arrow-up {
+      background-image: url("../common/images/gallery-handle-arrow-up.png") !important; }
+  .up .up-gallery .gallery-inner {
+    background: white; }
+    .up .up-gallery .gallery-inner .menu-wrapper {
+      /* The navigation menu of gallery views. */ }
+      .up .up-gallery .gallery-inner .menu-wrapper .menu {
+        border: none;
+        background: #dddddd; }
+        .up .up-gallery .gallery-inner .menu-wrapper .menu li {
+          border: 1px solid #999999;
+          background: #aaaaaa; }
+          .up .up-gallery .gallery-inner .menu-wrapper .menu li a {
+            color: white; }
+        .up .up-gallery .gallery-inner .menu-wrapper .menu li:hover, .up .up-gallery .gallery-inner .menu-wrapper .menu li:active {
+          background: #888888; }
+          .up .up-gallery .gallery-inner .menu-wrapper .menu li:hover a, .up .up-gallery .gallery-inner .menu-wrapper .menu li:active a {
+            color: white; }
+        .up .up-gallery .gallery-inner .menu-wrapper .menu .active {
+          background: #cccccc; }
+          .up .up-gallery .gallery-inner .menu-wrapper .menu .active a {
+            color: white; }
+          .up .up-gallery .gallery-inner .menu-wrapper .menu .active span {
+            background: gray url("../common/images/gallery-arrow-right.png") 90% 50% no-repeat; }
+    .up .up-gallery .gallery-inner .content-filters-wrapper {
+      /* Search and category filters for the add portlet and use portlet views. */
+      background: #888888;
+      border: none;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper h3 {
+        /* Filter titles */
+        background: #aaaaaa;
+        color: white;
+        -moz-border-radius: 0 0 0 0;
+        -webkit-border-top-left-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        border-radius: 0 0 0 0; }
+        .up .up-gallery .gallery-inner .content-filters-wrapper h3 span {
+          -moz-border-radius: 0 0 0 0;
+          -webkit-border-top-left-radius: 0;
+          -webkit-border-top-right-radius: 0;
+          -webkit-border-bottom-right-radius: 0;
+          -webkit-border-bottom-left-radius: 0;
+          border-radius: 0 0 0 0; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper h3:hover, .up .up-gallery .gallery-inner .content-filters-wrapper h3:focus {
+        color: #eeeeee; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper .active h3 span {
+        background: #888888;
+        color: white; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper .active h3:hover, .up .up-gallery .gallery-inner .content-filters-wrapper .active h3:focus {
+        color: white; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper h4 {
+        /* Filter subtitles */
+        color: white;
+        border-bottom: 1px dotted #cccccc; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper .portlet-search-input {
+        /* Filter search */
+        background: white;
+        color: #gray6;
+        padding: 0.3em; }
+        .up .up-gallery .gallery-inner .content-filters-wrapper .portlet-search-input:hover {
+          background: #dddddd; }
+        .up .up-gallery .gallery-inner .content-filters-wrapper .portlet-search-input:focus {
+          background: #eeeeee; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper .categories {
+        /* Filter categories */ }
+        .up .up-gallery .gallery-inner .content-filters-wrapper .categories a {
+          color: white; }
+        .up .up-gallery .gallery-inner .content-filters-wrapper .categories a:hover, .up .up-gallery .gallery-inner .content-filters-wrapper .categories a:focus {
+          color: #dddddd; }
+        .up .up-gallery .gallery-inner .content-filters-wrapper .categories .active a {
+          color: #dddddd; }
+      .up .up-gallery .gallery-inner .content-filters-wrapper .packages-wrapper {
+        /* Filter packages */
+        color: #b3b3b3; }
+    .up .up-gallery .gallery-inner .results-wrapper {
+      /* Results section of the gallery. Lists portlets, packages, skins, or layout options. */
+      padding-bottom: 5px;
+      color: white; }
+      .up .up-gallery .gallery-inner .results-wrapper .layout-wrapper .ri-link,
+      .up .up-gallery .gallery-inner .results-wrapper .skins-wrapper .ri-link,
+      .up .up-gallery .gallery-inner .results-wrapper .portlet.result-item,
+      .up .up-gallery .gallery-inner .results-wrapper .package.results-item {
+        background: #666666;
+        border: 1px solid #555555;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+        .up .up-gallery .gallery-inner .results-wrapper .layout-wrapper .ri-link:hover, .up .up-gallery .gallery-inner .results-wrapper .layout-wrapper .ri-link:focus, .up .up-gallery .gallery-inner .results-wrapper .layout-wrapper .ri-link:active,
+        .up .up-gallery .gallery-inner .results-wrapper .skins-wrapper .ri-link:hover,
+        .up .up-gallery .gallery-inner .results-wrapper .skins-wrapper .ri-link:focus,
+        .up .up-gallery .gallery-inner .results-wrapper .skins-wrapper .ri-link:active,
+        .up .up-gallery .gallery-inner .results-wrapper .portlet.result-item:hover,
+        .up .up-gallery .gallery-inner .results-wrapper .portlet.result-item:focus,
+        .up .up-gallery .gallery-inner .results-wrapper .portlet.result-item:active,
+        .up .up-gallery .gallery-inner .results-wrapper .package.results-item:hover,
+        .up .up-gallery .gallery-inner .results-wrapper .package.results-item:focus,
+        .up .up-gallery .gallery-inner .results-wrapper .package.results-item:active {
+          background: #aaaaaa;
+          border: 1px soild #bbbbbb;
+          background-image: -moz-linear-gradient(top, false, false);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, false), color-stop(1, false));
+          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='false', EndColorStr='false')";
+          background-image: linear-gradient(top, false, false); }
+      .up .up-gallery .gallery-inner .results-wrapper .results-item.disabled {
+        -moz-opacity: 0.2;
+        opacity: 0.2;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+        filter: alpha(opacity=20);
+        border-color: #3A3A3A !important; }
+        .up .up-gallery .gallery-inner .results-wrapper .results-item.disabled:hover, .up .up-gallery .gallery-inner .results-wrapper .results-item.disabled:focus,
+        .up .up-gallery .gallery-inner .results-wrapper .results-item.disabled a:hover, .up .up-gallery .gallery-inner .results-wrapper .results-item.disabled a:focus {
+          background: none !important;
+          cursor: default !important; }
+      .up .up-gallery .gallery-inner .results-wrapper .results-item.selected .ri-link {
+        background: #737373;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        margin-bottom: -6px; }
+      .up .up-gallery .gallery-inner .results-wrapper .ri-wrapper .ri-utility {
+        height: 16px;
+        background: #666666;
+        -moz-border-radius: 0 0 0 0;
+        -webkit-border-top-left-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        border-radius: 0 0 0 0; }
+      .up .up-gallery .gallery-inner .results-wrapper .ri-wrapper .portlet-thumb-gripper {
+        background: #888888 url("../common/images/gripper.png") 5px 0px no-repeat; }
+      .up .up-gallery .gallery-inner .results-wrapper .ri-wrapper .ri-titlebar {
+        color: white; }
+      .up .up-gallery .gallery-inner .results-wrapper .ri-wrapper .ri-description {
+        color: #f1f2f4; }
+      .up .up-gallery .gallery-inner .results-wrapper .portlet-wrapper .ri-link, .up .up-gallery .gallery-inner .results-wrapper .package-wrapper .ri-link {
+        color: white;
+        background: #666666;
+        -moz-border-radius: 0 0 0 0;
+        -webkit-border-top-left-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        border-radius: 0 0 0 0;
+        display: none; }
+      .up .up-gallery .gallery-inner .results-wrapper .portlet-wrapper:hover .ri-link, .up .up-gallery .gallery-inner .results-wrapper .portlet-wrapper:focus .ri-link, .up .up-gallery .gallery-inner .results-wrapper .package-wrapper:hover .ri-link, .up .up-gallery .gallery-inner .results-wrapper .package-wrapper:focus .ri-link {
+        background: #333333;
+        display: block; }
+      .up .up-gallery .gallery-inner .results-wrapper .pager .pager-pagination {
+        color: white; }
+      .up .up-gallery .gallery-inner .results-wrapper .pager .pager-button-up, .up .up-gallery .gallery-inner .results-wrapper .pager .pager-button-down {
+        background: #8c8c8c;
+        border: 1px solid #a6a6a6;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0; }
+      .up .up-gallery .gallery-inner .results-wrapper .pager .pager-button-up:hover, .up .up-gallery .gallery-inner .results-wrapper .pager .pager-button-up:focus, .up .up-gallery .gallery-inner .results-wrapper .pager .pager-button-down:hover, .up .up-gallery .gallery-inner .results-wrapper .pager .pager-button-down:focus {
+        background: #a6a6a6;
+        border: none; }
+      .up .up-gallery .gallery-inner .results-wrapper .pager .fl-pager-disabled {
+        background: gray !important;
+        border: none !important;
+        cursor: default !important; }
+        .up .up-gallery .gallery-inner .results-wrapper .pager .fl-pager-disabled a {
+          cursor: default !important; }
+
+/*====================================*/
+/* Sidebar */
+/*====================================*/
+/*
+ * Styles for formatting the portal sidebar and widgets that are contained in it.
+ */
+.up #portalSidebar {
+  /* A persistent sidebar that can contain widgets.  */ }
+  .up #portalSidebar #portalSidebarInner {
+    padding: 0 0 0 15px; }
+  .up #portalSidebar .fl-widget {
+    /* General formatting for sidebar widgets */
+    border: 1px solid #e6e6e6;
+    background: white url("../common/images/light_top_100px_50.png") 0px 0px repeat-x;
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, white));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='white')";
+    background-image: linear-gradient(top, white, white);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    .up #portalSidebar .fl-widget .fl-widget-titlebar h2 {
+      padding: 0;
+      color: #4d4d4d;
+      font-size: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+    .up #portalSidebar .fl-widget .fl-widget-content {
+      background: black;
+      color: #4d4d4d;
+      border: 1px solid white;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
+      .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu {
+        /* Most sidebar widgets contain list menus. */
+        background: black;
+        border: 1px solid black; }
+        .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu a {
+          text-decoration: none;
+          padding: 5px; }
+        .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu li {
+          border: 1px solid black; }
+        .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu li, .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu li a {
+          background: black;
+          color: #4d4d4d; }
+        .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu li:hover, .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu li:focus, .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu li a:hover, .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu li a:focus {
+          background: #990000;
+          color: white; }
+        .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu .fl-activemenu .portal-subnav-list a {
+          background: black;
+          color: #333333; }
+          .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu .fl-activemenu .portal-subnav-list a:hover, .up #portalSidebar .fl-widget .fl-widget-content .fl-listmenu .fl-activemenu .portal-subnav-list a:focus {
+            background: #660000;
+            color: white; }
+  .up #portalSidebar #portalFragAdminList .fl-widget-content {
+    /* This sidebar widget does not have a list menu and needs some padding. */
+    padding: 1em 12px; }
+
+/*====================================*/
+/* Portlet Chrome */
+/*====================================*/
+/*
+ * Styles for formatting the portlet chrome that wraps portlets.
+ */
+.up .up-portlet-wrapper {
+  /* Portlet chrome. */
+  padding: 3px 0 0 0;
+  background: #002255;
+  border: 1px solid black;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+  .up .up-portlet-wrapper .up-portlet-titlebar h2 a {
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+    .up .up-portlet-wrapper .up-portlet-titlebar h2 a:hover, .up .up-portlet-wrapper .up-portlet-titlebar h2 a:focus {
+      color: #cccccc; }
+  .up .up-portlet-wrapper .up-portlet-content-wrapper {
+    background: white;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
+  .up .up-portlet-wrapper .up-portlet-wrapper-top,
+  .up .up-portlet-wrapper .up-portlet-wrapper-bottom {
+    /* These extra containers are available for additional styling (like rounded corners with images). 
+     * This skin does not use them, so hide them from view. */
+    display: none; }
+  .up .up-portlet-wrapper .up-portlet-titlebar {
+    /* Prevent portlet titles from wrapping. */
+    white-space: nowrap; }
+    .up .up-portlet-wrapper .up-portlet-titlebar h2 {
+      padding: 3px 0 8px 0.5em;
+      font-size: 100%;
+      font-weight: normal;
+      text-transform: capitalize; }
+      .up .up-portlet-wrapper .up-portlet-titlebar h2 a {
+        text-decoration: none; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-controls {
+      top: 0;
+      padding: 1px 6px 0 0; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-control {
+      font-size: 90%;
+      color: white; }
+      .up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-control:hover, .up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-control:focus {
+        color: #cccccc; }
+      .up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-control .icon {
+        display: block;
+        float: left;
+        height: 16px;
+        width: 16px;
+        background-image: url("../byu4.0_v1/images/portlet_icons_with_print_flat.png");
+        background-repeat: no-repeat;
+        background-position: 0 0; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .focus .icon {
+      background-position: -0px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .focus:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .focus:focus .icon {
+      background-position: -0px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .edit .icon {
+      background-position: -16px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .edit:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .edit:focus .icon {
+      background-position: -16px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .info .icon {
+      background-position: -32px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .info:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .info:focus .icon {
+      background-position: -32px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .help .icon {
+      background-position: -48px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .help:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .help:focus .icon {
+      background-position: -48px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .remove .icon {
+      background-position: -64px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .remove:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .remove:focus .icon {
+      background-position: -64px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .add .icon {
+      background-position: -80px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .add:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .add:focus .icon {
+      background-position: -80px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .permissions .icon {
+      background-position: -96px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .permissions:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .permissions:focus .icon {
+      background-position: -96px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .show-content .icon {
+      background-position: -112px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .show-content:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .show-content:focus .icon {
+      background-position: -112px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .hide-content .icon {
+      background-position: -128px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .hide-content:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .hide-content:focus .icon {
+      background-position: -128px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .return .icon {
+      background-position: -144px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .return:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .return:focus .icon {
+      background-position: -144px -16px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .print .icon {
+      background-position: -160px 0px; }
+    .up .up-portlet-wrapper .up-portlet-titlebar .print:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .print:focus .icon {
+      background-position: -160px -16px; }
+  .up .up-portlet-wrapper .up-portlet-content-wrapper {
+    margin: 0; }
+.up .up-portlet-wrapper.no-chrome, .up .up-portlet-wrapper.no-chrome .up-portlet-content-wrapper {
+  /* A portlet that has been flagged to have no chrome - "Just the content, please." */
+  padding: 0;
+  background: none;
+  border: none; }
+.up .up-portlet-wrapper.alternate {
+  /* A portlet that has been flagged to have the alternate styling of portlet chrome.*/
+  background: #a7a9ac;
+  border: 1px solid #91b2d2;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+  .up .up-portlet-wrapper.alternate .up-portlet-titlebar h2 a {
+    color: #628cb6;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+    .up .up-portlet-wrapper.alternate .up-portlet-titlebar h2 a:hover, .up .up-portlet-wrapper.alternate .up-portlet-titlebar h2 a:focus {
+      color: #f1f2f4; }
+  .up .up-portlet-wrapper.alternate .up-portlet-content-wrapper {
+    background: white;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
+.up .up-portlet-wrapper.highlight {
+  /* A portlet that has been flagged to have the highlight styling of portlet chrome. */
+  background: #e0edf9;
+  border: 1px solid #000099;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+  .up .up-portlet-wrapper.highlight .up-portlet-titlebar h2 a {
+    color: #002255;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+    .up .up-portlet-wrapper.highlight .up-portlet-titlebar h2 a:hover, .up .up-portlet-wrapper.highlight .up-portlet-titlebar h2 a:focus {
+      color: #b3b3b3; }
+  .up .up-portlet-wrapper.highlight .up-portlet-content-wrapper {
+    background: #9999ff;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
+.up .up-portlet-wrapper.locked {
+  /* A portlet that has been locked (cannot be moved or removed). */
+  background: black url("../common/images/light_top_100px_50.png") 0px 0px repeat-x;
+  border: 1px solid black;
+  background-image: -moz-linear-gradient(top, black, black 65px);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(black), color-stop(0.1, black));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='black', EndColorStr='black')";
+  background-image: linear-gradient(top, black, black 65px);
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+  .up .up-portlet-wrapper.locked .up-portlet-titlebar h2 a {
+    color: #333333;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+    .up .up-portlet-wrapper.locked .up-portlet-titlebar h2 a:hover, .up .up-portlet-wrapper.locked .up-portlet-titlebar h2 a:focus {
+      color: white; }
+  .up .up-portlet-wrapper.locked .up-portlet-content-wrapper {
+    background: white;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
+.up .dashboard .up-portlet-controls {
+  top: 0;
+  padding: 1px 6px 0 0; }
+.up .dashboard .up-portlet-control {
+  display: block;
+  float: left;
+  padding: 0; }
+  .up .dashboard .up-portlet-control .label {
+    display: none; }
+.up .focused {
+  /* A portlet when in the focused view. */ }
+  .up .focused .up-portlet-controls .up-portlet-control {
+    display: inline-block;
+    margin-left: 1.5em;
+    text-decoration: none; }
+  .up .focused .up-portlet-controls .icon {
+    margin-right: 3px; }
+  .up .focused .up-portlet-controls .label {
+    float: left; }
+
+/*====================================*/
+/* Footer */
+/*====================================*/
+/*
+ * Styles for formatting the portal footer and widgets that are contained in it.
+ */
+.up #portalPageFooter {
+  /* Portal footer. */
+  background: white;
+  color: #999999;
+  font-size: 90%; }
+  .up #portalPageFooter a {
+    /* Generally want footer links to blend in with the footer. */
+    color: #666666;
+    text-decoration: none; }
+    .up #portalPageFooter a:hover, .up #portalPageFooter a:focus {
+      color: #999999;
+      text-decoration: underline; }
+  .up #portalPageFooter #portalPageFooterContent {
+    margin: 0 auto;
+    padding: 4em;
+    background: transparent; }
+  .up #portalPageFooter #portalPageFooterNav {
+    background: white;
+    font-size: 90%;
+    padding: 25px; }
+    .up #portalPageFooter #portalPageFooterNav .fl-container-flex {
+      margin: 0 auto; }
+    .up #portalPageFooter #portalPageFooterNav div > a {
+      color: #999999;
+      text-decoration: none;
+      font-weight: bold; }
+    .up #portalPageFooter #portalPageFooterNav div > a:link {
+      color: #999999;
+      text-decoration: none; }
+    .up #portalPageFooter #portalPageFooterNav div > a:visited {
+      color: #999999; }
+    .up #portalPageFooter #portalPageFooterNav div > a:hover {
+      color: #666666;
+      text-decoration: underline; }
+    .up #portalPageFooter #portalPageFooterNav .fl-col {
+      margin-left: 0;
+      margin-right: 0.50%;
+      padding: 0; }
+    .up #portalPageFooter #portalPageFooterNav ul {
+      margin: 0;
+      padding-top: 12px; }
+    .up #portalPageFooter #portalPageFooterNav ul li {
+      list-style: none;
+      line-height: 1.5em; }
+  .up #portalPageFooter #portalPageFooterLinks {
+    /* This list of footer links needs a little more attention than the rest of the footer stuff. */
+    margin: 0 0 2em 0; }
+    .up #portalPageFooter #portalPageFooterLinks a {
+      color: #666666;
+      font-weight: bold; }
+      .up #portalPageFooter #portalPageFooterLinks a:hover, .up #portalPageFooter #portalPageFooterLinks a:focus {
+        color: #999999; }
+  .up #portalPageFooter #portalProductAndVersion, .up #portalPageFooter #portalCopyright, .up #portalPageFooter #silkIconsAttribution {
+    margin: 0 0 0 120px; }
+
+/*====================================*/
+/* Customization */
+/*====================================*/
+/*
+ * Styles for formatting various aspects of portal customization.
+ */
+.up #portalPageBodyCustomizeMessageRow {
+  /* Customize Page Message, displays when a new page is created (with no content). */
+  background: transparent url("images/customize_message_arrow.png") 40px 0px no-repeat; }
+  .up #portalPageBodyCustomizeMessageRow #portalPageBodyCustomizeMessageRowContents {
+    padding: 1em 20px;
+    background: white;
+    border: 2px solid #990000;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px; }
+    .up #portalPageBodyCustomizeMessageRow #portalPageBodyCustomizeMessageRowContents h1 {
+      margin: 0 0 0.3em 0;
+      font-weight: normal;
+      color: gray;
+      text-decoration: none;
+      border: none; }
+    .up #portalPageBodyCustomizeMessageRow #portalPageBodyCustomizeMessageRowContents strong {
+      color: black; }
+.up .fragment-admin-mode #portalPageBodyInner {
+  /* Page body in fragment administration mode. */
+  padding: 1.2em 25px 2.5em 25px; }
+.up #portalFragAdminExit {
+  /* Fragment Administration mode. */
+  margin: 0;
+  background: #999999;
+  border: none;
+  border-bottom: 1px solid #4d4d4d;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+  .up #portalFragAdminExit h2 {
+    color: #333333;
+    font-size: 150%; }
+  .up #portalFragAdminExit .fl-widget-content {
+    background: #999999; }
+    .up #portalFragAdminExit .fl-widget-content #exitFragment {
+      float: right; }
+.up #portalEditPagePermissions {
+  /* Edit page Permisssions */
+  float: right;
+  display: block;
+  margin-top: .75em;
+  margin-right: 25px; }
+.up .column-permissions {
+  margin-bottom: 0.5em; }
+.up .fragment-disabled, .up .fragment-disabled h2.fragment-title {
+  color: #666666; }
+.up .layout-option {
+  padding: 5px; }
+.up .layout-option.selected {
+  border: thin solid gray; }
+.up .fl-reorderer-movable-hover {
+  /* Affordance to indicate draggable. */
+  cursor: move; }
+.up .fl-reorderer-movable-dragging-mouse {
+  /* When the item is being moved, hide the original. */
+  display: none; }
+.up .fl-reorderer-avatar {
+  /* See-through avatar (copy) of the item being dragged. */
+  background-color: white;
+  border: 1px dotted gray; }
+.up .fl-reorderer-movable-selected,
+.up .fl-reorderer-movable-selected:focus,
+.up .fl-reorderer-movable-dragging:focus {
+  /* keyboard layout reorder focus outline */
+  outline: 2px solid #ff0000; }
+.up .fl-reorderer-header-movable-selected:focus,
+.up .fl-reorderer-header-movable-dragging:focus,
+.up .fl-reorderer-sidebar-movable-selected:focus,
+.up .fl-reorderer-sidebar-movable-dragging:focus {
+  outline: none; }
+.up .fl-reorderer-dropMarker {
+  /* Indicate where the item may be dropped. */
+  background-color: #ff0000;
+  border: 2px dashed #990000; }
+.up .drop-warning {
+  /* Warning message that indicates that an item cannot be moved into a position due to locked (unmovable) items. */
+  border: 2px solid #000099;
+  background: #0000ff;
+  color: white; }
+
+.up #portalPageHeader #webSearchContainer {
+  border-radius: 0; }
+  .up #portalPageHeader #webSearchContainer input[type="text"], .up #portalPageHeader #webSearchContainer input[type="submit"] {
+    margin-right: 10px;
+    text-shadow: none; }
+.up #portalPageHeader .fl-widget .fl-widget-content {
+  border-radius: 0; }
+.up #portalNavigation .portal-navigation .portal-navigation-link, .up #portalNavigation .portal-navigation:hover .portal-navigation-link, .up #portalNavigation .active .portal-navigation-link, .up #portalNavigation .active:hover .portal-navigation-link {
+  text-shadow: none; }
+.up #portalNavigation li.portal-navigation-add-item {
+  margin-right: 3.0em; }
+.up .up-gallery .gallery-inner .content-filters-wrapper .categories a:hover, .up .up-gallery .gallery-inner .content-filters-wrapper .categories a:focus {
+  text-decoration: underline; }
+.up .up-gallery .handle a {
+  margin-left: 4.5em; }
+.up .up-portlet-wrapper {
+  margin: 10px 10px 30px 10px; }
+  .up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-control {
+    padding-top: 3px;
+    margin-right: 4px;
+    margin-left: 3px; }
+.up #portalPageFooter #portalPageFooterLinks {
+  text-align: center; }
+.up #portalPageFooter #portalProductAndVersion, .up #portalPageFooter #besafe, .up #portalPageFooter #powered-by, .up #portalPageFooter #silkIconsAttribution {
+  display: none; }
+
+/*# sourceMappingURL=portal.css.map */

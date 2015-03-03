@@ -1,0 +1,494 @@
+// Button styles.
+// Gives links and form buttons a consistent button look across the portal.
+// Pass in the desired type of button based on the context.
+
+// Mixin for repeated button style elements.
+// Text-shadow is either "light" or "dark"; light is below the text and white, dark is above the text and black.
+
+// Default Button
+$buttonBorder					: $c1darker;
+$buttonBackground				: $c1;
+$buttonText						: $white;
+$buttonTextShadow				: dark;
+$buttonGradient1				: $c1;
+$buttonGradient2				: $c1darker;
+$buttonHoverBorder				: $c1darker;
+$buttonHoverBackground			: $c1light;
+$buttonHoverText				: $white;
+$buttonHoverTextShadow			: dark;
+$buttonHoverGradient1			: $c1lighter;
+$buttonHoverGradient2			: $c1darker;
+$buttonDownBorder				: $c1darker;
+$buttonDownBackground			: $c1dark;
+$buttonDownText					: $white;
+$buttonDownTextShadow			: dark;
+$buttonDownGradient1			: $c1darker;
+$buttonDownGradient2			: $c1;
+
+// Dark Button
+$darkButtonBorder				: $c3darker;
+$darkButtonBackground			: $c3;
+$darkButtonText					: $white;
+$darkButtonTextShadow			: dark;
+$darkButtonGradient1			: $c3;
+$darkButtonGradient2			: $c3darker;
+$darkButtonHoverBorder			: $c3darker;
+$darkButtonHoverBackground		: $c3light;
+$darkButtonHoverText			: $white;
+$darkButtonHoverTextShadow		: dark;
+$darkButtonHoverGradient1		: $c3light;
+$darkButtonHoverGradient2		: $c3darker;
+$darkButtonDownBorder			: $c3darker;
+$darkButtonDownBackground		: $c3dark;
+$darkButtonDownText				: $white;
+$darkButtonDownTextShadow		: dark;
+$darkButtonDownGradient1		: $c3dark;
+$darkButtonDownGradient2		: $c3light;
+
+// Light Button
+$lightButtonBorder				: $graylight;
+$lightButtonBackground			: $graylightest;
+$lightButtonText				: $graydarkest;
+$lightButtonTextShadow			: light;
+$lightButtonGradient1			: $white;
+$lightButtonGradient2			: $graylightest;
+$lightButtonHoverBorder			: $graydark;
+$lightButtonHoverBackground		: $gray;
+$lightButtonHoverText			: $graydarkest;
+$lightButtonHoverTextShadow		: light;
+$lightButtonHoverGradient1		: $graylightest;
+$lightButtonHoverGradient2		: $graylighter;
+$lightButtonDownBorder			: $graydark;
+$lightButtonDownBackground		: $graydark;
+$lightButtonDownText			: $graydarkest;
+$lightButtonDownTextShadow		: light;
+$lightButtonDownGradient1		: $graylighter;
+$lightButtonDownGradient2		: $white;
+
+// Login Button
+$loginButtonBorder				: $c4dark;
+$loginButtonBackground			: $c4;
+$loginButtonText				: $white;
+$loginButtonTextShadow			: dark;
+$loginButtonGradient1			: $c4light;
+$loginButtonGradient2			: $c4dark;
+$loginButtonHoverBorder			: $c4dark;
+$loginButtonHoverBackground		: $c4light;
+$loginButtonHoverText			: $white;
+$loginButtonHoverTextShadow		: dark;
+$loginButtonHoverGradient1		: $c4lighter;
+$loginButtonHoverGradient2		: $c4dark;
+$loginButtonDownBorder			: $c4darker;
+$loginButtonDownBackground		: $c4dark;
+$loginButtonDownText			: $white;
+$loginButtonDownTextShadow		: dark;
+$loginButtonDownGradient1		: $c4dark;
+$loginButtonDownGradient2		: $c4light;
+
+// Web Search Button
+$websearchButtonPadding			: 0.3em 12px;
+$websearchButtonBorder			: $c1darker;
+$websearchButtonBackground		: $c1;
+$websearchButtonText			: $white;
+$websearchButtonTextShadow		: dark;
+$websearchButtonGradient1		: $c1;
+$websearchButtonGradient2		: $c1darker;
+$websearchButtonHoverBorder		: $c4darker;
+$websearchButtonHoverBackground	: $c4light;
+$websearchButtonHoverText		: $white;
+$websearchButtonHoverTextShadow	: dark;
+$websearchButtonHoverGradient1	: $c4lighter;
+$websearchButtonHoverGradient2	: $c4dark;
+$websearchButtonDownBorder		: $c4darker;
+$websearchButtonDownBackground	: $c4dark;
+$websearchButtonDownText		: $white;
+$websearchButtonDownTextShadow	: dark;
+$websearchButtonDownGradient1	: $c4dark;
+$websearchButtonDownGradient2	: $c4light;
+
+// Search Button
+$searchButtonPadding			: 0.3em 12px;
+$searchButtonBorder				: $c1darker;
+$searchButtonBackground			: $c1;
+$searchButtonText				: $white;
+$searchButtonTextShadow			: dark;
+$searchButtonGradient1			: $c1;
+$searchButtonGradient2			: $c1darker;
+$searchButtonHoverBorder		: $c4darker;
+$searchButtonHoverBackground	: $c4light;
+$searchButtonHoverText			: $white;
+$searchButtonHoverTextShadow	: dark;
+$searchButtonHoverGradient1		: $c4lighter;
+$searchButtonHoverGradient2		: $c4dark;
+$searchButtonDownBorder			: $c4darker;
+$searchButtonDownBackground		: $c4dark;
+$searchButtonDownText			: $white;
+$searchButtonDownTextShadow		: dark;
+$searchButtonDownGradient1		: $c4dark;
+$searchButtonDownGradient2		: $c4light;
+
+// Utility Button
+$utilityButtonBorder			: $c3dark;
+$utilityButtonBackground		: $c3;
+$utilityButtonText				: $white;
+$utilityButtonTextShadow		: dark;
+$utilityButtonGradient1			: $c3light;
+$utilityButtonGradient2			: $c3dark;
+$utilityButtonHoverBorder		: $c3dark;
+$utilityButtonHoverBackground	: $c3light;
+$utilityButtonHoverText			: $white;
+$utilityButtonHoverTextShadow	: dark;
+$utilityButtonHoverGradient1	: $c3lighter;
+$utilityButtonHoverGradient2	: $c3dark;
+$utilityButtonDownBorder		: $c3darker;
+$utilityButtonDownBackground	: $c3dark;
+$utilityButtonDownText			: $white;
+$utilityButtonDownTextShadow	: dark;
+$utilityButtonDownGradient1		: $c3dark;
+$utilityButtonDownGradient2		: $c3light;
+
+// Active (global "on") state.
+$activeButtonBorder				: $c1darker;
+$activeButtonBackground			: $c1;
+$activeButtonText				: $white;
+$activeButtonTextShadow			: dark;
+$activeButtonGradient1			: $c1;
+$activeButtonGradient2			: $c1darker;
+
+// Disabled Button
+$disabledButtonBorder			: $gray;
+$disabledButtonBackground		: $graylighter;
+$disabledButtonText				: $gray;
+
+@mixin button-style(
+    $borderColor, 
+    $backgroundColor, 
+    $textColor, 
+    $textShadow, 
+    $gradientColor1, 
+    $gradientColor2
+) {
+	border-color: $borderColor;
+	background: $backgroundColor;
+	color: $textColor;
+	@include text-shadow($textShadow);
+	@include gradient($gradientColor1, $gradientColor2);
+}
+
+// Specific styling for button Up state. Styling is contextual, by the type passed in.
+@mixin button-up($type) {
+    line-height     : 1;
+    display			: inline;
+	margin			: 0;
+	padding			: 0.3em 15px 0.4em 15px;
+	border-width	: 1px;
+	border-style	: solid;
+	font-family		: sans-serif;
+	font-weight		: bold;
+	font-size		: 12px;
+	text-align		: center;
+	text-decoration	: none;
+	text-transform	: capitalize;
+	cursor			: pointer;
+	@include rounded(0.6em);
+	@include box-shadow(0 1px 3px rgba(0, 0, 0, .5));
+	
+    @if $type == 'dark' {
+        @include button-style(
+            $darkButtonBorder,
+            $darkButtonBackground,
+            $darkButtonText,
+            $darkButtonTextShadow,
+            $darkButtonGradient1,
+            $darkButtonGradient2
+        );
+    } @else if $type == 'light' {
+        @include button-style(
+            $lightButtonBorder,
+            $lightButtonBackground,
+            $lightButtonText,
+            $lightButtonTextShadow,
+            $lightButtonGradient1,
+            $lightButtonGradient2
+        );
+    } @else if $type == 'login' {
+        @include button-style(
+            $loginButtonBorder,
+            $loginButtonBackground,
+            $loginButtonText,
+            $loginButtonTextShadow,
+            $loginButtonGradient1,
+            $loginButtonGradient2
+        );
+    } @else if $type == 'utility' {
+        @include button-style(
+            $utilityButtonBorder,
+            $utilityButtonBackground,
+            $utilityButtonText,
+            $utilityButtonTextShadow,
+            $utilityButtonGradient1,
+            $utilityButtonGradient2
+        );
+    } @else if $type == 'search' {
+        @include button-style(
+            $searchButtonBorder,
+            $searchButtonBackground,
+            $searchButtonText,
+            $searchButtonTextShadow,
+            $searchButtonGradient1,
+            $searchButtonGradient2
+        );
+      padding: $searchButtonPadding;
+      @if ($buttonRound != false) {
+          @include round(0, $buttonRound, $buttonRound, 0);
+      }
+    } @else if $type == 'websearch' {
+        @include button-style(
+            $websearchButtonBorder,
+            $websearchButtonBackground,
+            $websearchButtonText,
+            $websearchButtonTextShadow,
+            $websearchButtonGradient1,
+            $websearchButtonGradient2
+        );
+      padding: $websearchButtonPadding;
+          @include round(0, 0.6em, 0.6em, 0);
+    } @else {
+        @include button-style(
+            $buttonBorder,
+            $buttonBackground,
+            $buttonText,
+            $buttonTextShadow,
+            $buttonGradient1,
+            $buttonGradient2
+        );
+    }
+}
+
+// Specific styling for button Hover state. Styling is contextual, by the type passed in.
+@mixin button-hover($type) {
+    @if $type == 'dark' {
+    	@include button-style(
+    	    $darkButtonHoverBorder,
+    	    $darkButtonHoverBackground,
+    	    $darkButtonHoverText,
+    	    $darkButtonHoverTextShadow,
+    	    $darkButtonHoverGradient1,
+    	    $darkButtonHoverGradient2
+    	);
+    } @else if $type == 'light' {
+    	@include button-style(
+    	    $lightButtonHoverBorder,
+    	    $lightButtonHoverBackground,
+    	    $lightButtonHoverText,
+    	    $lightButtonHoverTextShadow,
+    	    $lightButtonHoverGradient1,
+    	    $lightButtonHoverGradient2
+        );
+    } @else if $type == 'login' {
+    	@include button-style(
+    	    $loginButtonHoverBorder,
+    	    $loginButtonHoverBackground,
+    	    $loginButtonHoverText,
+    	    $loginButtonHoverTextShadow,
+    	    $loginButtonHoverGradient1,
+    	    $loginButtonHoverGradient2
+        );
+    } @else if $type == 'utility' {
+    	@include button-style(
+    	    $utilityButtonHoverBorder,
+    	    $utilityButtonHoverBackground,
+    	    $utilityButtonHoverText,
+    	    $utilityButtonHoverTextShadow,
+    	    $utilityButtonHoverGradient1,
+    	    $utilityButtonHoverGradient2
+        );
+    } @else if $type == 'search' {
+    	@include button-style(
+    	    $searchButtonHoverBorder,
+    	    $searchButtonHoverBackground,
+    	    $searchButtonHoverText,
+    	    $searchButtonHoverTextShadow,
+    	    $searchButtonHoverGradient1,
+    	    $searchButtonHoverGradient2
+        );
+    } @else if $type == 'websearch' {
+    	@include button-style(
+    	    $websearchButtonHoverBorder,
+    	    $websearchButtonHoverBackground,
+    	    $websearchButtonHoverText,
+    	    $websearchButtonHoverTextShadow,
+    	    $websearchButtonHoverGradient1,
+    	    $websearchButtonHoverGradient2
+        );
+    } @else {
+    	@include button-style(
+    	    $buttonHoverBorder,
+    	    $buttonHoverBackground,
+    	    $buttonHoverText,
+    	    $buttonHoverTextShadow,
+    	    $buttonHoverGradient1,
+    	    $buttonHoverGradient2
+        );
+    }
+}
+
+// Specific styling for button Down state. Styling is contextual, by the type passed in.
+@mixin button-down($type) {
+    @if $type == 'dark' {
+		@include button-style(
+		    $darkButtonDownBorder,
+		    $darkButtonDownBackground,
+		    $darkButtonDownText,
+		    $darkButtonDownTextShadow,
+		    $darkButtonDownGradient1,
+		    $darkButtonDownGradient2
+        );
+	} @else if $type == 'light' {
+		@include button-style(
+		    $lightButtonDownBorder,
+		    $lightButtonDownBackground,
+		    $lightButtonDownText,
+		    $lightButtonDownTextShadow,
+		    $lightButtonDownGradient1,
+		    $darkButtonDownGradient2
+        );
+	} @else if $type == 'login' {
+		@include button-style(
+		    $loginButtonHoverBorder,
+		    $loginButtonHoverBackground,
+		    $loginButtonHoverText,
+		    $loginButtonHoverTextShadow,
+		    $loginButtonHoverGradient1,
+		    $darkButtonHoverGradient2
+        );
+	} @else if $type == 'utility' {
+		@include button-style(
+		    $utilityButtonDownBorder,
+		    $utilityButtonDownBackground,
+		    $utilityButtonDownText,
+		    $utilityButtonDownTextShadow,
+		    $utilityButtonDownGradient1,
+		    $utilityButtonDownGradient2
+        );
+	}  @else if $type == 'search' {
+		@include button-style(
+		    $searchButtonDownBorder,
+		    $searchButtonDownBackground,
+		    $searchButtonDownText,
+		    $searchButtonDownTextShadow,
+		    $searchButtonDownGradient1,
+		    $searchButtonDownGradient2
+        );
+	}  @else if $type == 'websearch' {
+		@include button-style(
+		    $websearchButtonDownBorder,
+		    $websearchButtonDownBackground,
+		    $websearchButtonDownText,
+		    $websearchButtonDownTextShadow,
+		    $websearchButtonDownGradient1,
+		    $websearchButtonDownGradient2
+        );
+	} @else {
+		@include button-style(
+		    $buttonDownBorder,
+		    $buttonDownBackground,
+		    $buttonDownText,
+		    $buttonDownTextShadow,
+		    $buttonDownGradient1,
+		    $buttonDownGradient2
+        );
+	}
+}
+
+// Button mixin. Calls in the Up, Hover, and Down states.
+// Passes the context type to those mixins.
+// If no type is specified, default will be used, which will take the @else styles.
+@mixin button-type($type: 'default') {
+    
+    // Active
+    @if $type == 'active' {
+        @include button-style(
+    	    $activeButtonBorder,
+    	    $activeButtonBackground, 
+    	    $activeButtonText, 
+    	    $activeButtonTextShadow, 
+    	    $activeButtonGradient1, 
+    	    $activeButtonGradient2
+    	);
+    	
+    // Disabled
+    } @else if $type == 'disabled' {
+        background: $disabledButtonBackground !important;
+    	border-color : $disabledButtonBorder !important;
+    	color : $disabledButtonText !important;
+    	text-shadow : none !important;
+    	cursor : default !important;
+    	
+    // Styles
+    } @else {
+        @include button-up($type);
+        &:hover { 
+            @include button-hover($type); 
+        }
+        &:active,
+        &.active { 
+            @include button-down($type); 
+        }
+    }
+}
+
+.up {
+        
+    // Global styles
+    .button, button, input[type='submit'], input[type='button'] {
+        @include button-type('default');
+    }
+    a.button {
+		display:inline-block;
+	}
+	
+	// Disabled
+	.button, button, input {
+	    &[disabled='disabled'] {
+	        &:hover, &:focus {
+                @include button-type('disabled');
+	        }
+	    }
+	}
+	
+	// Gallery close button
+    .up-gallery .close-button a.button {
+    	@include button-type('default');
+    }
+
+    // Web search
+    #webSearchContainer input[type='submit'] {
+        @include button-type('websearch');
+    }
+
+    // Login
+    #portalLogin #portalCASLogin a.button {
+        @include button-type('login');
+    }
+
+    // Fragment exit
+    #portalFragAdminExit input.button {
+		@include button-type('login');
+    }
+
+    // Page permissions
+    #portalEditPagePermissions a.button {
+    	@include button-type('dark');
+    }
+    
+    // Column permissions
+    .column-permissions a.button {
+    	@include button-type('dark');
+    }
+	
+	// Portlet toolbar
+	.portlet .titlebar .toolbar .button {
+        @include button-type('light');
+    }
+}

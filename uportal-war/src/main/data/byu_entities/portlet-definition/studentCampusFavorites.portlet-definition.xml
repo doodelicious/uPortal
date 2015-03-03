@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<portlet-definition version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/portlet-type" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/user">
+    <title>Campus Favorites</title>
+    <name>Student Campus Favorites</name>
+    <fname>studentCampusFavorites</fname>
+    <desc>Campus Favorites for Students</desc>
+    <type>CMS</type>
+    <timeout>5000</timeout>
+    <portlet-descriptor>
+        <ns2:webAppName>/SimpleContentPortlet</ns2:webAppName>
+        <ns2:portletName>cms</ns2:portletName>
+    </portlet-descriptor>
+    <category>Services</category>
+    <group>Students</group>
+    <parameter>
+        <name>alternate</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>blockImpersonation</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>disableDynamicTitle</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <name>editable</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hasAbout</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hasHelp</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>hideFromMobile</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>highlight</name>
+        <value>false</value>
+    </parameter>
+    <parameter>
+        <name>iconUrl</name>
+        <value>/uPortal/media/skins/universality/common/byu-icons/student-favorites.png</value>
+    </parameter>
+    <parameter>
+        <name>mobileIconUrl</name>
+        <value>/uPortal/media/skins/universality/common/byu-icons/mobile/student-favorites.png</value>
+    </parameter>
+    <parameter>
+        <name>showChrome</name>
+        <value>true</value>
+    </parameter>
+    <portlet-preference>
+        <name>content</name>
+        <readOnly>false</readOnly>
+        <value>&lt;div id="StudentCampusQuickLinks"&gt;
+	&lt;div
+        id="FavoritesBackground"&gt;
+		&lt;h3&gt;
+			&lt;span
+          style="color: rgb(68,68,68);"&gt;&lt;strong&gt;Campus Resources&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://home.byu.edu/webapp/mymap/plan.htm"
+          target="_blank"
+          title="Select a program and the courses you will use to complete the requirements for that program."&gt;Academic Planning&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://booklist.byu.edu/index.cfm" target="_blank"
+          title="Find the books I need for my coursework."&gt;Books I need for classes&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://blackboard.byu.edu/" target="_blank"
+          title="Access online course web site"&gt;Blackboard&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="http://link.byu.edu/mfc" target="_blank"
+          title="Find out the status of your financial aid, charges, scholarships etc. via Finacial Center"&gt;My Financial Center&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://learningsuite.byu.edu" target="_blank"
+          title="Use BYU Learning Suite"&gt;Learning Suite&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://gamma.byu.edu/ry/ae/prod/person/cgi/personLookup.cgi"
+          target="_blank"
+          title="Find contact information for BYU faculty, staff, and students from BYU directory."&gt;Lookup a Person&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://home.byu.edu/webapp/mymap/welcome.htm"
+          target="_blank"
+          title="MyMAP is BYU's student planning system."&gt;MyMap&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="http://saas.byu.edu/onestop/" target="_blank"
+          title="One Stop is designed to help students navigate the various services BYU offers."&gt;One Stop Headquarters&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://home.byu.edu/webapp/mymap/register.htm"
+          target="_blank"
+          title="Register for classes, check class schedules and view your grades"&gt;Register for classes&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="http://www.lib.byu.edu/" target="_blank"
+          title="Find books and articles from collections of the Harold B. Lee Library."&gt;Library Search&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="http://saas.byu.edu/catalog/2010-2011ucat/Advisement/MajorList.php"
+          target="_blank"
+          title="Find information about undergraduate majors and minors."&gt;Undergraduate Catalog&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="http://gradebook.byu.edu/" target="_blank"
+          title="University Gradebook tracks student progress and performance."&gt;University Gradebook&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;h3&gt;
+			&lt;strong&gt;Personal Information&lt;/strong&gt;&lt;/h3&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://gamma.byu.edu/ry/ae/prod/person/cgi/changePassword.cgi"
+          target="_blank"
+          title="Reset your BYU network password or retrieve a forgotten Net ID."&gt;Change Password&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://home.byu.edu/webapp/traffic/vehicles/summary/show.htm"
+          target="_blank"
+          title="Register your vehicle(s) with the university for parking privileges."&gt;Update Parking Information&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://gamma.byu.edu/ry/ae/prod/person/cgi/personSummary.cgi"
+          target="_blank"
+          title="Provide your current contact information to the university for use in the directory system and elsewhere."&gt;Update my Personal Information&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://kronprod.byu.edu/wfc/applications/wtk/html/ess/logon.jsp"
+          target="_blank"
+          title="Login into Kronos Timekeeping System for punching in/out, number of hours worked etc."&gt;View Employment Information&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://gamma.byu.edu/ry/ae/prod/records/cgi/stdCourseWork.cgi"
+          target="_blank"&gt;View Grades and Academic Progress&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;h3&gt;
+			&lt;strong&gt;Technology&lt;/strong&gt;&lt;/h3&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a
+          href="http://software.byu.edu/" target="_blank"
+          title="Purchase and download free software at university prices."&gt;Get Software&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://it.byu.edu/byu/form.do?form=55cbcf7c0a0a3c09012ab89c1a18792f"
+          target="_blank"
+          title="Get in contact with the Office of IT Service Desk by logging a ticket."&gt;Log an Office of IT Service Desk Ticket&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a
+          href="https://it.byu.edu/byu/view_content.do?sysparm_sys_id=7fd6d1050a0a3c0e6d9714668cc32aa7"
+          target="_blank" title="View current and past Office of IT Service Desk Tickets"&gt;View Office of IT Service Desk Tickets&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+
+
+</value>
+    </portlet-preference>
+</portlet-definition>

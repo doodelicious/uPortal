@@ -1,0 +1,198 @@
+/*====================================*/
+/* Typography */
+/*====================================*/
+
+.up {
+    font-family: Verdana, sans-serif;
+	color: $text;
+	line-height: 1.5;
+	
+    a:link, a:visited {
+        color: #5A95CF;
+    }
+    
+    a:hover {
+        color: #6DB5FB;
+    }
+	
+	.portal-pipe {
+	    padding: 0 0.5em;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	
+	// Utility menu
+    #portalPageBar {
+        padding: 0.3em 25px;
+		font-size: 80%;
+		text-align: right;
+		text-transform: uppercase;
+		color: $c1lightest;
+		
+		#portalPageBarLinks {
+		    position: relative;
+		    right: -10px; // offset padding from links
+		    
+			li {
+			    list-style: none;
+				border-right: 1px solid rgba($c1lightest, .25);
+				
+				&:last-child {
+				    border-right: none;
+				}
+			}			
+			
+			a {
+			    padding: 0 10px;
+				color: $c1lightest;
+				text-decoration: none;
+				
+				&:hover, &:focus {
+				    color: $white;
+    				text-decoration: underline;
+				}
+			}
+		}
+    }
+    
+    // Signed in as...
+	#portalWelcome {
+		color: $c1lightest;
+
+		a, .user-name {
+			color: $white;
+		}
+	}
+	
+	// Search
+	#webSearchInput, 
+	#webSearchSubmit {	
+		&, &:focus {
+		  color: $text;  
+		}
+	}
+	
+	// Main tabs
+	#portalNavigation {
+	    .portal-navigation-link {
+			padding: 8px 20px;
+			color: $white;
+			@include text-shadow(dark);
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.portal-flyout-container {
+			font-size: 85%;
+			
+			a {
+			    padding: 0.7em 2em;
+				text-decoration: none;
+			}
+		}
+		.portal-navigation-add {
+			text-decoration: none;
+			padding: 2px 8px 2px 20px;
+			font-size: 86%;
+		}
+	}
+	
+	// Breadcrumbs
+	#portalPageBodyBreadcrumb {
+		/* Breadcrumb */
+		color: $graylighter;
+		a {
+			font-weight: normal;
+			color: $gray;
+			text-decoration: none;
+			&:hover, &:focus {
+				color: $graydark;
+			}
+		}
+	}
+	
+    // Sidebar
+    #portalAdminLinks {
+		.fl-widget-titlebar h2 {
+			padding: 0;
+			color: $c1lightest;
+			font-size: 100%;
+			font-weight: bold;
+			text-transform: uppercase;
+			@include text-shadow(dark);	
+		}
+		.fl-widget-content .fl-listmenu {
+			background: $c1dark;
+			border: 1px solid $c1dark;
+			
+			a {
+				text-decoration: none;
+				padding: 5px;
+			}
+			li {
+				border: 1px solid $c1dark;
+			}
+			li, li a {
+				background: $c1dark;
+				color: $c1lightest;
+				
+				&:hover, &:focus {
+				   	background: $c4darker;
+					color: $white; 
+				}
+			}
+			.fl-activemenu .portal-subnav-list {
+				a {
+					background: $c1darker;
+					color: $c1lighter;
+				
+					&:hover, &:focus {
+						background: $c4darkest;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	
+    // Footer
+	#portalPageFooter {
+		/* Portal footer. */
+		color: $graydarker;
+		font-size: 80%;
+		a {
+			/* Generally want footer links to blend in with the footer. */
+			color: $gray;
+			text-decoration: none;
+			&:hover, &:focus {
+				color: $c1light;
+			}
+		}
+		#portalPageFooterLinks {
+			/* This list of footer links needs a little more attention than the rest of the footer stuff. */
+			margin: 0 0 2em 0;
+			a {
+				color: $white;
+				font-weight: bold;
+				&:hover, &:focus {
+					color: $c1light;
+				}
+			}
+		}
+	}
+	
+	// jQuery UI
+	.ui-widget {
+        &, input, select, textarea, button {
+            font-size: 1em;
+            font-family: arial, helvetica, clean, sans-serif;
+        }
+        
+        .ui-tabs-nav {
+            a {
+                color: #444;
+            }
+        }
+    }
+}

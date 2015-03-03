@@ -1,0 +1,260 @@
+/*====================================*/
+/* Portlet Chrome */
+/*====================================*/
+/*
+ * Styles for formatting the portlet chrome that wraps portlets.
+ */
+
+// Mixin to style portlet chrome.
+@mixin portlet-chrome(
+    $background,
+    $gradient1,
+    $gradient2,
+    $title,
+    $titleShadow,
+    $titleHover,
+    $border,
+    $contentBorder,
+    $contentBackground
+) {
+	background: $background;
+	@if ($border != false) {
+		border: $border;
+	}
+	@if ($gradient1 != false) {
+		background-image: -moz-linear-gradient(top, $gradient1, $gradient2 65px);
+		background-image: -webkit-gradient(linear, left top, left bottom, from($gradient1), to($gradient2), color-stop(0.1, $gradient1));
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')";
+		background-image: linear-gradient(top, $gradient1, $gradient2 65px);
+	}
+	@include rounded(7px);
+	
+	.up-portlet-titlebar h2 a  {
+		color: $title;
+		@if ($titleShadow != false) {
+			@include text-shadow($titleShadow);
+		}
+		&:hover, &:focus {
+			color: $titleHover;
+		}
+	}
+	.up-portlet-content-wrapper {
+		background: $contentBackground;
+		@if ($contentBorder != false) {
+			border: $contentBorder;
+		}
+		@include rounded(5px);
+	}
+}
+
+// Mixin to set image sprite location for portlet control icons.
+@mixin portlet-control($size, $position) {
+	$xpos: ($size * $position);
+	$ypos: 0;
+	
+	.icon {
+		background-position: -#{$xpos} #{$ypos};
+	}
+	&:hover, &:focus {
+		.icon {
+			background-position: -#{$xpos} -#{$size};
+		}
+	}
+}
+
+.up {
+	.up-portlet-wrapper {
+		/* Portlet chrome. */
+		
+		padding: 5px;
+		
+		@include portlet-chrome(
+		    $graylightest url("../common/images/light_top_100px_50.png") 0 0 repeat-x, 
+    		$white,
+    		$graylightest,
+    		$gray,
+    		light,
+    		$c1,
+    		1px solid $graylighter,
+    		1px solid $graylighter,
+    		$white
+		);		
+		
+		.up-portlet-wrapper-top,
+		.up-portlet-wrapper-bottom {
+			/* These extra containers are available for additional styling (like rounded corners with images). 
+			 * This skin does not use them, so hide them from view. */
+			display:none;
+			
+		}
+		
+		.up-portlet-titlebar  {
+			/* Prevent portlet titles from wrapping. */
+			white-space: nowrap;
+			position: relative;
+			
+			h2 {
+				padding: 0 0 3px 0.5em;
+				font-size: 100%;
+				font-weight: normal;
+				text-transform: uppercase;
+				
+				a {
+					text-decoration: none;
+				}
+			}
+			
+			.up-portlet-controls {
+			    position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0 0.5em 0 0;
+			}
+			
+			.up-portlet-control {
+				font-size: 90%;
+				color: $c1;
+				
+				&:hover, &:focus {
+					color: $c1darker;
+				}
+				
+				.icon {
+					display: block;
+					float: left;
+					height: 16px;
+					width: 16px;
+					background: url("../common/images/portlet_icons_flat.png") no-repeat 0 0;
+				}
+			}
+			
+			.focus {
+				@include portlet-control(16px, 0);
+			}
+			.edit {
+				@include portlet-control(16px, 1);
+			}
+			.info {
+				@include portlet-control(16px, 2);
+			}
+			.help {
+				@include portlet-control(16px, 3);
+			}
+			.remove {
+				@include portlet-control(16px, 4);
+			}
+			.add {
+				@include portlet-control(16px, 5);
+			}
+			.permissions {
+				@include portlet-control(16px, 6);
+			}
+			.show-content {
+				@include portlet-control(16px, 7);
+			}
+			.hide-content {
+				@include portlet-control(16px, 8);
+			}
+			.return {
+				@include portlet-control(16px, 9);
+			}
+		}
+		
+		.up-portlet-content-wrapper {
+			margin: 0;
+			padding: 1em;
+		}	
+	}
+	
+	.up-portlet-wrapper.no-chrome, .up-portlet-wrapper.no-chrome .up-portlet-content-wrapper {
+		/* A portlet that has been flagged to have no chrome - "Just the content, please." */
+		padding: 0;
+		background: none;
+		border: none;
+	}
+	
+	.up-portlet-wrapper.alternate {
+		/* A portlet that has been flagged to have the alternate styling of portlet chrome.*/		
+		@include portlet-chrome(
+		    $c1lightest url("../common/images/light_top_100px_50.png") 0 0 repeat-x,
+		    $white,
+		    $c1lightest,
+		    $c1dark,
+		    light,
+		    $c1,
+		    1px solid $c1light,
+		    1px solid $c1light,
+		    $white
+	    );
+	}
+	
+	.up-portlet-wrapper.highlight {
+		/* A portlet that has been flagged to have the highlight styling of portlet chrome. */
+		@include portlet-chrome(
+		    $c4darker url("../common/images/light_top_100px_50.png") 0 0 repeat-x,
+		    $c4,
+		    $c4darker,
+		    $c4darkest,
+		    light,
+		    $c4lighter,
+		    1px solid $c4darker,
+		    1px solid $c4darker,
+		    $c4lightest
+		);
+	}
+	
+	.up-portlet-wrapper.locked {
+		/* A portlet that has been locked (cannot be moved or removed). */
+		@include portlet-chrome(
+		    $graylighter url("../common/images/light_top_100px_50.png") 0 0 repeat-x,
+		    $graylightest,
+		    $graylighter,
+		    $graydark,
+		    light,
+		    $c1,
+		    1px solid $gray,
+		    1px solid $gray,
+		    $white
+		);
+		
+		.up-portlet-titlebar h2 {
+			padding-left: 21px;
+			background: url("/ResourceServingWebapp/rs/tango/0.8.90/16x16/emblems/emblem-readonly.png") no-repeat;
+		}
+	}
+	
+	.dashboard {
+		.up-portlet-controls {
+			top: 0;
+			padding: 0 0.5em 0 0;
+		}
+			
+		.up-portlet-control {
+			display: block;
+			float: left;
+			padding: 0;
+			
+			.label {
+				display: none;
+			}
+		}
+	}
+	
+	.focused {
+		/* A portlet when in the focused view. */
+		.up-portlet-controls {
+			.up-portlet-control {
+				display: inline-block;
+				margin-left: 1.5em;
+				text-decoration: none;
+			}
+			.icon {
+				margin-right: 3px;
+			}
+			.label {
+				float: left;
+			}
+		}
+		
+	}
+}

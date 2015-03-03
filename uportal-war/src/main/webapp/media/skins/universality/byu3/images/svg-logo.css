@@ -1,0 +1,21 @@
+.up #portalPage #portalLogo {
+    position: relative;
+    margin: 0px;
+    border: none;
+    background-image: url("images/portal_logo.png");
+}
+
+.up #portalPage #portalLogo a {
+    position: absolute;
+    width: 450px;
+    height: 80px;
+    top: 34px;
+    left: 62px;
+    background-image: url("images/byulogo.png");
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+
+}
+
+.svg .up #portalPage #portalLogo a {
+    background-image: url("../../byu/images/byulogo.svg");

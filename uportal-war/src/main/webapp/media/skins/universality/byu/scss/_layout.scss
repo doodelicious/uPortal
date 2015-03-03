@@ -1,0 +1,246 @@
+.up {
+    @include skip-links;
+    
+    #portalPage {
+		width: 100%;
+		min-width: 960px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	// Header
+	#portalPageHeader {
+	    height: 125px;
+	    position: relative;
+        @include hide-chrome();
+        
+        #portalLogo {
+            padding: 0 1em;
+        }
+        
+        #portalWelcome {
+	        position: absolute;
+	        top: 13px;
+	        left: 26px;
+	        display: inline;
+		    padding-right: 2em;
+	    }
+        
+        #portalPageBar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0.5em 0;
+            
+            #portalPageBarLinks {
+    	        position: absolute;
+    	        top: 9px;
+    	        right: 249px;
+
+    	        &,ul,li {
+    			    display: inline;
+    			    margin: 0;
+    			    padding: 0;
+    			}
+    			
+    			li {
+    			    margin-right: 1em;
+    			}
+    			
+    			a {
+    			    display: inline-block;
+    			    padding: 4px 10px;
+    			}
+    	    }
+        }
+	    
+	    #webSearchContainer {
+			position: absolute;
+			top: 9px;
+			right: 15px;
+			
+			input, select {
+				margin: 0;
+			}
+			select {
+				display: none;
+			}
+			
+			#webSearchInput {
+			    margin-right: 5px;
+			    padding: 1px 0 1px 5px;
+			    width: 145px;
+			}			
+		}
+    }
+    
+    // Navigation
+    #portalNavigation {
+        position: relative;
+        
+        // Main tabs
+        #portalNavigationList {
+			padding: 0 0 0 25px;
+			@include clearfix();
+			
+			li.portal-navigation {
+    			float: left;
+    			position: relative;
+    		}
+    		
+    		a.portal-navigation-link {
+				display: block;
+    		}
+    		
+    		input {
+			    margin-bottom: -2px;
+			    margin-top: -2px;
+			}
+		}
+		
+		// Dropdown menu
+		.portal-flyout-container {
+		    width: 200px;
+		    position: absolute; 
+            z-index: 100000; 
+            display: none;
+            
+            ul {
+    	        margin: 0;
+    	    }
+            li {
+                display: block;
+                list-style: none; 
+                padding: 0;
+            }
+            a {
+                display: block;
+            }
+        }
+        
+        // Admin controls
+		.portal-navigation-gripper,
+		.portal-navigation-delete {
+		    position: absolute;
+		    top: 0;
+		    width: 16px; 
+            height: 16px;
+            display: none;
+            
+            span {
+                visibility: hidden;
+            }
+		}
+		.active {
+		    .portal-navigation-gripper {
+    		    left: 0;
+    		    display: block;
+    		    cursor: move;
+    		    background: url("images/gripper.png") no-repeat;
+		    }
+    		.portal-navigation-delete {
+                right: 0;
+    		    display: block;
+    		    cursor: pointer;
+    		    background: url("images/remove.png") no-repeat; 
+    		}
+		}		
+		.portal-navigation-add {
+		    position: absolute;
+			top: 7px;
+			right: 25px;
+		}
+		.fl-inlineEdit-editModeInstruction {
+			@include visuallyhidden();
+		}
+    }
+    
+    // Sidebar
+    #portalSidebar {
+        padding: 0;
+        
+        #portalSidebarInner {
+            padding:  0 0 0 15px;
+        }
+       	#portalFragAdminList .fl-widget-content {
+			padding: 1em 12px; // no list menu
+		}
+    }
+    
+    #portalPageBodyInner {
+		padding: 2.5em 12px;
+		background: #f7f5ef;
+		overflow: hidden;
+	}
+    
+    // Column layouts
+    #portalPageBodyColumns {
+        .portal-page-column {
+            float: left; 
+            display: inline;
+        }
+        .portal-page-column-inner {
+            padding-bottom: 1em; 
+            min-height: 100px;
+        }
+        &.columns-1 .column-1 {
+            width: 100%;
+        }
+        &.columns-2 .column-1 .portal-page-column-inner,
+        &.columns-3 .column-1 .portal-page-column-inner,
+        &.columns-4 .column-1 .portal-page-column-inner,
+        &.columns-3 .column-2 .portal-page-column-inner,
+        &.columns-4 .column-2 .portal-page-column-inner,
+        &.columns-4 .column-3 .portal-page-column-inner {
+            margin-right: 5px !important;
+        }
+        &.columns-2 .column-2 .portal-page-column-inner,
+        &.columns-3 .column-3 .portal-page-column-inner,
+        &.columns-4 .column-4 .portal-page-column-inner {
+            margin-left: 5px !important;
+        }
+    }
+    
+    // Footer
+    #portalPageFooter {
+        #portalPageFooterInner {
+    		margin: 0 auto;
+            padding: 10px;
+    	}
+    }
+    
+    // Guest view
+    .not-logged-in {
+		#portalLogo {
+			padding: 1.5em 0;
+		}	
+		#portalLogin {
+			/* Login */
+			width: 10em;
+			position: absolute;
+			top: 1.5em;
+			right: 25px;
+			
+			.fl-widget-content {
+				text-align: center;
+			}
+		}
+	}
+	
+	// Focus view
+	.focused {
+	    #portalPageBarLinks {
+	        right: 25px !important;
+	    }
+	}
+    
+    // Misc classes
+    .on-top { 
+        z-index: 1000000;
+    }
+    
+    .clear-float {
+        clear: both;
+    }
+}

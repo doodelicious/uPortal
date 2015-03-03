@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><group script="classpath://org/jasig/portal/io/import-group_membership_v3-2.crn">
+  <name>Human-Resources</name>
+  <entity-type>org.jasig.portal.portlet.om.IPortletDefinition</entity-type>
+  <creator>system</creator>
+  <description>Human-Resources portlets</description>
+  <children/>
+</group>

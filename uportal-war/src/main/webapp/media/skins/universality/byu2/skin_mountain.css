@@ -1,0 +1,364 @@
+body {
+    margin: 0px;
+}
+
+#portalNavigationInner {
+    background: none;
+    -webkit-box-shadow: none;
+}
+
+.up #portalNavigation {
+    background: none;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.up#portal {
+    height: 100px;
+    /*background-image: url("images/snowy-mountain-01.png");*/
+    background-repeat: no-repeat;
+}
+
+.up #portalPage {
+    background: none;
+}
+
+.up #portalPageInner {
+    background: none;
+}
+
+.up #portalPageBody {
+    box-shadow: 0px -7px 20px rgb(52, 82, 120);
+}
+
+.up #portalPageBodyInner {
+    background-image: url("images/white-linen.png");
+    background-repeat: repeat repeat;
+}
+
+.up .up-portlet-wrapper .up-portlet-titlebar {
+    background: -webkit-linear-gradient(top, rgb(133, 169, 200), rgb(111, 141, 177));
+    background: -moz-linear-gradient(top, rgb(133, 169, 200), rgb(111, 141, 177));
+    background: -o-linear-gradient(top, rgb(133, 169, 200), rgb(111, 141, 177));
+    background: linear-gradient(top, rgb(133, 169, 200), rgb(111, 141, 177));
+}
+
+.up .up-portlet-wrapper .up-portlet-titlebar h2 a {
+    color: white;
+    font-weight: bold;
+}
+
+.up #portalPage #portalLogo {
+    background-image: url("images/snowy-mountain-02.png");
+    background-repeat: repeat-x;
+    height: 100px;
+}
+
+.up #portalPage #portalLogo a img {
+    display: none;
+    top: 15px;
+    left: 32px;
+}
+
+.up #portalLogin #portalCASLogin a.button {
+    border: none;
+    background: rgba(52, 82, 120, .8);
+    padding: 8px 14px;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+#byuTitle {
+    color: #375572;
+    text-shadow: -1px -1px 0 #F1E9DC, 1px -1px 0 #F1E9DC, -1px 1px 0 #F1E9DC, 1px 1px 0 #F1E9DC;
+    padding: 25px 0 0 450px;
+}
+
+#myBYUTitle {
+    color: #F1E9DC;
+    text-shadow: -1px -1px 0 #375572, 1px -1px 0 #375572, -1px 1px 0 #375572, 1px 1px 0 #375572;
+}
+
+#portalNavigationInner {
+    background: #b0bac3; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IwYmFjMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5NWFjYzEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #b0bac3 0%, #95acc1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bac3), color-stop(100%,#95acc1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #b0bac3 0%,#95acc1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #b0bac3 0%,#95acc1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #b0bac3 0%,#95acc1 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #b0bac3 0%,#95acc1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0bac3', endColorstr='#95acc1',GradientType=0 ); /* IE6-8 */
+
+}
+
+.up #portalLogin #portalCASLogin a.button:hover {
+    border: none;
+    background: rgba(52, 82, 120, 1);
+}
+
+.up #portalNavigation .active .portal-navigation-link {
+    background: rgba(52, 82, 120, .8);
+    border-radius: 5px 5px 0 0;
+}
+
+.up .up-portlet-wrapper .up-portlet-content-wrapper {
+    background-color: white;
+}
+
+.up #portalPageHeader #webSearchContainer input {
+    margin-top: 0.5em;
+    padding: 7px;
+    color: rgb(0, 19, 56);
+    background-color: rgba(209, 228, 246, .8);
+    border: none;
+    font-weight: bold;
+}
+
+.up #portalPageHeader #webSearchContainer input {
+    padding: 5px 14px;
+}
+
+.up #portalPageHeader #portalPageBar {
+    background: #6E8190;
+    background: -moz-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6E8190), color-stop(100%, #3B5A77)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #6E8190 0%, #3B5A77 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6E8190', endColorstr='#3B5A77', GradientType=0); /* IE6-9 */
+    /*padding: 0px*/
+}
+
+.up #portalPageHeader #portalPageBar #portalPageBarLinks a {
+    color: white;
+    padding: 0px 12px;
+    background: none repeat scroll 0 0 #6E8190;
+    background: -moz-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6E8190), color-stop(100%, #3B5A77)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #6E8190 0%, #3B5A77 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6E8190', endColorstr='#3B5A77', GradientType=0); /* IE6-9 */
+}
+
+.up #portalNavigation a.portal-navigation-add {
+    background: none;
+    border: none;
+    padding: 4px 0 0 0;
+}
+
+.up #portalNavigation a.portal-navigation-add:hover {
+    color: rgb(209, 228, 246);
+}
+
+.up form input, .up form select, .up form textarea {
+    background-color: white;
+}
+
+.up #portalNavigation .portal-navigation-link {
+    background: transparent;
+}
+
+.up #portalNavigation .portal-navigation-link {
+    background-color: transparent;
+}
+
+.up #portalNavigation .portal-navigation-link:hover, .up #portalNavigation .portal-navigation-link:focus {
+    background: url("../byu/images/shadow_top_10px_15.png") repeat-x scroll left top #3B5A77;
+}
+
+.up .button, .up button, .up input[type='submit'], .up form select[type='submit'], .up input[type='button'], .up form select[type='button'] {
+    background-color: #EE8800;
+    border-color: #444;
+    /*background-image: -moz-linear-gradient(top, #ED9040, #E56E03);*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ED9040), color-stop(1, #E56E03));*/
+    /*background-image: linear-gradient(top, #ED9040, #E56E03);*/
+}
+
+.up .button:hover, .up button:hover, .up input[type='submit']:hover, .up form select[type='submit']:hover, .up input[type='button']:hover, .up form select[type='button']:hover {
+    border-color: #000;
+    background: #F47404;
+    color: white;
+    font-weight: bold;
+    /*text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);*/
+    /*background-image: -moz-linear-gradient(top, #E56E03, #F47404);*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E56E03), color-stop(1, #F47404));*/
+    /*background-image: linear-gradient(top, #E56E03, #F47404);*/
+}
+
+.up .button:active, .up .button.active, .up button:active, .up button.active, .up input[type='submit']:active, .up form select[type='submit']:active, .up input[type='submit'].active, .up form select[type='submit'].active, .up input[type='button']:active, .up form select[type='button']:active, .up input[type='button'].active, .up form select[type='button'].active {
+    border-color: #000;
+    background: #F47404;
+    color: white;
+    font-weight: bold;
+    /*text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);*/
+    /*background-image: -moz-linear-gradient(top, #E56E03, #F47404);*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E56E03), color-stop(1, #F47404));*/
+    /*background-image: linear-gradient(top, #E56E03, #F47404);*/
+}
+
+.up .up-gallery .content-filters-wrapper {
+    background: none repeat scroll 0 0 #9CAFC1;
+}
+
+.up .up-gallery .menu .active span {
+    background-color: #9CAFC1;
+}
+
+.up .up-gallery .content-filters-wrapper .active h3 span {
+    background-color: #9CAFC1;
+}
+
+.up .up-gallery .content-filters-wrapper h3 {
+    background: none repeat scroll 0 0 #4F6981
+}
+
+.up .up-gallery .results-wrapper .ri-wrapper .ri-utility {
+    background: #6f8db1;
+}
+
+.up .up-gallery .results-wrapper .pager .pager-button-up, .up .up-gallery .results-wrapper .pager .pager-button-down {
+    background: #6E8190;
+    background: -moz-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6E8190), color-stop(100%, #3B5A77)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #6E8190 0%, #3B5A77 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6E8190', endColorstr='#3B5A77', GradientType=0); /* IE6-9 */
+    /*padding: 0px*/
+}
+
+.up .up-gallery .results-wrapper .pager .fl-pager-disabled {
+    background: #6E8190 !important;
+    background: -moz-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6E8190), color-stop(100%, #3B5A77)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6E8190 0%, #3B5A77 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #6E8190 0%, #3B5A77 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6E8190', endColorstr='#3B5A77', GradientType=0); /* IE6-9 */
+    /*padding: 0px*/
+}
+
+.up .up-gallery .close-button a.button {
+    border-color: #000;
+    background: #F47404;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, #E56E03, #F47404);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E56E03), color-stop(1, #F47404));
+    background-image: linear-gradient(top, #E56E03, #F47404);
+}
+
+.up .up-gallery .close-button a.button:active {
+    border-color: #000;
+    background: #F47404;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, #F47404, #E56E03);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F47404), color-stop(1, #E56E03));
+    background-image: linear-gradient(top, #F47404, #E56E03);
+}
+
+.up .up-gallery .close-button a.button:hover {
+    border-color: #000;
+    background: #F47404;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+    background-image: -moz-linear-gradient(top, #F47404, #E56E03);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F47404), color-stop(1, #E56E03));
+    background-image: linear-gradient(top, #F47404, #E56E03);
+}
+
+.up #portalNavigation .portal-navigation-link:hover, .up #portalNavigation .portal-navigation-link:focus {
+    /*background: rgba(52, 82, 120, 0.8); url("../byu/images/shadow_top_10px_15.png") repeat-x left top;*/
+    border: none;
+    border-bottom: none;
+}
+
+#portalNavigationInner {
+    background: #e9e4d1; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZTRkMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzYzN2U5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, #e9e4d1 0%, #637e99 20%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e9e4d1), color-stop(20%, #637e99)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e9e4d1 0%, #637e99 20%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e9e4d1 0%, #637e99 20%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e9e4d1 0%, #637e99 20%); /* IE10+ */
+    background: linear-gradient(to bottom, #e9e4d1 0%, #637e99 20%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e4d1', endColorstr='#637e99', GradientType=0); /* IE6-8 */
+
+}
+
+.up #portalNavigation .portal-navigation-link:hover, .up #portalNavigation .portal-navigation-link:focus {
+    background: #282D33 url("../byu/images/shadow_top_10px_15.png") repeat-x left top;
+}
+
+/*.up #portalNavigation .active .portal-navigation-link {*/
+/*background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #336699), color-stop(100%, #114477));*/
+/*background: -webkit-linear-gradient(top, #336699, #114477);*/
+/*background: -moz-linear-gradient(top, #336699, #114477);*/
+/*background: -o-linear-gradient(top, #336699, #114477);*/
+/*background: linear-gradient(top, #336699, #114477);*/
+/*color: #fff;*/
+/*font-size: 14px;*/
+/*}*/
+
+/*.up #portalNavigation .portal-navigation:hover .portal-navigation-link,*/
+/*.up #portalNavigation .portal-navigation:focus .portal-navigation-link {*/
+/*background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #114477), color-stop(100%, #003366));*/
+/*background: -webkit-linear-gradient(top, #114477, #003366);*/
+/*background: -moz-linear-gradient(top, #114477, #003366);*/
+/*background: -o-linear-gradient(top, #114477, #003366);*/
+/*background: linear-gradient(top, #114477, #003366);*/
+/*color: #fff;*/
+/*font-size: 14px;*/
+/*}*/
+
+/*.up #portalNavigation .portal-navigation-gripper {*/
+/*background: transparent url("images/gripper.png") 0 0 no-repeat;*/
+/*}*/
+
+/*.up #portalNavigation .portal-navigation-delete {*/
+/*background: transparent url("images/remove.png") 0 0 no-repeat;*/
+/*}*/
+
+.up #portalNavigation .portal-flyout-container {
+    background: #282D33;
+
+}
+
+.up #portalNavigation .portal-flyout-container li {
+    border-top: none;
+    background-color: #F9FCFE;
+}
+
+.up #portalNavigation .portal-flyout-container li a {
+    color: #3C5A7E;
+}
+
+.up #portalNavigation .portal-flyout-container li a:hover,
+.up #portalNavigation .portal-flyout-container li a:focus {
+    background-color: #3C5A7E;
+}
+
+.up #portalLogo h1 {
+    text-indent: -999em;
+    overflow: hidden;
+    text-align: left;
+    background: url("../byu/images/byulogo.png") top left no-repeat;
+}
+
+.svg .up #portalLogo h1 {
+    background-image: url("../byu/images/byulogo.svg");
+}
