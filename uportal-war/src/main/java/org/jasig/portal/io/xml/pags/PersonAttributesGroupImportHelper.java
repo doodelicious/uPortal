@@ -81,15 +81,9 @@ public class PersonAttributesGroupImportHelper {
                 testGroup, attributeName, testerClass, testValue, includes, excludes);
     }
 
-    public void addAdHocGroupTest(IPersonAttributesGroupTestGroupDefinition testGroup, Set<String> includedGroupNames, Set<String> excludedGroupNames) {
-        logger.warn("adding AdHocGroupTest");
-        logger.warn("Testgroup is {}", testGroup.getId());
-        logger.warn("Included group names are '{}'", includedGroupNames.toString());
-        logger.warn("Excluded group names are '{}'", excludedGroupNames.toString());
-    }
-
-    public HashSet<String> createStringHashSet() {
-        return new HashSet<String>();
+    public void addMemberOfGroupTest(IPersonAttributesGroupTestGroupDefinition testGroup, String groupName) {
+        logger.error("testGroup is {}", testGroup.getId());
+        logger.error("groupName is {}", groupName);
     }
 
     public void addGroupMember(String groupName, String member) {
