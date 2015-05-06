@@ -81,9 +81,8 @@ public class PersonAttributesGroupImportHelper {
                 testGroup, attributeName, testerClass, testValue, includes, excludes);
     }
 
-    public void addMemberOfGroupTest(IPersonAttributesGroupTestGroupDefinition testGroup, String groupName) {
-        logger.error("testGroup is {}", testGroup.getId());
-        logger.error("groupName is {}", groupName);
+    public HashSet<String> createStringHashSet() {
+        return new HashSet<String>();
     }
 
     public void addGroupMember(String groupName, String member) {
