@@ -37,6 +37,7 @@ import javax.persistence.Table;
 import javax.persistence.TableGenerator;
 import javax.persistence.Version;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.dom4j.DocumentHelper;
@@ -55,12 +56,12 @@ import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestGroupDefinitio
 @Table(name = JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX)
 @SequenceGenerator(
         name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN",
-        sequenceName="UP_PAGS_TEST_SEQ",
+        sequenceName=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_SEQ",
         allocationSize=5
     )
 @TableGenerator(
         name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN",
-        pkColumnValue="UP_PAGS_TEST",
+        pkColumnValue=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX,
         allocationSize=5
     )
 @NaturalIdCache(region = "org.jasig.portal.groups.pags.dao.jpa.PersonAttributesGroupTestDefinitionImpl-NaturalId")
@@ -84,7 +85,7 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
     }
 
     @Id
-    @GeneratedValue(generator = "UP_PAGS_TEST_GEN")
+    @GeneratedValue(generator = JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN")
     @Column(name = "PAGS_TEST_ID")
     private long internalPersonAttributesGroupTestDefinitionId;
 
@@ -205,9 +206,13 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
         }
 
         org.dom4j.Element elementTest = DocumentHelper.createElement(new QName("test"));
-        elementTest.addElement("attribute-name").addText(this.getAttributeName());
+        if (StringUtils.isNotBlank(this.getAttributeName())) {
+            elementTest.addElement("attribute-name").addText(this.getAttributeName());
+        }
         elementTest.addElement("tester-class").addText(this.getTesterClassName());
-        elementTest.addElement("test-value").addText(this.getTestValue());
+        if (StringUtils.isNotBlank(this.getTestValue())) {
+            elementTest.addElement("test-value").addText(this.getTestValue());
+        }
         for (String incl : includes) {
             elementTest.addElement("includes").addText(incl);
         }
