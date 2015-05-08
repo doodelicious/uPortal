@@ -80,8 +80,12 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
         this.attributeName = attributeName;
         this.testerClass = testerClass;
         this.testValue = testValue;
-        this.includes = new HashSet<String>(includes);  // defensive copy
-        this.excludes = new HashSet<String>(excludes);      // defensive copy
+        if (includes != null) {
+            this.includes.addAll(includes);
+        }
+        if (excludes != null) {
+            this.excludes.addAll(excludes);
+        }
     }
 
     @Id
@@ -104,11 +108,11 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
 
     @ElementCollection(fetch=FetchType.EAGER)
     @CollectionTable(name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_INCLUDES")
-    private Set<String> includes = Collections.emptySet();
+    private Set<String> includes = new HashSet<>(0);
 
     @ElementCollection(fetch=FetchType.EAGER)
     @CollectionTable(name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_EXCLUDES")
-    private Set<String> excludes = Collections.emptySet();
+    private Set<String> excludes = new HashSet<>(0);
 
     @ManyToOne(fetch = FetchType.EAGER, targetEntity=PersonAttributesGroupTestGroupDefinitionImpl.class)
     @JoinColumn(name = "PAGS_TEST_GROUP_ID", nullable = false)
