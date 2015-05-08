@@ -18,20 +18,22 @@
  */
 package org.jasig.portal.groups.pags.dao.jpa;
 
-import com.google.common.base.Function;
-import org.apache.commons.lang.Validate;
-import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestDefinition;
-import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestDefinitionDao;
-import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestGroupDefinition;
-import org.jasig.portal.jpa.BasePortalJpaDao;
-import org.springframework.stereotype.Repository;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import java.util.HashSet;
-import java.util.Set;
+
+import org.apache.commons.lang.Validate;
+import org.jasig.portal.jpa.BasePortalJpaDao;
+import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestDefinitionDao;
+import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestDefinition;
+import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestGroupDefinition;
+import org.springframework.stereotype.Repository;
+
+import com.google.common.base.Function;
 
 /**
  * @author Shawn Connolly, sconnolly@unicon.net
