@@ -56,12 +56,12 @@ import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestGroupDefinitio
 @Table(name = JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX)
 @SequenceGenerator(
         name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN",
-        sequenceName=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_SEQ",
+        sequenceName="UP_PAGS_TEST_SEQ",
         allocationSize=5
     )
 @TableGenerator(
         name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN",
-        pkColumnValue=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX,
+        pkColumnValue="UP_PAGS_TEST",
         allocationSize=5
     )
 @NaturalIdCache(region = "org.jasig.portal.groups.pags.dao.jpa.PersonAttributesGroupTestDefinitionImpl-NaturalId")
@@ -89,7 +89,7 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
     }
 
     @Id
-    @GeneratedValue(generator = JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN")
+    @GeneratedValue(generator = "UP_PAGS_TEST_GEN")
     @Column(name = "PAGS_TEST_ID")
     private long internalPersonAttributesGroupTestDefinitionId;
 
