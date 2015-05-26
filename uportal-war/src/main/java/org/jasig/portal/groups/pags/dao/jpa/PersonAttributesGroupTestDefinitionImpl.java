@@ -18,14 +18,8 @@
  */
 package org.jasig.portal.groups.pags.dao.jpa;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-
 import javax.persistence.Cacheable;
-import javax.persistence.CollectionTable;
 import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -53,14 +47,14 @@ import org.jasig.portal.groups.pags.dao.IPersonAttributesGroupTestGroupDefinitio
  * @author Shawn Connolly, sconnolly@unicon.net
  */
 @Entity
-@Table(name = JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX)
+@Table(name = "UP_PAGS_TEST")
 @SequenceGenerator(
-        name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN",
+        name="UP_PAGS_TEST_GEN",
         sequenceName="UP_PAGS_TEST_SEQ",
         allocationSize=5
     )
 @TableGenerator(
-        name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_GEN",
+        name="UP_PAGS_TEST_GEN",
         pkColumnValue="UP_PAGS_TEST",
         allocationSize=5
     )
@@ -71,21 +65,12 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
     public PersonAttributesGroupTestDefinitionImpl() {
         super();
     }
-    public PersonAttributesGroupTestDefinitionImpl(
-            IPersonAttributesGroupTestGroupDefinition testGroup, String attributeName,
-            String testerClass, String testValue, Set<String> includes,
-            Set<String> excludes) {
+    public PersonAttributesGroupTestDefinitionImpl(IPersonAttributesGroupTestGroupDefinition testGroup, String attributeName, String testerClass, String testValue) {
         super();
         this.testGroup = testGroup;
         this.attributeName = attributeName;
         this.testerClass = testerClass;
         this.testValue = testValue;
-        if (includes != null) {
-            this.includes.addAll(includes);
-        }
-        if (excludes != null) {
-            this.excludes.addAll(excludes);
-        }
     }
 
     @Id
@@ -105,14 +90,6 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
 
     @Column(name = "TEST_VALUE", length=500, nullable = true)
     private String testValue;
-
-    @ElementCollection(fetch=FetchType.EAGER)
-    @CollectionTable(name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_INCLUDES")
-    private Set<String> includes = new HashSet<>(0);
-
-    @ElementCollection(fetch=FetchType.EAGER)
-    @CollectionTable(name=JpaPersonAttributesGroupTestDefinitionDao.TABLENAME_PREFIX + "_EXCLUDES")
-    private Set<String> excludes = new HashSet<>(0);
 
     @ManyToOne(fetch = FetchType.EAGER, targetEntity=PersonAttributesGroupTestGroupDefinitionImpl.class)
     @JoinColumn(name = "PAGS_TEST_GROUP_ID", nullable = false)
@@ -159,30 +136,6 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
     }
 
     @Override
-    public Set<String> getIncludes() {
-        return Collections.unmodifiableSet(includes);
-    }
-
-    @Override
-    public void setIncludes(Set<String> includes) {
-        // Need to keep the JPA-managed collection
-        this.includes.clear();
-        this.includes.addAll(includes);
-    }
-
-    @Override
-    public Set<String> getExcludes() {
-        return Collections.unmodifiableSet(excludes);
-    }
-
-    @Override
-    public void setExcludes(Set<String> excludes) {
-        // Need to keep the JPA-managed collection
-        this.excludes.clear();
-        this.excludes.addAll(excludes);
-    }
-
-    @Override
     public IPersonAttributesGroupTestGroupDefinition getTestGroup() {
         return testGroup;
     }
@@ -214,15 +167,7 @@ public class PersonAttributesGroupTestDefinitionImpl implements IPersonAttribute
             elementTest.addElement("attribute-name").addText(this.getAttributeName());
         }
         elementTest.addElement("tester-class").addText(this.getTesterClassName());
-        if (StringUtils.isNotBlank(this.getTestValue())) {
-            elementTest.addElement("test-value").addText(this.getTestValue());
-        }
-        for (String incl : includes) {
-            elementTest.addElement("includes").addText(incl);
-        }
-        for (String excl : excludes) {
-            elementTest.addElement("excludes").addText(excl);
-        }
+        elementTest.addElement("test-value").addText(this.getTestValue());
         parent.add(elementTest);
     }
 
