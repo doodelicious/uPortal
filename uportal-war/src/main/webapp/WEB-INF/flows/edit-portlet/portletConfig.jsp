@@ -418,7 +418,7 @@ PORTLET DEVELOPMENT STANDARDS AND GUIDELINES
         </div> <!-- end: portlet-content -->
     </div> <!-- end: portlet -->
 
-    <!-- Portlet config groups and categories -->
+    <!-- Portlet config Permissions and categories -->
     <div id="${n}PortletGroupsCategories" class="fl-widget portlet ptl-mgr view-groups-cats" role="section">
         <!-- Portlet Content -->
         <div class="fl-widget-content content portlet-content" role="main">
@@ -426,7 +426,7 @@ PORTLET DEVELOPMENT STANDARDS AND GUIDELINES
             <div class="portlet-section" role="region">
                 <div class="titlebar">
                     <h3 class="title" role="heading">
-                        <spring:message code="groups.and.categories" text="Groups and Categories"/>
+                        <spring:message code="Permissions.and.categories" text="Permissions and Categories"/>
                     </h3>
                 </div>
                 <div class="content row">
@@ -434,16 +434,39 @@ PORTLET DEVELOPMENT STANDARDS AND GUIDELINES
                     <!-- Portlet groups -->
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="col-sm-4 control-label h3"><spring:message code="groups"/></label>
-                            <div class="col-sm-offset-4">
-                                <button type="submit" class="button btn btn-primary" name="_eventId_chooseGroup"><spring:message code="edit.groups"/>&nbsp;&nbsp;<i class="fa fa-users"></i></button>
-                            </div>
-                            <div class="col-sm-offset-4">
-                                <ul class="config-list">
-                                    <c:forEach items="${ portlet.groups }" var="group">
-                                        <li><i class="fa fa-users"></i> ${fn:escapeXml(group.name )}</li>
-                                    </c:forEach>
-                                </ul>
+                            <label class="col-sm-3 control-label h3"><spring:message code="permissions"/></label>
+                            <div class="col-sm-9">
+                                <button type="submit" class="button btn btn-primary" name="_eventId_chooseGroup"><spring:message code="edit.permissions"/>&nbsp;&nbsp;<i class="fa fa-users"></i></button>
+                                <form>
+                                    <table class="table table-condensed permissions-options-table">
+                                        <thead>
+                                            <tr>
+                                                <td class="col-md-6"></td>
+                                                <td class="col-md-3">
+                                                    <spring:message code="edit.browse"/>&nbsp;
+                                                    <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="<spring:message code="edit.browse.tooltip"/>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </a>
+                                                </td>
+                                                <td class="col-md-3">
+                                                    <spring:message code="edit.subscribe"/>&nbsp;
+                                                    <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="<spring:message code="edit.subscribe.tooltip"/>">
+                                                        <i class="fa fa-info-circle"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <c:forEach items="${ portlet.groups }" var="group">
+                                                <tr>
+                                                    <td><i class="fa fa-users"></i> ${fn:escapeXml(group.name )}</td>
+                                                    <td class=text-center><input type="checkbox" name="browse" checked></td>
+                                                    <td class=text-center><input type="checkbox" name="subscribe" checked></td>
+                                                </tr>
+                                            </c:forEach>
+                                        </tbody>
+                                    </table>
+                                </form>
                             </div>
                         </div>
                     </div> <!-- end: portlet groups -->
@@ -451,14 +474,14 @@ PORTLET DEVELOPMENT STANDARDS AND GUIDELINES
                     <!-- Portlet categories -->
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="col-sm-4 control-label h3"><spring:message code="categories"/></label>
-                            <div class="col-sm-offset-4">
+                            <label class="col-sm-3 control-label h3"><spring:message code="categories"/></label>
+                            <div class="col-sm-9">
                                 <button type="submit" class="button btn btn-primary" name="_eventId_chooseCategory"><spring:message code="edit.categories"/>&nbsp;&nbsp;<i class="fa fa-folder-open"></i></button>
-                            </div>
-                            <div class="col-sm-offset-4">
                                 <ul class="config-list">
                                     <c:forEach items="${ portlet.categories }" var="category">
-                                        <li><i class="fa fa-folder-open"></i> ${fn:escapeXml(category.name )}</li>
+                                        <li>
+                                            <i class="fa fa-folder-open"></i> ${fn:escapeXml(category.name )}
+                                        </li>
                                     </c:forEach>
                                 </ul>
                             </div>
@@ -887,6 +910,8 @@ PORTLET DEVELOPMENT STANDARDS AND GUIDELINES
                 updateOptionalInputs();
             });
             updateOptionalInputs();
+
+            $('[data-toggle="tooltip"]').tooltip();
         });
 
         function toggleChevron(e) {
